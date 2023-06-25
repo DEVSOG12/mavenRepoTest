@@ -189,7 +189,7 @@ def main():
             # Remove the project from the queue and report status "results"
             records = json.loads(read_json()[0])
             records["queue"].remove(project[0])
-            result = {"project": project[0], "gh_version": gh[1], "pypi_version": pypi[1], "status": "Success", "diffoscope:": output, "error": "NA"}
+            result = {"project": project[0], "gh_version": gh[1], "pypi_version": pypi[1], "status": "Success", "diffoscope:": output.split()[0:10], "error": "NA"}
             records["results"].append(result)
             write_json(records)
 
