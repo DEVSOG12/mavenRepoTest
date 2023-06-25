@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: shipwire
+Version: 0.9.1
+Summary: A Python abstraction layer around the Shipwire API.
+Home-page: https://github.com/durbin/shipwire-python
+Author: Neil Durbin, Clark Fischer
+Author-email: neildurbin@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/durbin/shipwire-python/archive/master.tar.gz
+Description: UNKNOWN
+Keywords: shipwire,api,wrapper
+Platform: UNKNOWN

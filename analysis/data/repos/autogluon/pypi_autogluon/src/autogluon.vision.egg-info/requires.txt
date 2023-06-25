@@ -1,0 +1,8 @@
+numpy<1.24,>=1.21
+pandas<1.6,>1.4.0
+gluoncv<0.10.6,>=0.10.5
+Pillow<=9.4.0,>=9.3.0
+timm<0.7.0,>=0.5.4
+matplotlib
+autogluon.core==0.6.3b20230201
+autogluon.multimodal==0.6.3b20230201
