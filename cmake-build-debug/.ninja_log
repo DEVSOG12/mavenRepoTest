@@ -1,7 +1,0 @@
-# ninja log v5
-0	370	1686534200599665421	CMakeFiles/reproducibleTests.dir/main.c.o	8d0a690ee0bf4a53
-371	438	1686534200670536059	reproducibleTests	c645172159207eaf
-1	338	1686534242522740037	CMakeFiles/reproducibleTests.dir/main.c.o	8d0a690ee0bf4a53
-340	409	1686534242603140608	reproducibleTests	c645172159207eaf
-1	316	1686534303597355799	CMakeFiles/reproducibleTests.dir/main.c.o	8d0a690ee0bf4a53
-316	380	1686534303662959660	reproducibleTests	c645172159207eaf

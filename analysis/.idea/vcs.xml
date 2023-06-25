@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/Record/github_Record" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/analytics-python/github_analytics-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/apeye/github_apeye" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/batchup/github_batchup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/compute-image-packages/github_compute-image-packages" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/django-cockroachdb/github_django-cockroachdb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/django-code-deploy/github_django-code-deploy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/django-fast-pagination/github_django-fast-pagination" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/djangocms-icon/github_djangocms-icon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/edx-analytics-data-api-client/github_edx-analytics-data-api-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/fritzprofiles/github_fritzprofiles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/generator/github_generator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/genty/github_genty" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/github_" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/hata/github_hata" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/infi.storagemodel/github_infi.storagemodel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/norbert/github_norbert" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pikepdf/github_pikepdf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/prosodic/github_prosodic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/py-rcsb_db/github_py-rcsb_db" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pyobjc/github_pyobjc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pypjlink/github_pypjlink" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pyqubo/github_pyqubo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/python-manhole/github_python-manhole" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/python-mip/github_python-mip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/taar/github_taar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/unittest-pyspark/github_unittest-pyspark" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/vonage-python-sdk/github_vonage-python-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/zope.pagetemplate/github_zope.pagetemplate" vcs="Git" />
+  </component>
+</project>
