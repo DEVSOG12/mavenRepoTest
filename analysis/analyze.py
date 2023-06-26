@@ -260,5 +260,8 @@ if __name__ == "__main__":
     for i in range(int(n)):
         print("Running project: " + str(i))
         main()
+     # Remove all the repos downloaded
+    os.system("rm -rf repos/*")
+
 
 
