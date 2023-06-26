@@ -236,7 +236,7 @@ def main():
         # Remove the project from the queue and report status "results"
         records = json.loads(read_json()[0])
         records["queue"].remove(project[0])
-        result = {"project": project[0], "gh_version": versionize(gh[1])[0] if versionize(gh[1])[0] else "Failed", "pypi_version": versionize(gh[1])[0] if versionize(gh[1])[0] else "Failed", "status": "Failed", "diffoscope:": "NA", "error": "GH: " + gh[1] if not gh[0] else "Not Error from GithHub" + " PyPi: " + pypi[1] if not pypi[0] else "Not Error from PyPi"}
+        result = {"project": project[0], "gh_version": versionize(gh[1])[1] if versionize(gh[1])[0] else "Failed", "pypi_version": versionize(gh[1])[1] if versionize(gh[1])[0] else "Failed", "status": "Failed", "diffoscope:": "NA", "error": "GH: " + gh[1] if not gh[0] else "Not Error from GithHub" + " PyPi: " + pypi[1] if not pypi[0] else "Not Error from PyPi"}
         records["results"].append(result)
         write_json(records)
 
