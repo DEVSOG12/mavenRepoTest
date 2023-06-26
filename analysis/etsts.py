@@ -11,15 +11,21 @@ with open('data/records.json', 'r') as f:
     print(len(data["results"]))
 
     # create a csv file
-    with open('data/records_second.csv', 'w') as f:
-        f.write("name,gh_version,pypi_version,status,diffoscope,repo_version,error\n")
+    with open('data/records_third.csv', 'w') as f:
+        f.write("name,gh_version,pypi_version,status,diffoscope,error\n")
         data = data["results"]
         for record in data:
             print(record)
-            f.write("{0},{1},{2},{3},{4}\n".format(record['project'], versionize(record['gh_version'])[1] if versionize(record['gh_version'])[0] else record['gh_version'], versionize( record['pypi_version'])[1] if versionize( record['pypi_version'])[0] else
-            record['pypi_version']
-                                                   , record['status'], record['diffoscope:'] if record['diffoscope:'] != "NA" else "Error", record['error']))
+            f.write("{0},{1},{2},{3},{4}, {5}\n".format(
+                record['project'],
+                versionize(record['gh_version'])[1] if versionize(record['gh_version'])[0] else record['gh_version'],
+                versionize(record['pypi_version'])[1] if versionize(record['pypi_version'])[0] else record[
+                    'pypi_version'],
+                record['status'],
+                record['diffoscope:'] if record['diffoscope:'] != "NA" else "Error",
+                record['error']
 
+            ))
 
 #
 # output = """
