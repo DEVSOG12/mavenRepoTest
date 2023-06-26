@@ -4,9 +4,9 @@ import setuptools
 kwargs = json.loads(
     """
 {
-    "name": "aws-cdk.aws-mediapackage",
+    "name": "aws-cdk.lambda-layer-awscli",
     "version": "1.204.0",
-    "description": "The CDK Construct Library for AWS::MediaPackage",
+    "description": "An AWS Lambda layer that contains the AWS CLI",
     "license": "Apache-2.0",
     "url": "https://github.com/aws/aws-cdk",
     "long_description_content_type": "text/markdown",
@@ -21,20 +21,22 @@ kwargs = json.loads(
         "": "src"
     },
     "packages": [
-        "aws_cdk.aws_mediapackage",
-        "aws_cdk.aws_mediapackage._jsii"
+        "aws_cdk.lambda_layer_awscli",
+        "aws_cdk.lambda_layer_awscli._jsii"
     ],
     "package_data": {
-        "aws_cdk.aws_mediapackage._jsii": [
-            "aws-mediapackage@1.204.0.jsii.tgz"
+        "aws_cdk.lambda_layer_awscli._jsii": [
+            "lambda-layer-awscli@1.204.0.jsii.tgz"
         ],
-        "aws_cdk.aws_mediapackage": [
+        "aws_cdk.lambda_layer_awscli": [
             "py.typed"
         ]
     },
     "python_requires": "~=3.7",
     "install_requires": [
+        "aws-cdk.aws-lambda==1.204.0",
         "aws-cdk.core==1.204.0",
+        "constructs>=3.3.69, <4.0.0",
         "jsii>=1.84.0, <2.0.0",
         "publication>=0.0.3",
         "typeguard~=2.13.3"

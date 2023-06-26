@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
-Name: aws-cdk.aws-mediapackage
+Name: aws-cdk.lambda-layer-awscli
 Version: 1.204.0
-Summary: The CDK Construct Library for AWS::MediaPackage
+Summary: An AWS Lambda layer that contains the AWS CLI
 Home-page: https://github.com/aws/aws-cdk
 Author: Amazon Web Services
 License: Apache-2.0
@@ -25,7 +25,7 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 License-File: NOTICE
 
-# AWS::MediaPackage Construct Library
+# AWS Lambda Layer with AWS CLI
 
 <!--BEGIN STABILITY BANNER-->---
 
@@ -40,26 +40,19 @@ License-File: NOTICE
 ---
 <!--END STABILITY BANNER-->
 
-This module is part of the [AWS Cloud Development Kit](https://github.com/aws/aws-cdk) project.
+This module exports a single class called `AwsCliLayer` which is a `lambda.Layer` that bundles the AWS CLI.
+
+Any Lambda Function that uses this layer must use a Python 3.x runtime.
+
+Usage:
 
 ```python
-import aws_cdk.aws_mediapackage as mediapackage
+# AwsCliLayer bundles the AWS CLI in a lambda layer
+from aws_cdk.lambda_layer_awscli import AwsCliLayer
+
+# fn: lambda.Function
+
+fn.add_layers(AwsCliLayer(self, "AwsCliLayer"))
 ```
 
-<!--BEGIN CFNONLY DISCLAIMER-->
-
-There are no official hand-written ([L2](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html#constructs_lib)) constructs for this service yet. Here are some suggestions on how to proceed:
-
-* Search [Construct Hub for MediaPackage construct libraries](https://constructs.dev/search?q=mediapackage)
-* Use the automatically generated [L1](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html#constructs_l1_using) constructs, in the same way you would use [the CloudFormation AWS::MediaPackage resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_MediaPackage.html) directly.
-
-<!--BEGIN CFNONLY DISCLAIMER-->
-
-There are no hand-written ([L2](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html#constructs_lib)) constructs for this service yet.
-However, you can still use the automatically generated [L1](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html#constructs_l1_using) constructs, and use this service exactly as you would using CloudFormation directly.
-
-For more information on the resources and properties available for this service, see the [CloudFormation documentation for AWS::MediaPackage](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_MediaPackage.html).
-
-(Read the [CDK Contributing Guide](https://github.com/aws/aws-cdk/blob/master/CONTRIBUTING.md) and submit an RFC if you are interested in contributing to this construct library.)
-
-<!--END CFNONLY DISCLAIMER-->
+The CLI will be installed under `/opt/awscli/aws`.
