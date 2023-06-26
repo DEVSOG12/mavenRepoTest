@@ -1,3 +1,0 @@
-line
-  sign missing
-  sign damage

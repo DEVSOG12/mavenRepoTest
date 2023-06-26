@@ -1,2 +1,0 @@
-blaseball_mike
-tests

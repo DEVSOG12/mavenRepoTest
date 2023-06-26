@@ -1,7 +1,0 @@
-numpydoc
-setuptools
-setuptools_scm
-numpydoc
-mock
-numpy
-cython

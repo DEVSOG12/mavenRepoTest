@@ -1,8 +1,0 @@
-c:clause
-/with/
-  =: phrase function=Subj
-/or/
-  := phrase function=Subj
-/-/
-  phrase
-  <: phrase

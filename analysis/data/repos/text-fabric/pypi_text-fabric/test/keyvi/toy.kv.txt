@@ -1,6 +1,0 @@
-a
-index
-is
-key
-keyvi
-value

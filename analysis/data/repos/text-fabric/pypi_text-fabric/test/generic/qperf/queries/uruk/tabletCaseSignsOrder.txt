@@ -1,5 +1,0 @@
-tablet catalogId=P448702
-  line
-    case terminal=1 number=2a
-      sign type=ideograph
-      > sign type=numeral

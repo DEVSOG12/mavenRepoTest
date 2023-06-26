@@ -1,2 +1,0 @@
-lex
-  word sp=subs g_cons~^>.$

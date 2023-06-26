@@ -1,5 +1,0 @@
-
-[dev]
-pycodestyle
-mypy
-twine

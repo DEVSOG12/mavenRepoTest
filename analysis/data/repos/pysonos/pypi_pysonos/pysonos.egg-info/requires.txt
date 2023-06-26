@@ -1,6 +1,0 @@
-requests
-xmltodict
-ifaddr
-
-[events_asyncio]
-aiohttp

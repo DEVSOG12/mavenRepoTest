@@ -1,3 +1,0 @@
-book
-  clause txt=N|?N
-    word sp=verb ps=p1

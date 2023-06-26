@@ -1,3 +1,0 @@
-[console_scripts]
-cget = cget.cli:cli
-

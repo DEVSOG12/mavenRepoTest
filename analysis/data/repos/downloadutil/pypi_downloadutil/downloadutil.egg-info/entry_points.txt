@@ -1,3 +1,0 @@
-[console_scripts]
-downloadutil = downloadutil.download_util:main
-

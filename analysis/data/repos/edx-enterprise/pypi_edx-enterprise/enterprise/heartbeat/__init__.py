@@ -1,3 +1,0 @@
-"""
-Enterprise heartbeat related code.
-"""

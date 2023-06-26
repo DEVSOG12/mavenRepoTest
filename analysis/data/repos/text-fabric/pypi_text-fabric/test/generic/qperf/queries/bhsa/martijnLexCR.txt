@@ -1,3 +1,0 @@
-verse
-  clause rela=Objc
-    =: word lex=>CR

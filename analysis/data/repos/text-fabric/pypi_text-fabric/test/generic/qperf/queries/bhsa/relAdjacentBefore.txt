@@ -1,4 +1,0 @@
-verse
-  clause
-    phrase
-    <: phrase

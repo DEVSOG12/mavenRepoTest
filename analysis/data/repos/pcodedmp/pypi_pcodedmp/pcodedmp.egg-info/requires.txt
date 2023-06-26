@@ -1,4 +1,0 @@
-oletools>=0.54
-
-[:platform_system == "Windows" and platform_python_implementation != "PyPy"]
-win_unicode_console

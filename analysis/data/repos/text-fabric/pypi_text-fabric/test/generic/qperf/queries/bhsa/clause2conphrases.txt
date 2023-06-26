@@ -1,4 +1,0 @@
-clause
-  =: conphrase
-  <: conphrase
-  :=

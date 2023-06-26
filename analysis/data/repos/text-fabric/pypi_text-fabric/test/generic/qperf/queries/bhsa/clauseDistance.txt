@@ -1,2 +1,0 @@
-verse
-    clause dist<-10

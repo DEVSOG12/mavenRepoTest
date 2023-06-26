@@ -1,3 +1,0 @@
-include README.md
-include AUTHORS
-include src/dippy/*.h

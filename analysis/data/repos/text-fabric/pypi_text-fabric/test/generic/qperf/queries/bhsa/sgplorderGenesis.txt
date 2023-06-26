@@ -1,6 +1,0 @@
-book book=Genesis
-  chapter chapter=1
-    verse verse=1
-      sentence
-        word nu=sg
-        < word nu=pl

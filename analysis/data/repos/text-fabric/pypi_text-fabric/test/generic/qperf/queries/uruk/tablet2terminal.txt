@@ -1,2 +1,0 @@
-tablet catalogId=P003581|P000311
-  line terminal

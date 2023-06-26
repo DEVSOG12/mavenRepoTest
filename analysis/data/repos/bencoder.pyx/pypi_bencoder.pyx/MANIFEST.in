@@ -1,3 +1,0 @@
-include bencoder.pyx README.rst LICENSE
-global-exclude *.pyc __pycache__
-recursive-include tests *.py *.torrent

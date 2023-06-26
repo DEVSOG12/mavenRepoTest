@@ -1,5 +1,0 @@
-tablet
-  face
-    column
-      line
-        sign type=ideograph grapheme~[0-9]

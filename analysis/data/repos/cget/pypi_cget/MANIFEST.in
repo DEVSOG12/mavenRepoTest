@@ -1,5 +1,0 @@
-recursive-include cget *.py
-recursive-include cget/cmake *.cmake
-include README
-include LICENSE
-include requirements.txt

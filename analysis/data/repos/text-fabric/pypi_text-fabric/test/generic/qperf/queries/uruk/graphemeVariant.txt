@@ -1,3 +1,0 @@
-tablet excavation~20274
-  case depth=1
-    sign grapheme=SZITA variant=a1

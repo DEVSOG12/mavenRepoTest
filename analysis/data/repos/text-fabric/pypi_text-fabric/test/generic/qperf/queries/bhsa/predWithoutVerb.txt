@@ -1,9 +1,0 @@
-clause
-/where/
-  phrase function=Pred
-/have/
-  /without/
-    word sp#verb
-  /-/
-/-/
-  phrase function=Subj

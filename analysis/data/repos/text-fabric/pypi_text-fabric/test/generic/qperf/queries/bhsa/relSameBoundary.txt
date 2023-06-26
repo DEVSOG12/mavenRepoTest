@@ -1,4 +1,0 @@
-verse
-  c:clause
-    :: p:phrase
-c ## p

@@ -1,2 +1,0 @@
-clause typ~^W[xX]
-  word sp=verb vs#qal

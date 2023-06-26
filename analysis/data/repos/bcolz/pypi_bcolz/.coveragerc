@@ -1,7 +1,0 @@
-[run]
-source = bcolz
-
-[report]
-omit =
-    */python?.?/*
-    *bcolz/tests/*

@@ -261,7 +261,7 @@ if __name__ == "__main__":
         print("Running project: " + str(i))
         main()
      # Remove all the repos downloaded
-    os.system("rm -rf repos/*")
+    os.system("rm -rf data/repos/*")
 
 
 

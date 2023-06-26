@@ -1,3 +1,0 @@
-sura number=1|2|3
-  aya number<4
-    word

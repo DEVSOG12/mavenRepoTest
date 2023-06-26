@@ -1,2 +1,0 @@
-[console_scripts]
-codecheck = codecheck.code_check:main

@@ -1,8 +1,0 @@
-PyJWT>=1.0.1
-oauthlib
-requests
-requests-oauthlib
-six
-
-[flask]
-flask

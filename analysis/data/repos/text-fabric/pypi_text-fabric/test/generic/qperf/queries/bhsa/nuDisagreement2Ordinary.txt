@@ -1,8 +1,0 @@
-ochapter
-  verse
-    clause
-      phrase function=Pred
-        word pdp=verb nu=sg
-      phrase function=Subj
-        =: word pdp=subs nu=pl
-        :=

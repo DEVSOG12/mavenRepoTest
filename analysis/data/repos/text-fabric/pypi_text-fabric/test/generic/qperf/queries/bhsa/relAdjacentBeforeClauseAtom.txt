@@ -1,4 +1,0 @@
-verse
-  clause
-    clause_atom
-    <: clause_atom

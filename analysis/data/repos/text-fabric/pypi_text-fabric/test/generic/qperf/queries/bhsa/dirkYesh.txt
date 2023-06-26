@@ -1,6 +1,0 @@
-verse
-  clause
-    clause_atom
-      phrase
-        phrase_atom
-          word lex=JC/|>JN/

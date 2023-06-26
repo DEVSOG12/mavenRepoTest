@@ -1,3 +1,0 @@
-book book=Samuel_I
-  clause
-    word sp=nmpr

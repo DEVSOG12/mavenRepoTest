@@ -1,3 +1,0 @@
-[mkdocs.plugins]
-techdocs-core = src.core:TechDocsCore
-

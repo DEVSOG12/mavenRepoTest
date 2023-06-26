@@ -1,2 +1,0 @@
-cntablet
-  sign type=numeral

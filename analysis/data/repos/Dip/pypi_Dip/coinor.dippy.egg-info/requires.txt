@@ -1,2 +1,0 @@
-pulp>=1.5.4
-coinor.gimpy>=2.0.0
