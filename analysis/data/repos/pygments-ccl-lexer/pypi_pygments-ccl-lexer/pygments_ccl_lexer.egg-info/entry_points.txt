@@ -1,4 +1,0 @@
-
-        [pygments.lexers]
-        ccl=ccl_lexer:CCL_Lexer
-    

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/libratom/github_libratom" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/ml_collections/github_ml_collections" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/pyloco/github_pyloco" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/python-license-check/github_python-license-check" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/waterch-tasker/github_waterch-tasker" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/wpull/github_wpull" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/aldryn-translation-tools/github_aldryn-translation-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/github_" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/hstspreload/github_hstspreload" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/multimethod/github_multimethod" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/mypy_boto3_builder/github_mypy_boto3_builder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/prettytable/github_prettytable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pyDOE/github_pyDOE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/python-thermoworks-smoke/github_python-thermoworks-smoke" vcs="Git" />
   </component>
 </project>

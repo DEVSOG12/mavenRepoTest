@@ -1,4 +1,0 @@
-class TestErrors:
-    """Errors"""
-    pass
-

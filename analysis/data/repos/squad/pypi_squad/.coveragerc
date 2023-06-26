@@ -1,5 +1,0 @@
-[run]
-source = squad
-omit = squad/wsgi.py
-       squad/*/apps.py
-       squad/*settings.py

@@ -1,7 +1,0 @@
-[console_scripts]
-hbaapi_mock = infi.hbaapi.scripts:hbaapi_mock
-hbaapi_real = infi.hbaapi.scripts:hbaapi_real
-
-[gui_scripts]
-
-

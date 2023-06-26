@@ -17,6 +17,22 @@ def write_json(data):
     with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'w') as f:
         json.dump(data, f)
 
+def parseDiffoscopeOutput(output):
+    # Parse the output of diffoscope and return a list of files that are different
+    # If there is no difference, return an empty list
+
+    # Split the output by new line
+    output = output.split('\n')
+
+    # Get the index of the line that starts with "├──"
+    files_index = [i for i in range(len(output)) if output[i].startswith("├──")]
+
+    # Get file name by checking the last part of the line with / split
+    files = [output[i].split('/')[-1] for i in files_index] if files_index else []
+
+    # print(files)
+    return files
+
 def versionize(stringversion):
     # Convert the version string to the format of x.x.x where x is a digit
     # If the version string is not in the format of x.x.x, return False
@@ -37,8 +53,15 @@ def getMainFolder(path):
             return [True, os.path.join(path, folder)]
         else:
             return [False, "No __init__.py found",]
+
+
 def getRepoGH(link):
     # Download the repo from github
+
+    #add a :@ before github
+    link = link.replace('github', ':@github')
+
+
     try:
         Repo.clone_from(link, os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}'.format(link.split('/')[-1])))
 
@@ -180,7 +203,7 @@ def main():
         if versionize(gh[1])[0] == versionize(pypi[1])[0]:
             print("Same version found", versionize(gh[1])[1])
             try:
-                output = subprocess.check_output("diffoscope {0} {1}".format(gh[2], pypi[2]), shell=True)
+                output = subprocess.check_output("diffoscope --exclude-directory-metadata=recursive {0} {1}".format(gh[2], pypi[2]), shell=True)
             except subprocess.CalledProcessError as e:
                 output = e.output.decode('utf-8')
 
@@ -189,7 +212,7 @@ def main():
             # Remove the project from the queue and report status "results"
             records = json.loads(read_json()[0])
             records["queue"].remove(project[0])
-            result = {"project": project[0], "gh_version": gh[1], "pypi_version": pypi[1], "status": "Success", "diffoscope:": output.split()[0:10], "error": "NA"}
+            result = {"project": project[0], "gh_version": gh[1], "pypi_version": pypi[1], "status": "Success", "diffoscope:": " ".join(parseDiffoscopeOutput(output)), "error": "NA"}
             records["results"].append(result)
             write_json(records)
 
@@ -201,7 +224,7 @@ def main():
             # Remove the project from the queue and report status "results"
             records = json.loads(read_json()[0])
             records["queue"].remove(project[0])
-            result = {"project": project[0], "gh_version": gh[1], "pypi_version": pypi[1], "status": "Version Mismatch", "diffoscope:": "NA", "error": "NA"}
+            result = {"project": project[0], "gh_version": gh[1], "pypi_version": pypi[1], "status": "Failed","diffoscope:": "NA", "error": "Version Mismatch"}
             records["results"].append(result)
             write_json(records)
 
@@ -213,7 +236,7 @@ def main():
         # Remove the project from the queue and report status "results"
         records = json.loads(read_json()[0])
         records["queue"].remove(project[0])
-        result = {"project": project[0], "gh_version": gh[1] if versionize(gh[1])[0] else "Failed", "pypi_version": pypi[1] if versionize(gh[1])[0] else "Failed", "status": "Failed", "diffoscope:": "NA", "error": gh[1] if not versionize(gh[1]) else pypi[1] if not versionize(pypi[1]) else "NA"}
+        result = {"project": project[0], "gh_version": versionize(gh[1])[0] if versionize(gh[1])[0] else "Failed", "pypi_version": versionize(gh[1])[0] if versionize(gh[1])[0] else "Failed", "status": "Failed", "diffoscope:": "NA", "error": "GH: " + gh[1] if not gh[0] else "Not Error from GithHub" + " PyPi: " + pypi[1] if not pypi[0] else "Not Error from PyPi"}
         records["results"].append(result)
         write_json(records)
 
@@ -221,6 +244,15 @@ def main():
         print("Failed")
         print("GH: " + str(gh))
         print("PyPi: " + str(pypi))
+
+        # Remove the project from the queue and report status "results"
+        records = json.loads(read_json()[0])
+        records["queue"].remove(project[0])
+        result = {"project": project[0], "gh_version": versionize(gh[1])[0] if versionize(gh[1])[0] else "Failed", "pypi_version": versionize(gh[1])[0] if versionize(gh[1])[0] else "Failed", "status": "Failed", "diffoscope:": "NA", "error": "GH: " + gh[1] if not gh[0] else "Not Error from GithHub" + " PyPi: " + pypi[1] if not pypi[0] else "Not Error from PyPi"}
+        records["results"].append(result)
+        write_json(records)
+
+
 
 
 if __name__ == "__main__":

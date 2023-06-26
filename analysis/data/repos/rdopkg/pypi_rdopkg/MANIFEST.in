@@ -1,6 +1,0 @@
-include README.md
-include LICENSE
-include requirements.txt
-include test-requirements.txt
-include features/*
-include doc/*.adoc

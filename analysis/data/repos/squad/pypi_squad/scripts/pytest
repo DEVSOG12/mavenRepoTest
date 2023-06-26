@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -eu
-
-exec python3 -m pytest --cov --cov-fail-under=79

@@ -1,8 +1,0 @@
-black
-bpython
-flake8
-pre-commit
-setuptools
-tox
-twine
-wheel

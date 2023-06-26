@@ -1,3 +1,0 @@
-[console_scripts]
-sachima = sachima.cli:sachima
-

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -exu
-
-docker build -t squad .
-docker run squad squad-admin showmigrations

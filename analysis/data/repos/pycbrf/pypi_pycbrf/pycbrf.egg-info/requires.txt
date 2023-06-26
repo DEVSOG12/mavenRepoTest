@@ -1,5 +1,0 @@
-requests
-dbf_light>=0.3.0
-
-[cli]
-click

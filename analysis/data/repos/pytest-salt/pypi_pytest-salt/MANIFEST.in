@@ -1,3 +1,0 @@
-include versioneer.py
-include pytestsalt/_version.py
-include pytestsalt/salt/coverage/sitecustomize.py

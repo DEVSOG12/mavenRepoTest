@@ -1,9 +1,0 @@
-/* Overwrite changes made by bootstrap.css */
-#head h1,
-#body ul {
-    margin-bottom: 0;
-}
-
-body.main {
-    line-height: inherit;
-}

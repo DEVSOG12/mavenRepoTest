@@ -1,131 +1,113 @@
+from analyze import versionize, parseDiffoscopeOutput
+# # Convert json to csv
+#
+# import json
+#
 # from analyze import versionize
-# setup = """
-# [metadata]
-# name = text-fabric
-# version = 11.5.1
-# description = Processor and browser for annotated text corpora
-# long_description = file README.md
-# author = Dirk Roorda
-# author_email = dirk.roorda@di.huc.knaw.nl
-# url = https://github.com/annotation/text-fabric
 #
-# classifiers =
-#     Development Status :: 4 - Beta
-#     Environment :: Other Environment
-#     Framework :: Jupyter
-#     Intended Audience :: Developers
-#     Intended Audience :: Education
-#     Intended Audience :: Religion
-#     Intended Audience :: Science/Research
-#     License :: OSI Approved :: MIT License
-#     Natural Language :: English
-#     Natural Language :: Hebrew
-#     Natural Language :: Greek
-#     Operating System :: MacOS :: MacOS X
-#     Operating System :: Microsoft :: Windows :: Windows 10
-#     Operating System :: POSIX :: Linux
-#     Programming Language :: Python :: 3 :: Only
-#     Programming Language :: Python :: Implementation :: CPython
-#     Programming Language :: JavaScript
-#     Topic :: Religion
-#     Topic :: Scientific/Engineering :: Information Analysis
-#     Topic :: Sociology :: History
-#     Topic :: Text Processing :: Filters
-#     Topic :: Text Processing :: Linguistic
-#     Topic :: Text Processing :: Markup
-# keywords =
-#     text
-#     linguistics
-#     database
-#     graph
-#     hebrew
-#     bible
-#     peshitta
-#     quran
-#     cuneiform
-#     uruk
-#     greek
-#     syriac
-#     akkadian
-#     babylonian
+# with open('data/records.json', 'r') as f:
+#     data = json.load(f)
 #
-# [options]
-# zip_safe = False
-# include_package_data = True
-# python_requires = >=3.9.0
-# install_requires =
-#     wheel
-#     markdown>=3.4.1
-#     ipython
-#     lxml
-#     pyyaml>=5.3
-#
-# packages =
-#     tf
-#     tf.about
-#     tf.advanced
-#     tf.client
-#     tf.client.make
-#     tf.client.static
-#     tf.convert
-#     tf.convert.app
-#     tf.convert.app.static
-#     tf.core
-#     tf.dataset
-#     tf.search
-#     tf.server
-#     tf.server.static
-#     tf.server.static.fonts
-#     tf.server.static.mathjax
-#     tf.server.static.mathjax.input
-#     tf.server.static.mathjax.output
-#     tf.server.static.mathjax.ui
-#     tf.server.templates
-#     tf.tools
-#     tf.tools.tei
-#     tf.tools.trang
-#     tf.volumes
-#     tf.writing
-#
-# [options.extras_require]
-# github = requests; pygithub>=1.57
-# gitlab = psutil; requests; python-gitlab>=3.5.0
-# browser = rpyc; psutil; flask
-# pandas = pandas; pyarrow
-# all = rpyc; psutil; flask; requests; pygithub>=1.57; python-gitlab>=3.5.0
-#
-# [options.exclude_package_data]
-# * =
-#     text_fabric.egg-info
-#     __pycache__
-#     .DS_Store
-#     docs
-#     tests
-#
-# [options.entry_points]
-# console_scripts =
-#     tf = tf.server.start:main
-#     text-fabric = tf.server.start:main
-#     tf-zipall = tf.zip:main
-#     tf-zip = tf.advanced.zipdata:main
-#     text-fabric-zip = tf.advanced.zipdata:main
-#     tf-make = tf.client.make.build:main
-#     text-fabric-make = tf.client.make.build:main
-#     tf-nbconvert = tf.tools.nbconvert:main
-#     nbconvert = tf.tools.nbconvert:main
-#     tf-xmlschema = tf.tools.xmlschema:main
-#     xmlschema = tf.tools.xmlschema:main
-#     tf-fromxml = tf.convert.xml:main
-#     tf-fromtei = tf.convert.tei:main
-#     tf-addnlp = tf.convert.addnlp:main
-#     addnlp = tf.convert.addnlp:main
-# """
-#
-# # version = [i for i in setup if i.strip().startswith("version")][0].split('=')[1].strip().replace("'", "")
-# version = [i for i in setup.split('\n') if i.strip().startswith("version")][0].split('=')[1].strip().replace("'", "")
-#
-# print(versionize(version))
+#     # create a csv file
+#     with open('data/records.csv', 'w') as f:
+#         f.write("name,gh_version,pypi_version,status,diffoscope,repo_version,error\n")
+#         data = data["results"]
+#         for record in data:
+#             print(record)
+#             f.write("{0},{1},{2},{3},{4}\n".format(record['project'], versionize(record['gh_version'])[1] if versionize(record['gh_version'])[0] else record['gh_version'], versionize( record['pypi_version'])[1] if versionize( record['pypi_version'])[0] else
+#             record['pypi_version']
+#                                                    , record['status'], "Diff" if record['diffoscope:'] != "NA" else "Error", record['error']))
 #
 
-if "Tes":
-    print("Tes")
+
+output = """
+--- /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/github_wireless
++++ /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/pypi_wireless
+├── file list
+│ @@ -1,11 +1,8 @@
+│ -.git
+│ -.gitignore
+│ -.travis.yml
+│  LICENSE
+│  MANIFEST.in
+│ +PKG-INFO
+│  README.md
+│  setup.cfg
+│  setup.py
+│ -tests
+│ -tox.ini
+│ -wireless
+│ +wireless
+│ +wireless.egg-info
+│   --- /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/github_wireless/README.md
+├── +++ /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/pypi_wireless/README.md
+│ @@ -95,12 +95,12 @@
+│  First, install `pandoc` so that setup.py can auto-convert Markdown syntax into reStructuredText:
+│  
+│  ```bash
+│  sudo apt-get install pandoc
+│  sudo pip install pypandoc
+│  ```
+│  
+│ -Then, following [this guide](https://packaging.python.org/tutorials/packaging-projects/), push the project to PyPI:
+│ +Then, following [this guide](http://peterdowns.com/posts/first-time-with-pypi.html), push the project to PyPI:
+│  
+│  ```bash
+│ -python3 -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+│ +sudo python setup.py sdist upload -r pypi
+│  ```
+│   --- /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/github_wireless/setup.cfg
+├── +++ /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/pypi_wireless/setup.cfg
+│ @@ -1,2 +1,8 @@
+│  [metadata]
+│  description-file = README.md
+│ +
+│ +[egg_info]
+│ +tag_build = 
+│ +tag_date = 0
+│ +tag_svn_revision = 0
+│ +
+│   --- /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/github_wireless/setup.py
+├── +++ /Users/oreofe/Projects/test/reproducibleTests/analysis/data/repos/wireless/pypi_wireless/setup.py
+│ @@ -12,24 +12,25 @@
+│  
+│  setup(
+│      name='wireless',
+│      version='0.3.3',
+│      description='A dead simple, cross-platform Python library to connect to ' +
+│      'wireless networks.',
+│      long_description=long_description,
+│ +    long_description_content_type='text/markdown',
+│      url='https://github.com/joshvillbrandt/wireless',
+│      author='Josh Villbrandt',
+│      author_email='josh@javconcepts.com',
+│ -    license=open('LICENSE').read(),
+│ +    # license=open('LICENSE').read(),
+│      packages=['wireless'],
+│ -    setup_requires=[
+│ -        'tox',
+│ -        'nose',
+│ -        'flake8',
+│ -        'packaging'
+│ -    ],
+│ -    install_requires=[
+│ -    ],
+│ -    scripts=[],
+│ -    test_suite='tests',
+│ -    zip_safe=False
+│ +    # setup_requires=[
+│ +    #     # 'tox',
+│ +    #     # 'nose',
+│ +    #     # 'flake8',
+│ +    #     # 'packaging'
+│ +    # ],
+│ +    # install_requires=[
+│ +    # ],
+│ +    # scripts=[],
+│ +    # # test_suite='tests',
+│ +    # zip_safe=False
+│  )
+
+"""
+
+parseDiffoscopeOutput(output)

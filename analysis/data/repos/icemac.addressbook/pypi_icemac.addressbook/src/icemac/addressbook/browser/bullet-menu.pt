@@ -1,4 +1,0 @@
-<ul class="bullet">
-  <tal:search repeat="viewlet view/viewlets"
-              content="structure viewlet/render" />
-</ul>

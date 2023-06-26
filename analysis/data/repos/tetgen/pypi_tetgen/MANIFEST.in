@@ -1,1 +1,0 @@
-include tetgen/cython/tetgen/*.h

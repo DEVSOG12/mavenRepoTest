@@ -1,5 +1,0 @@
-scipy
-numpy
-scikit-learn
-tqdm
-access_points

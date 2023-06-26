@@ -1,3 +1,0 @@
-<tal:masterdata i18n:domain="icemac.addressbook">
-  <tal:block replace="structure provider:master-data" />
-</tal:masterdata>

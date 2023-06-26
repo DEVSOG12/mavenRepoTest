@@ -1,6 +1,0 @@
-infi.cwrap
-infi.dtypes.wwn
-infi.instruct
-infi.os_info
-munch
-setuptools

@@ -1,6 +1,0 @@
-[run]
-omit = tests/*
-source=src/hmf/
-
-[report]
-omit = tests/*

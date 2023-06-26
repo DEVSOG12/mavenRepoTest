@@ -1,8 +1,0 @@
-{% extends 'is_core/forms/default_form.html' %}
-
-{% load i18n %}
-
-{% block form-content %}
-  <span class="bulk-change-object-summary">{% trans 'Affected rows' %}:&nbsp;%s</span>
-  {{ block.super }}
-{% endblock %}

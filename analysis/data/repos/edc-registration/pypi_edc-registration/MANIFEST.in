@@ -1,3 +1,0 @@
-include AUTHORS CHANGES LICENSE VERSION
-include MANIFEST.in
-include *.rst

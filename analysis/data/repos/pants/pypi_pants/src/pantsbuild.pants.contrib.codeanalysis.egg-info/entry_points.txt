@@ -1,3 +1,0 @@
-[pantsbuild.plugin]
-register_goals = pants.contrib.codeanalysis.register:register_goals
-

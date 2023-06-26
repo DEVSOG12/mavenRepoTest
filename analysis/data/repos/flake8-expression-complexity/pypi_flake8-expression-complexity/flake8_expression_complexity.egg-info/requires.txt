@@ -1,2 +1,0 @@
-astpretty
-flake8
