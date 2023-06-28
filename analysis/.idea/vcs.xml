@@ -2,13 +2,47 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/Django_local_lib/github_Django_local_lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/MDT/github_MDT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/NURBS-Python/github_NURBS-Python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/accession/github_accession" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/astropy-sphinx-theme/github_astropy-sphinx-theme" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/azure-cli/github_azure-cli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/barbell2/github_barbell2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/caer/github_caer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/configsuite/github_configsuite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/django-push-notifications/github_django-push-notifications" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/django-rq/github_django-rq" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/djangorestframework-camel-case/github_djangorestframework-camel-case" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/easytorch/github_easytorch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/fastavro/github_fastavro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/find_job_titles/github_find_job_titles" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/flask-oauthlib/github_flask-oauthlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/gargoyle/github_gargoyle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/github_" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/googleapis/github_googleapis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/httptest/github_httptest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/hypothesis-graphql/github_hypothesis-graphql" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/indy-crypto/github_indy-crypto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/kafka-helper/github_kafka-helper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/latex-jekkish/github_latex-jekkish" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/leabra/github_leabra" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/mypy_boto3_builder/github_mypy_boto3_builder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/overpass-api-python-wrapper/github_overpass-api-python-wrapper" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/penaltymodel/github_penaltymodel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/pies/github_pies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pyattck/github_pyattck" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/pyee/github_pyee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pyeverlights/github_pyeverlights" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/pytest-test-groups/github_pytest-test-groups" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/python-plexapi/github_python-plexapi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/python-sparkpost/github_python-sparkpost" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/quantized-mesh-encoder/github_quantized-mesh-encoder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/rally/github_rally" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/robotframework-jsonlibrary.git/github_robotframework-jsonlibrary.git" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/sqlalchemy-vertica-python/github_sqlalchemy-vertica-python" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/data/repos/sqldf/github_sqldf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/srv/github_srv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/suntime/github_suntime" vcs="Git" />
   </component>
 </project>
