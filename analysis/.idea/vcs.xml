@@ -2,6 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/google-ads-python/github_google-ads-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/djangorestframework-camel-case/github_djangorestframework-camel-case" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/googleapis/github_googleapis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/mypy_boto3_builder/github_mypy_boto3_builder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/penaltymodel/github_penaltymodel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pies/github_pies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pyee/github_pyee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/pytest-test-groups/github_pytest-test-groups" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/sqldf/github_sqldf" vcs="Git" />
   </component>
 </project>

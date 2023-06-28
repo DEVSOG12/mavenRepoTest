@@ -6,7 +6,17 @@ def pickRandom(n):
     for i in range(n):
         analyze.randomProject()
 
+def getLineStartPoint(path):
+    # Given the path for the setup.py file, return the line number where the the last import statement is
+    with open(path, 'r') as f:
+        lines = f.readlines()
+        f.close()
+    k = []
+    for i in range(len(lines)):
+        if lines[i].startswith("import"):
+            k.append(i)
 
+    return (k[-1] if len(k) > 0 else 1) + 1
 
 def check_whl_file(data):
     gitH = analyze.getRepoGH(data[1])
@@ -19,8 +29,9 @@ def check_whl_file(data):
         # Line 1: import os and Line 2: os.environ["SOURCE_DATE_EPOCH"] = "315532800"
         with open(directory + "/setup.py", 'r') as f:
             lines = f.readlines()
-            lines.insert(1, "import os\n")
-            lines.insert(2, 'os.environ["SOURCE_DATE_EPOCH"] = "315532800"\n')
+            num = getLineStartPoint(directory + "/setup.py")
+            lines.insert(num, "import os\n")
+            lines.insert(num + 1, 'os.environ["SOURCE_DATE_EPOCH"] = "315532800"\n')
             f.close()
         with open(directory + "/setup.py", 'w') as f:
             f.writelines(lines)
