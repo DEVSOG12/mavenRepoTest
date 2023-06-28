@@ -146,33 +146,7 @@ def getRepoPyPi(name, link):
 
 
 def randomProject():
-    # k = input("1 == Stats, 2 == Process, 3 == Pick \n")
 
-    k = 3
-
-    # match k:
-    #     case "1":
-    #         print("Stats")
-    #         records = json.loads(read_json()[0])
-    #         print("Number of projects in queue: " + str(len(records["queue"])))
-    #         for i in records["queue"]:
-    #             print(i)
-    #         print("Number of projects in processed: " + str(len(records["completed"])))
-    #         for i in records["completed"]:
-    #             print(i)
-    #
-    #     case "2":
-    #         records = json.loads(read_json()[0])
-    #         print("Select a project to push as completed")
-    #         for i in records["queue"]:
-    #             print(i)
-    #         k = input("Project: ")
-    #         if k in records["queue"]:
-    #             records["queue"].remove(k)
-    #             records["completed"].append(k)
-    #             write_json(records)
-
-        # case "3":
     rand = random.randint(1, len(read_csv()))
 
     records = json.loads(read_json()[0])
@@ -184,7 +158,7 @@ def randomProject():
     else:
         print("Selecting: " + read_csv()[rand].split(',')[0])
         print("Details: " + read_csv()[rand].split(',')[0] + " " + read_csv()[rand].split(',')[1])
-        records["queue"].append(read_csv()[rand].split(',')[0])
+        records["queue"].append([read_csv()[rand].split(',')[0], read_csv()[rand].split(',')[1]])
         write_json(records)
         return list(read_csv()[rand].split(',')[0:2])
 

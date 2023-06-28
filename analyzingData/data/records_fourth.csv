@@ -1,0 +1,1001 @@
+name,gh_version,pypi_version,status,diffoscope,error
+inapppy,2.6,2.5.2,Success,├── file list inapppy setup.py, NA
+energy-trading-api,0.0.34,0.0.34,Success,├── file list README.md energy_trading_api setup.py, NA
+django-guid,Failed,Failed,Failed,Error, GH: No setup.py found
+tiledb,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pytest-sanic,1.9.1,1.9.1,Success,├── file list setup.py, NA
+tox-pyenv,Failed,Failed,Failed,Error, GH: No version found in setup.py
+google-search,1.1.1,1.1.1,Success,├── file list setup.cfg, NA
+dead-hosts-launcher,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pandas-dedupe,1.5.0,1.5.0,Success,├── file list README.md, NA
+hmmlearn,Failed,Failed,Failed,Error, GH: No version found in setup.py
+django-admin-sortable,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+abodepy,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+envparse,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tensorflow-plot,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ctutlz,..1,0.9.8,Success,├── file list ctutlz setup.py, NA
+result,Failed,Failed,Failed,Error, GH: No version found in setup.py
+jsonseq,1.0.0,1.0.0,Success,├── file list, NA
+python-arango,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pythondata-cpu-picorv32,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-rest-framework-mongoengine,3.4.1,3.4.1,Success,├── file list README.md rest_framework_mongoengine setup.cfg setup.py, NA
+html-similarity,0.3.3,0.3.3,Success,├── file list, NA
+markdownsuperscript,2.1.1440,2.1.1,Success,├── file list requirements setup.cfg, NA
+http-ece,Failed,Failed,Failed,Error, GH: No setup.py found
+gurux-dlms,Failed,Failed,Failed,Error, GH: No setup.py found
+bbopt,Failed,Failed,Failed,Error, GH: No version found in setup.py
+dlipower,Failed,Failed,Failed,Error, GH: No version found in setup.py
+spacy-api,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+gcld3,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+flask-logging-extras,2.0.0,2.0.0,Success,├── file list setup.cfg, NA
+fastremap,Failed,Failed,Failed,Error, GH: Could not clone the repo
+gecosistema-core,0.0.0,0.0.200,Success,├── file list README.md gecosistema_core setup.py, NA
+webspace,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pycef,1.11,1.11,Success,├── file list setup.cfg, NA
+epicscorelibs,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+imreg-dft,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+keras-rl,0.4.2,0.4.2,Success,├── file list README.md rl setup.cfg tests, NA
+pynmea2,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+seismograph,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+qiskit-aer,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+yalexs,1.5.1,1.5.1,Success,├── file list setup.cfg, NA
+suds-community,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tfcoreml,2.0,2.0,Success,├── file list, NA
+ccm,Failed,Failed,Failed,Error, GH: No version found in setup.py
+fairlearn,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+python-consul,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+scrolls,0.0.,0.0.4823123,Success,├── file list setup.cfg, NA
+tencentcloud-sdk-python-bmlb,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+auto-ml,..1.1.,2.9.10,Success,├── file list README.md docs setup.cfg, NA
+getuseragent,0.0.7,0.0.7,Success,├── file list README.md, NA
+squid-py,Failed,Failed,Failed,Error, GH: Could not clone the repo
+deebotozmo,0.0.0,4.0.04,Success,├── file list README.md deebotozmo setup.cfg setup.py tests, NA
+cvxpy,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+json2,0.4.0,0.4.0,Success,├── file list README.md, NA
+girder-large-image-annotation,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+stdlib-list,Failed,Failed,Failed,Error, GH: No setup.py found
+castle,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+apispec,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+autoenv,Failed,Failed,Failed,Error, GH: No setup.py found
+playback-studio,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+urltools,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+letsencrypt-apache,Failed,Failed,Failed,Error, GH: No setup.py found
+sphinxcontrib-contentui,0.2.5,0.2.2,Success,├── file list CHANGES.rst README.rst setup.cfg setup.py sphinxcontrib, NA
+pyshark-legacy,Failed,Failed,Failed,Error, GH: No setup.py found
+url64,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ocspresponder,Failed,Failed,Failed,Error, GH: Could not clone the repo
+uri-template,Failed,Failed,Failed,Error, GH: Could not clone the repo
+certbot-dns-google,Failed,Failed,Failed,Error, GH: No setup.py found
+python-ulid,Failed,Failed,Failed,Error, GH: No setup.py found
+pyquil,Failed,Failed,Failed,Error, GH: No setup.py found
+gcsfs,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mtaf,Failed,Failed,Failed,Error, GH: No setup.py found
+engarde,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+djangorestframework-guardian,Failed,Failed,Failed,Error, GH: No version found in setup.py
+fakenewsredis,0.10.0,0.10.1,Success,├── file list README.rst fakenewsredis.py setup.cfg setup.py, NA
+snipsfakeweather,1.1.1.2,1.1.1.2,Success,├── file list setup.cfg snipsfakeweather, NA
+hipnotify,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+robojslib,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pydevd,Failed,Failed,Failed,Error, GH: Could not clone the repo
+genshinstats,1.4.11.3,1.4.11.3,Success,├── file list LICENSE README.md genshinstats setup.py, NA
+scikit-plot,0.3.7,0.3.7,Success,├── file list scikitplot, NA
+better-setuptools-git-version,1.0.5,1.0.5,Success,├── file list, NA
+mypy-boto3-ssm,Failed,Failed,Failed,Error, GH: No setup.py found
+bloscpack,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+xleditor,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-docopt-command,1.1.0,1.1.0,Success,├── file list, NA
+rapidfuzz,Failed,Failed,Failed,Error, GH: No version found in setup.py
+sxl,0.0.19,0.0.110,Success,├── file list setup.py sxl, NA
+vega,Failed,Failed,Failed,Error, GH: No setup.py found
+splot,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dcoscli,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+xgboost-ray,0.1.17,0.1.10,Success,├── file list .github .gitignore format.sh run_ci_examples.sh run_ci_tests.sh setup.py xgboost_ray, NA
+mypy-boto3-kinesis-video-signaling,Failed,Failed,Failed,Error, GH: Could not clone the repo
+rikai,Failed,Failed,Failed,Error, GH: No setup.py found
+jsdaily,Failed,Failed,Failed,Error, GH: Could not clone the repo
+dicomrttool,2.0.8,2.0.8,Success,├── file list LICENSE.txt MANIFEST.in README.md setup.py src, NA
+badx12,Failed,Failed,Failed,Error, GH: No setup.py found
+profanity,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+sphinx-inline-tabs,Failed,Failed,Failed,Error, GH: No setup.py found
+edc-registration,Failed,Failed,Failed,Error, GH: No setup.py found
+hupper,Failed,Failed,Failed,Error, GH: No version found in setup.py
+aws-cdk-aws-elasticache,Failed,Failed,Failed,Error, GH: No setup.py found
+paginate,0.5.6,0.5.6,Success,├── file list CHANGELOG.txt README.md paginate paginate.egg-info setup.py, NA
+java-access-bridge-wrapper,Failed,Failed,Failed,Error, GH: No setup.py found
+assemblyline-v4-service,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tf-agents,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+spglm,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+orjson,Failed,Failed,Failed,Error, GH: No setup.py found
+ueagle,0.0.2,0.0.2,Success,├── file list uEagle, NA
+mocket,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+snmpfwd,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pynwb,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pyformat,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+telegraph,2.2.0,2.2.0,Success,├── file list, NA
+pycksum,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+anime-downloader,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+uproot,Failed,Failed,Failed,Error, GH: No setup.py found
+gapic-google-cloud-vision-v1,Failed,Failed,Failed,Error, GH: No setup.py found
+wtforms-jsonschema2,...2,0.7.0,Success,├── file list setup.cfg, NA
+sc2gamelobby,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+thriftrw,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dataclassy,1.0.1,1.0.1,Success,├── file list, NA
+mypy-boto3-polly,Failed,Failed,Failed,Error, GH: Could not clone the repo
+lahc,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pydfs-lineup-optimizer,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+colorgram-py,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+authorizenet,1.1.4,1.1.4,Success,├── file list README.md authorizenet setup.cfg setup.py, NA
+bof,0.3.5,0.3.5,Success,├── file list bof setup.cfg setup.py, NA
+ngxtop,0.0.3,0.0.3,Success,├── file list setup.cfg, NA
+robotframework-excellib,2.0.1,2.0.1,Success,├── file list setup.cfg src, NA
+nipyapi,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ipinfo,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+scalapb-pants,Failed,Failed,Failed,Error, GH: No setup.py found
+xlearn,Failed,Failed,Failed,Error, GH: No setup.py found
+centerline,Failed,Failed,Failed,Error, GH: No version found in setup.py
+sense-hat,2.4.0,2.4.0,Success,├── file list sense_hat, NA
+epiweeks-barc,0.0.1,0.0.1,Success,├── file list src, NA
+pyvisa-py,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pytime,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ramos,1.4.0,1.4.0,Success,├── file list README.rst ramos setup.cfg setup.py, NA
+roffio,Failed,Failed,Failed,Error, GH: No version found in setup.py
+gradient,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+import-string,0.1.0,0.1.0,Success,├── file list README.rst docs setup.cfg, NA
+pyzstd,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+htsprophet,0.1.1,0.1.0,Success,├── file list htsprophet setup.cfg setup.py, NA
+broshelp,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tgcalls,..0,..0,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+hypua2jamo,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+google-cloud-testutils,1.3.3,1.3.3,Success,├── file list setup.cfg, NA
+messengeruvvs,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+stillson,Failed,Failed,Failed,Error, GH: Could not clone the repo
+parsec,3.15,3.15,Success,├── file list setup.cfg src, NA
+http,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+python-speech-features,0.6.1,0.6,Success,├── file list README.rst python_speech_features setup.py, NA
+poolsense,0.1.0,0.1.0,Success,├── file list, NA
+saspy,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dukedsclient,3.4.0,2.0.2,Success,├── file list DukeDS README.md ddsc setup.cfg setup.py, NA
+django-appdata,Failed,Failed,Failed,Error, GH: Could not clone the repo
+honeybee-standards,Failed,Failed,Failed,Error, GH: No version found in setup.py
+azure-cli-interactive,Failed,Failed,Failed,Error, GH: No setup.py found
+nlp,2.13.2.0...0...1..,0.4.0,Success,├── file list README.md setup.cfg setup.py src, NA
+cryptosteganography,0.8.2,0.8.3,Success,├── file list README.rst requirements.txt setup.cfg setup.py src, NA
+pystemmer,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyupbit,0.2.33,0.2.33,Success,├── file list README.md pyupbit, NA
+reqman,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+stable-baselines,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+python-mpd2,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+performer-pytorch,1.1.4,1.1.4,Success,├── file list, NA
+ceph-deploy,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+urlman,2.0.1,2.0.1,Success,├── file list setup.cfg urlman, NA
+gspread-pandas,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pycksum,Failed,Failed,Failed,Error, GH: Could not clone the repo
+skia-pathops,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tinyaes,1.1.00,1.0.4,Success,├── file list LICENSE.txt README.md setup.py tiny-AES-c, NA
+speak2mary,1.5.0,1.5.0,Success,├── file list README.md, NA
+aws-cdk-aws-robomaker,Failed,Failed,Failed,Error, GH: Could not clone the repo
+hap-python,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-bootstrap-toolkit,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+newrelic-asyncpg,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ssh-ldap-pubkey,1.4.0,1.4.0,Success,├── file list setup.cfg, NA
+graphyte,.1,1.7.1,Success,├── file list, NA
+scratch2py,0.7.1,0.7.1,Success,├── file list LICENSE README.md, NA
+autoclasstoc,Failed,Failed,Failed,Error, GH: No setup.py found
+jaraco-apt,Failed,Failed,Failed,Error, GH: No setup.py found
+tencentcloud-sdk-python-youmall,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pysma,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+cloudscrape,0.4,0.4,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+pytest-reverse,Failed,Failed,Failed,Error, GH: No setup.py found
+django-dynamic-db-router,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pcg-gazebo,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+durable-rules,2.0.28,2.0.28,Success,├── file list docs libpy src, NA
+astral,Failed,Failed,Failed,Error, GH: No setup.py found
+hmf,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pwclip,Failed,Failed,Failed,Error, GH: No setup.py found
+validatesns,0.1.1,0.1.1,Success,├── file list src, NA
+pylibjpeg-openjpeg,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+python-eq3bt,Failed,Failed,Failed,Error, GH: No setup.py found
+aws-cdk-lambda-layer-awscli,Failed,Failed,Failed,Error, GH: Could not clone the repo
+sagemaker-tensorflow,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pymitter,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aiocoap,Failed,Failed,Failed,Error, GH: No version found in setup.py
+hanlp,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aws-cdk-aws-nimblestudio,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-menu-generator,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+fortiosapi,1.0.5,1.0.5,Success,├── file list fortiosapi tests, NA
+osysid,0.2.2,0.1.9,Success,├── file list README.md setup.py, NA
+pytest-emoji,0.2.0,0.2.0,Success,├── file list LICENSE setup.cfg src tests, NA
+eip712,Failed,Failed,Failed,Error, GH: No version found in setup.py
+natural,0.2.0,0.2.0,Success,├── file list README natural PKG-INFO, NA
+digimat-saia,0.1.64,0.1.67,Success,├── file list README.rst setup.py src, NA
+python-pcre,0.7,0.7,Success,├── file list test, NA
+faust-streaming,Failed,Failed,Failed,Error, GH: No version found in setup.py
+dataclasses-avroschema,Failed,Failed,Failed,Error, GH: No setup.py found
+sklearn2pmml,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+sweetviz,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mendelai-ipc,Failed,Failed,Failed,Error, GH: Could not clone the repo
+labelimg,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+radwave,1.0.8,1.0.8,Success,, NA
+cdk-aurora-globaldatabase,Failed,Failed,Failed,Error, GH: No setup.py found
+simplefix,1.0.15,1.0.15,Success,├── file list README.rst setup.py simplefix test, NA
+pytest-pudb,0.7.0,0.7.0,Success,├── file list setup.cfg, NA
+roulette-russe,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pennylane-lightning,.1.1.,0.30.0,Success,├── file list README.rst pennylane_lightning requirements.txt setup.py, NA
+pydictionary,2.0.1,2.0.1,Success,├── file list PyDictionary README.md, NA
+confidential-ml-utils,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tencentcloud-sdk-python-tdmq,Failed,Failed,Failed,Error, GH: Could not clone the repo
+indexed-bzip2,Failed,Failed,Failed,Error, GH: No setup.py found
+scalr-manage,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pegasi,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-multiselectfield,0.1.12,0.1.12,Success,├── file list multiselectfield, NA
+azure-mgmt-netapp,Failed,Failed,Failed,Error, GH: No version found in setup.py
+dhclientlist,0.0.6,0.0.6,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+tensorci-client,0.0.14,0.0.14,Success,├── file list, NA
+aliyunsdkcore,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+elastic,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+azure-mgmt-sql,Failed,Failed,Failed,Error, GH: Could not clone the repo
+thumbor,Failed,Failed,Failed,Error, GH: Could not clone the repo
+kubernetes-asyncio,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+wakatime,Failed,Failed,Failed,Error, GH: Could not clone the repo
+topology-lib-ping,Failed,Failed,Failed,Error, GH: Could not clone the repo
+zope-globalrequest,2.1.0,2.0,Success,├── file list CHANGES.rst setup.cfg setup.py src, NA
+dagster-mysql,Failed,Failed,Failed,Error, GH: Could not clone the repo
+retrypy,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mkdocs-exclude,1.0.2,1.0.2,Success,├── file list, NA
+typer,Failed,Failed,Failed,Error, GH: No setup.py found
+aiohttp-swagger3,3.,0.7.4,Success,├── file list setup.cfg, NA
+http-ece,Failed,Failed,Failed,Error, GH: Could not clone the repo
+related,0.7.3,0.7.3,Success,├── file list setup.cfg src tests tox.ini, NA
+libconf,2.0.1,2.0.1,Success,├── file list setup.cfg, NA
+pyfolio,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pylife,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pyaesni,0.16,0.16,Success,├── file list, NA
+tencentcloud-sdk-python-btoe,Failed,Failed,Failed,Error, GH: Could not clone the repo
+bz2file,0.98,0.98,Success,├── file list README.rst, NA
+ccy,Failed,Failed,Failed,Error, GH: No setup.py found
+yotta,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+cdifflib,1.2.6,1.2.6,Success,├── file list, NA
+gtts,Failed,Failed,Failed,Error, GH: No setup.py found
+pytest-reraise,Failed,Failed,Failed,Error, GH: No setup.py found
+mypy-zope,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pinotdb,Failed,Failed,Failed,Error, GH: No setup.py found
+invenio-celery,Failed,Failed,Failed,Error, GH: No version found in setup.py
+google-cloud-memcache,Failed,Failed,Failed,Error, GH: No setup.py found
+interpret-core,Failed,Failed,Failed,Error, GH: No setup.py found
+shioaji,Failed,Failed,Failed,Error, GH: No setup.py found
+tencentcloud-sdk-python-privatedns,Failed,Failed,Failed,Error, GH: Could not clone the repo
+torchfile,0.1.0,0.1.0,Success,├── file list torchfile.py, NA
+paddlehub,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+yamlordereddictloader,0.4.1,0.4.0,Success,├── file list README.rst setup.py, NA
+sqlalchemy-filters,0.13.0,0.13.0,Success,├── file list setup.cfg, NA
+importlib-metadata,Failed,Failed,Failed,Error, GH: No setup.py found
+kenv,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+georaptor,2.0.3,2.0.3,Success,├── file list setup.cfg test, NA
+pycoolmasternet-async,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pycontrol4,1.1.0,1.1.0,Success,├── file list, NA
+thingy,0.10.0,0.10.0,Success,├── file list setup.cfg, NA
+rgbnotes,Failed,Failed,Failed,Error, GH: Could not clone the repo
+12factor-configclasses,Failed,Failed,Failed,Error, GH: No setup.py found
+autowoe,Failed,Failed,Failed,Error, GH: No setup.py found
+flynt,Failed,Failed,Failed,Error, GH: No setup.py found
+paddle2onnx,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+livejson,Failed,Failed,Failed,Error, GH: Could not clone the repo
+dbnd-docker,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pyspark-stubs,3.0.0.4,3.0.0.3,Success,├── file list setup.py third_party, NA
+mypy-boto3-mediaconvert,Failed,Failed,Failed,Error, GH: Could not clone the repo
+slither-analyzer,0.9.4,0.9.3,Success,├── file list README.md setup.py slither tests, NA
+google-images-download,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyacoustid,1.2.2,1.2.2,Success,├── file list README.rst acoustid.py chromaprint.py, NA
+qb-solver,0.1.9,0.1.9,Success,├── file list README.md qb_solver, NA
+vdf,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+akro,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+jupyter-bokeh,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+torchviz,Failed,Failed,Failed,Error, GH: Could not clone the repo
+bqtools-json,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyramid-tablib,0.2,0.2,Success,├── file list src, NA
+molecule-inspec,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pycrypt,0.7.2,0.7.2,Success,├── file list, NA
+pytradfri,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+proximityhash,1.0.1,1.0.1,Success,├── file list setup.cfg, NA
+libra-client,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pytest-instafail,0.5.0,0.5.0,Success,├── file list setup.cfg, NA
+logging-mv-integrations,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-registration,Failed,Failed,Failed,Error, GH: Could not clone the repo
+torchtraining-nightly,Failed,Failed,Failed,Error, GH: Could not clone the repo
+vodafone-ie-account-checker,1.0.7,1.0.7,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+runez,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+meutils,Failed,Failed,Failed,Error, GH: Could not clone the repo
+geetools,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pythondata-cpu-mor1kx,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pdfx,1.4.1,1.4.1,Success,├── file list README.md setup.cfg, NA
+pyexecjs,1.5.1,1.5.1,Success,├── file list README.md, NA
+logging-test-case,1.4.1,1.4.1,Success,├── file list LICENSE README.rst loggingtestcase setup.py, NA
+markdown-inline-graphviz-extension,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+amqplib,1.0.2,1.0.2,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+girder-large-image,Failed,Failed,Failed,Error, GH: Could not clone the repo
+flake8,Failed,Failed,Failed,Error, GH: No version found in setup.py
+boto3-type-annotations,Failed,Failed,Failed,Error, GH: No setup.py found
+pytest-live,Failed,Failed,Failed,Error, GH: Could not clone the repo
+royalpack,Failed,Failed,Failed,Error, GH: No setup.py found
+zope-container,5.2.0,5.1,Success,├── file list CHANGES.rst setup.cfg setup.py src, NA
+pyqrcode,1.2.1,1.2.1,Success,├── file list, NA
+django-redis,Failed,Failed,Failed,Error, GH: No version found in setup.py
+py-trading,Failed,Failed,Failed,Error, GH: No setup.py found
+exscript,Failed,Failed,Failed,Error, GH: Could not clone the repo
+finance-python,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+numpy-sugar,Failed,Failed,Failed,Error, GH: No setup.py found
+dom-toml,Failed,Failed,Failed,Error, GH: No setup.py found
+pygeodiff,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+isjosh18,0.12,0.12,Success,├── file list test, NA
+scaleapi,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ggwp,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+gbd-tools,4.3.5,4.5.9,Success,├── file list gbd.py gbd_core gbd_init gbd_server server.py setup.py, NA
+genshinstats,Failed,Failed,Failed,Error, GH: Could not clone the repo
+aws-cdk-aws-sagemaker,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pseutopy,2.0.2,3.0.8,Success,├── file list README.rst src, NA
+pygmail,0.0.5,0.0.5.4,Success,├── file list gmail setup.py, NA
+addressable,Failed,Failed,Failed,Error, GH: Could not clone the repo
+objex,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+awsiotsdk,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+concurrent-log-handler,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mmh3cffi,0.2.1,0.2.1,Success,├── file list, NA
+torch-lr-finder,0.2.1,0.2.1,Success,├── file list torch_lr_finder, NA
+dbdaora,Failed,Failed,Failed,Error, GH: No setup.py found
+fleece,Failed,Failed,Failed,Error, GH: No setup.py found
+check50,3.3.7,3.3.7,Success,├── file list README.md setup.cfg setup.py, NA
+xs1-api-client,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyobjc-framework-coretext,Failed,Failed,Failed,Error, GH: No setup.py found
+metar,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+types-cachetools,Failed,Failed,Failed,Error, GH: No setup.py found
+django-fobi,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyobjc-framework-cfnetwork,Failed,Failed,Failed,Error, GH: Could not clone the repo
+hedgehog-station-controller,Failed,Failed,Failed,Error, GH: Could not clone the repo
+bytecode,Failed,Failed,Failed,Error, GH: No version found in setup.py
+gpustat,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+giotto-tda-nightly,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyobjc-framework-coredata,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pytradfri,Failed,Failed,Failed,Error, GH: Could not clone the repo
+httpcore,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+quantulum3,3.,0.9.0,Success,├── file list README.md quantulum3, NA
+mem-top,0.2.1,0.2.1,Success,├── file list, NA
+ghp-import,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+wrap,2018.03.01,2018.03.01,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+mypy-boto3-iotfleethub,Failed,Failed,Failed,Error, GH: Could not clone the repo
+wolfram-model,Failed,Failed,Failed,Error, GH: No setup.py found
+pythondata-misc-tapcfg,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyqt5-stubs,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+grpc-google-iam-v1,Failed,Failed,Failed,Error, GH: Could not clone the repo
+faadelays,0.0.7,0.0.7,Success,├── file list, NA
+python-resize-image,1.1.20,1.1.20,Success,├── file list setup.cfg tests, NA
+line-profiler,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+redisq,Failed,Failed,Failed,Error, GH: Could not clone the repo
+mmcls,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+urlman,Failed,Failed,Failed,Error, GH: Could not clone the repo
+ibm-cos-sdk,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+plover-phenrsteno,Failed,Failed,Failed,Error, GH: No setup.py found
+env,0.1.1,0.1.0,Success,├── file list env.py setup.cfg setup.py, NA
+apispec-oneofschema,3.0.0,3.0.0,Success,├── file list README.md setup.py, NA
+r53-register,0.1.7,0.1.7,Success,├── file list, NA
+base36,0.1.1,0.1.1,Success,├── file list README.rst setup.cfg, NA
+mypy-boto3-directconnect,Failed,Failed,Failed,Error, GH: Could not clone the repo
+drf-access-policy,1.5.0,1.5.0,Success,├── file list, NA
+django-redshift-backend,Failed,Failed,Failed,Error, GH: No version found in setup.py
+flake8-file-encoding,Failed,Failed,Failed,Error, GH: No setup.py found
+squareconnect,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+locu,0.1.1,0.1,Success,├── file list locu setup.py, NA
+pytest-seleniumbase,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+simple-colors,.1,.1,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+azure-mgmt-containerservice,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pycox,0.2.3,0.2.3,Success,├── file list setup.cfg, NA
+docker-pycreds,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+jupyter-bokeh,Failed,Failed,Failed,Error, GH: Could not clone the repo
+google-cloud-kms,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+fiscalyear,Failed,Failed,Failed,Error, GH: No setup.py found
+elib-config,Failed,Failed,Failed,Error, GH: No version found in setup.py
+fs,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pyupbit,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-cli-telemetry,Failed,Failed,Failed,Error, GH: Could not clone the repo
+ribosome,Failed,Failed,Failed,Error, GH: No setup.py found
+spamwatch,0.3.0,0.3.0,Success,├── file list, NA
+iterable-queue,1.2.1,1.2.2,Success,├── file list setup.py, NA
+benchexec,Failed,Failed,Failed,Error, GH: Could not clone the repo
+netstruct,1.1.1,1.1.1,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+fusesoc,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pydot-ng,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+compressed-segmentation,Failed,Failed,Failed,Error, GH: No version found in setup.py
+jwplatform,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+terraform-validator,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+flask-injector,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+newrelic-plugin-agent,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tfcoreml,Failed,Failed,Failed,Error, GH: Could not clone the repo
+flask-redis,Failed,Failed,Failed,Error, GH: Could not clone the repo
+sphinx-git,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aws-cdk-aws-route53-targets,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-mgmt-maps,Failed,Failed,Failed,Error, GH: Could not clone the repo
+b9y,0.0.22,0.0.22,Success,├── file list b9y, NA
+win-unicode-console,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aws-shell,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pycaret-nightly,Failed,Failed,Failed,Error, GH: Could not clone the repo
+wsaccel,0.6.4,0.6.4,Success,├── file list wsaccel, NA
+django-sesame,Failed,Failed,Failed,Error, GH: No setup.py found
+azure,Failed,Failed,Failed,Error, GH: Could not clone the repo
+monocdk-nag,Failed,Failed,Failed,Error, GH: No setup.py found
+mamonsu,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-accessanalyzer,Failed,Failed,Failed,Error, GH: Could not clone the repo
+google-compute-engine,Failed,Failed,Failed,Error, GH: No setup.py found
+python-jss,Failed,Failed,Failed,Error, GH: Could not clone the repo
+discord-webhooks,1.0.4,1.0.4,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+bu-cascade,Failed,Failed,Failed,Error, GH: Could not clone the repo
+segtok,1.5.11,1.5.11,Success,├── file list, NA
+edk2-pytool-library,Failed,Failed,Failed,Error, GH: No setup.py found
+nameparser,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+rokuecp,Failed,Failed,Failed,Error, GH: No setup.py found
+itunessmart,Failed,Failed,Failed,Error, GH: No version found in setup.py
+opsgenie-sdk,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+apscheduler,Failed,Failed,Failed,Error, GH: No setup.py found
+eniarbiter,1.3.2,1.3.2,Success,├── file list, NA
+django-username-email,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cloudformation-cli-python-plugin,Failed,Failed,Failed,Error, GH: Could not clone the repo
+zope-browserresource,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-webpack-loader,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+jhi-databricksenvironment,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pytorch-transformers-pvt-nightly,4.31.0.0...0...1..,1.2.0.201909261000,Success,├── file list LICENSE README.md setup.cfg setup.py, NA
+aws-solutions-constructs-aws-events-rule-sqs,Failed,Failed,Failed,Error, GH: No setup.py found
+discord-py-self,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+flask-sqlalchemy,Failed,Failed,Failed,Error, GH: No setup.py found
+celery-flower,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+webbot,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+fly-graph,Failed,Failed,Failed,Error, GH: No setup.py found
+opencensus-ext-google-cloud-clientlibs,Failed,Failed,Failed,Error, GH: Could not clone the repo
+powerbiclient,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aws-cdk-aws-elasticloadbalancingv2-targets,Failed,Failed,Failed,Error, GH: Could not clone the repo
+bonsai,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+python-lsp-jsonrpc,Failed,Failed,Failed,Error, GH: No setup.py found
+dynet,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pytest-reorder,0.1.1,0.1.1,Success,├── file list, NA
+pyculiarity,0.0.7,0.0.7,Success,├── file list setup.cfg, NA
+lbt-honeybee,Failed,Failed,Failed,Error, GH: No version found in setup.py
+watermark,Failed,Failed,Failed,Error, GH: No version found in setup.py
+udatetime,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyreadstat,1.2.2,1.2.2,Success,├── file list src, NA
+magicattr,0.1.6,0.1.6,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+tomotopy,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+peace-performance-python,2.0.0,2.0.0,Success,├── file list Cargo.toml, NA
+flameprof,Failed,Failed,Failed,Error, GH: Could not clone the repo
+backports-os,Failed,Failed,Failed,Error, GH: No version found in setup.py
+nuscenes-devkit,Failed,Failed,Failed,Error, GH: No setup.py found
+redis-namespace,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+klampt,Failed,Failed,Failed,Error, GH: No setup.py found
+ffmpeg-normalize,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+friendsreco,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pytwistyscrambler,1.6,1.6,Success,├── file list README.md pyTwistyScrambler pyproject.toml setup.py, NA
+python-lambda,11.8.0,11.8.0,Success,├── file list aws_lambda setup.cfg setup.py, NA
+pyspider,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-politico-fake-news,Failed,Failed,Failed,Error, GH: Could not clone the repo
+blocksparse,1.13.1,1.13.1,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+aws-cdk-aws-autoscalingplans,Failed,Failed,Failed,Error, GH: Could not clone the repo
+epc,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+enum34-custom,0.7.2,0.7.2,Success,├── file list, NA
+the-refinery-toolkit,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+supervisor-stdout,0.1.1,0.1.1,Success,├── file list supervisor_stdout.py, NA
+cpython,0.0.6,0.0.6,Success,├── file list, NA
+pip-chill,1.0.2,1.0.3,Success,├── file list HISTORY.rst docs setup.cfg setup.py, NA
+shiv,Failed,Failed,Failed,Error, GH: No setup.py found
+msoffcrypto-tool,Failed,Failed,Failed,Error, GH: No setup.py found
+aws-cdk-aws-qldb,Failed,Failed,Failed,Error, GH: Could not clone the repo
+deodr,.2,0.2.0,Success,├── file list deodr setup.cfg, NA
+nr-parsing-date,Failed,Failed,Failed,Error, GH: No setup.py found
+tencentcloud-sdk-python-dlc,Failed,Failed,Failed,Error, GH: Could not clone the repo
+products-zsqlmethods,4.1.0,4.0,Success,├── file list CHANGES.rst setup.cfg setup.py src, NA
+openupgradelib,Failed,Failed,Failed,Error, GH: No version found in setup.py
+tx-shared-tools,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tencentcloud-sdk-python-iotexplorer,Failed,Failed,Failed,Error, GH: Could not clone the repo
+deskew,Failed,Failed,Failed,Error, GH: No setup.py found
+aumbry,0.10.0,0.10.0,Success,├── file list setup.cfg setup.py, NA
+carly,0.13.0,0.13.0,Success,├── file list, NA
+sphinxawesome-theme,Failed,Failed,Failed,Error, GH: No setup.py found
+cqlsh,Failed,Failed,Failed,Error, GH: No version found in setup.py
+optcc,Failed,Failed,Failed,Error, GH: No setup.py found
+python-moztelemetry,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pymatgen-db,2023.2.23,2023.2.23,Success,├── file list pymatgen setup.cfg, NA
+ibmcloudenv,Failed,Failed,Failed,Error, GH: Could not clone the repo
+firexkit,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+abodepy,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pydoe,0.3.8,0.3.7,Success,├── file list README pyDOE setup.py, NA
+testflows-core,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+icecream,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+bentley-ottmann,Failed,Failed,Failed,Error, GH: Could not clone the repo
+apsw,Failed,Failed,Failed,Error, GH: Could not clone the repo
+magicalimport,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-encrypted-filefield,Failed,Failed,Failed,Error, GH: No setup.py found
+json2df,0.2.1,0.2.1,Success,├── file list json2df setup.cfg, NA
+keras-mdn-layer,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pip-install-privates,0.6.3,0.6.3,Success,├── file list, NA
+pyros-genmsg,Failed,Failed,Failed,Error, GH: No version found in setup.py
+flask-simplelogin,Failed,Failed,Failed,Error, GH: No setup.py found
+azure-datalake-store,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+deeplabcut,2.3.5,2.3.5,Success,├── file list deeplabcut tests, NA
+faadelays,Failed,Failed,Failed,Error, GH: Could not clone the repo
+sphinxcontrib-django,Failed,Failed,Failed,Error, GH: No version found in setup.py
+lel-lang,0.0.6,0.0.6,Success,├── file list setup.cfg setup.py, NA
+oldest-supported-numpy,Failed,Failed,Failed,Error, GH: No version found in setup.py
+onlysnarf,4.4.14,4.4.13,Success,├── file list CHANGELOG.md OnlySnarf README.md setup.cfg setup.py tests, NA
+azure-schemaregistry-avroserializer,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cryptoadvance-specter,Failed,Failed,Failed,Error, GH: No version found in setup.py
+abodepy,Failed,Failed,Failed,Error, GH: Could not clone the repo
+zserver,4.1.0,4.0.2,Success,├── file list CHANGES.rst README.rst buildout.cfg setup.cfg setup.py src, NA
+reportportal-client,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-codestar,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-mgmt-commerce,Failed,Failed,Failed,Error, GH: Could not clone the repo
+kito,1.0.5,1.0.5,Success,├── file list README.md kito setup.py, NA
+azure-mgmt-media,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cdk-fargate-patterns,Failed,Failed,Failed,Error, GH: Could not clone the repo
+unoconv,0.8.2,0.9.0,Success,├── file list CHANGELOG.md ChangeLog README.adoc setup.py unoconv, NA
+slipbox,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+snps,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tetgen,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+jinjalint,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pymc3-ext,Failed,Failed,Failed,Error, GH: No version found in setup.py
+supervisor-stdout,Failed,Failed,Failed,Error, GH: Could not clone the repo
+mpegdash,0.3.1,0.3.1,Success,├── file list mpegdash, NA
+amsterdam-schema-tools,Failed,Failed,Failed,Error, GH: No version found in setup.py
+xstatic-roboto-fontface,Failed,Failed,Failed,Error, GH: No setup.py found
+pycorenlp,0.3.0,0.3.0,Success,├── file list, NA
+aionotify,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+flask-sqlite-admin,0.3,0.3,Success,├── file list flask_sqlite_admin setup.cfg, NA
+brevitas,Failed,Failed,Failed,Error, GH: No version found in setup.py
+alignmentrs,0.9.0,0.9.0,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+fmcw,Failed,Failed,Failed,Error, GH: Could not clone the repo
+lti-consumer-xblock,.2,9.5.3,Success,├── file list lti_consumer requirements setup.cfg, NA
+cimcb,2.1.0,1.1.0,Success,├── file list README.md cimcb setup.py, NA
+pyobjc-framework-virtualization,Failed,Failed,Failed,Error, GH: Could not clone the repo
+yak-yurt,Failed,Failed,Failed,Error, GH: Could not clone the repo
+oschmod,Failed,Failed,Failed,Error, GH: No version found in setup.py
+mypy-boto3-storagegateway,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cmsis-pack-manager,Failed,Failed,Failed,Error, GH: No setup.py found
+py-ubjson,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+zebrazoom,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dohq-teamcity,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+yamlloader,1.2.2,1.2.2,Success,├── file list yamlloader.egg-info, NA
+colorlog,6.7.0,6.7.0,Success,├── file list doc setup.cfg, NA
+torchlayers-nightly,Failed,Failed,Failed,Error, GH: Could not clone the repo
+corenlp,0.0.14,0.0.14,Success,├── file list corenlp setup.py, NA
+dominate,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cachecontrol,Failed,Failed,Failed,Error, GH: No setup.py found
+pybadges,3.0.0..,3.0.0,Success,├── file list pybadges setup.cfg setup.py, NA
+facet,Failed,Failed,Failed,Error, GH: No version found in setup.py
+azure-cli-feedback,Failed,Failed,Failed,Error, GH: Could not clone the repo
+dumper,1.2.0,1.2.0,Success,├── file list README setup.cfg, NA
+pysixel,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-accessanalyzer,Failed,Failed,Failed,Error, GH: Could not clone the repo
+swimlane-records-updater,2018.9.18.1,2018.10.18.1,Success,├── file list README.md setup.py swimlane_records_updater, NA
+winrmcp,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+youtube-search-python,1.6.6,1.6.6,Success,├── file list README.md youtubesearchpython, NA
+aws-cdk-aws-events,Failed,Failed,Failed,Error, GH: Could not clone the repo
+c-lasso,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+setuptools-git,1.2,1.2,Success,├── file list README.rst setup.cfg setup.py, NA
+flumine,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+invenio-cache,Failed,Failed,Failed,Error, GH: No version found in setup.py
+warc3-wet,0.2.3,0.2.3,Success,├── file list warc, NA
+google-search,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyfony-core,Failed,Failed,Failed,Error, GH: No setup.py found
+edx-name-affirmation,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-vinaigrette,Failed,Failed,Failed,Error, GH: Could not clone the repo
+python-ulid,Failed,Failed,Failed,Error, GH: Could not clone the repo
+databasetools,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+serverfiles,0.3.1,0.3.1,Success,├── file list doc serverfiles, NA
+crochet,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+httpx,Failed,Failed,Failed,Error, GH: No setup.py found
+gluish,0.3.0,0.3.0,Success,├── file list, NA
+web-fragments,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+exchange-calendars,Failed,Failed,Failed,Error, GH: No version found in setup.py
+hfpy,0.2.2,0.2.2,Success,├── file list hfpy readme.md requirements.txt, NA
+ldsc2,Failed,Failed,Failed,Error, GH: Could not clone the repo
+polyaxon-deploy,Failed,Failed,Failed,Error, GH: No version found in setup.py
+cffsubr,Failed,Failed,Failed,Error, GH: No version found in setup.py
+elastic-apm,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+napari-svg,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pyobjc-framework-securityinterface,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-eventhub,Failed,Failed,Failed,Error, GH: Could not clone the repo
+dagster-cron,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tencentcloud-sdk-python-cfs,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-mgmt-maps,Failed,Failed,Failed,Error, GH: Could not clone the repo
+aws-cdk-custom-resources,Failed,Failed,Failed,Error, GH: Could not clone the repo
+chatbotai,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aiolyric,1.0.10,1.0.10,Success,├── file list LICENSE aiolyric setup.py, NA
+pybigwig,Failed,Failed,Failed,Error, GH: No version found in setup.py
+postnl-api,1.2.3,1.2.3,Success,├── file list, NA
+azure-servicefabric,Failed,Failed,Failed,Error, GH: Could not clone the repo
+georss-qld-bushfire-alert-client,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+juriscraper,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+aws-cdk-aws-synthetics,Failed,Failed,Failed,Error, GH: Could not clone the repo
+fixerio,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tensorci-client,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-cli-security,Failed,Failed,Failed,Error, GH: Could not clone the repo
+monk-tf,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tapioca-wrapper,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dcos,Failed,Failed,Failed,Error, GH: Could not clone the repo
+aws-solutions-constructs-aws-s3-lambda,Failed,Failed,Failed,Error, GH: Could not clone the repo
+sqlalchemy-unchained,0.12.2,0.12.2,Success,├── file list setup.cfg, NA
+horovod,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+courseraoauth2client,0.0.1,0.0.1,Success,├── file list README.rst courseraoauth2client, NA
+aldjemy,Failed,Failed,Failed,Error, GH: No setup.py found
+mbed-tools,Failed,Failed,Failed,Error, GH: No version found in setup.py
+readthedocs-sphinx-search,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+cacheout,Failed,Failed,Failed,Error, GH: No setup.py found
+django-shortuuidfield,0.1.3,0.1.3,Success,├── file list, NA
+upyun,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+projpicker,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+face,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+channels-binding,Failed,Failed,Failed,Error, GH: Could not clone the repo
+mbed-targets,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+zmail,0.2.8,0.2.8,Success,├── file list README.md, NA
+mozdownload,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-network-firewall,Failed,Failed,Failed,Error, GH: Could not clone the repo
+messages,Failed,Failed,Failed,Error, GH: No setup.py found
+aws-cdk-cdk-assets-schema,Failed,Failed,Failed,Error, GH: Could not clone the repo
+stix2-validator,.1.,3.1.3,Success,├── file list setup.cfg setup.py stix2validator, NA
+invenio-search,Failed,Failed,Failed,Error, GH: No version found in setup.py
+index-py,Failed,Failed,Failed,Error, GH: No setup.py found
+parseratorvariable,Failed,Failed,Failed,Error, GH: Could not clone the repo
+awesome-slugify,1.6.5,1.6.5,Success,├── file list setup.py slugify, NA
+django-twilio,0.14.3.2,0.14.3.2,Success,├── file list test_project, NA
+lameenc,Failed,Failed,Failed,Error, GH: No version found in setup.py
+interpret,Failed,Failed,Failed,Error, GH: Could not clone the repo
+johnnydep,.1.,1.20.2,Success,├── file list tests, NA
+mgwr,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ldaptor,Failed,Failed,Failed,Error, GH: No version found in setup.py
+hyperjet,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+types-enum34,Failed,Failed,Failed,Error, GH: Could not clone the repo
+memory-profiler,Failed,Failed,Failed,Error, GH: No version found in setup.py
+universalmutator,1.1.7,1.0.1,Success,├── file list README.md setup.py universalmutator, NA
+instabot,0.117.0,0.117.0,Success,├── file list instabot setup.cfg setup.py README.md, NA
+integrationhelper,0.2.2,0.2.2,Success,├── file list setup.cfg, NA
+rikki,Failed,Failed,Failed,Error, GH: Could not clone the repo
+intervals,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tabula-py,Failed,Failed,Failed,Error, GH: No setup.py found
+google-cloud-aiplatform,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+closeio,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cloud-volume,Failed,Failed,Failed,Error, GH: Could not clone the repo
+marisa-trie-m,0.8.0,0.7.6,Success,├── file list CHANGES.rst LICENSE MANIFEST.in README.rst bench marisa-trie setup.py src tests update_cpp.sh, NA
+malaya,5.0.1,3.4.5,Success,├── file list .gitignore .readthedocs.yml README.rst accuracy docs example malaya misc pretrained-model pypi session setup.py tests, NA
+dataclasses-jsonschema,Failed,Failed,Failed,Error, GH: No version found in setup.py
+hypertag,Failed,Failed,Failed,Error, GH: No setup.py found
+async-cse,0.3.0,0.3.0,Success,├── file list README.md async_cse setup.py, NA
+travis-cargo,0.1.15,0.1.15,Success,├── file list setup.cfg, NA
+lambda-toolkit,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+jsonpath2,Failed,Failed,Failed,Error, GH: Could not clone the repo
+overrides,7.3.1,7.3.1,Success,├── file list .github README.rst mypy_passes, NA
+levenshtein,0.21.1,0.21.1,Success,├── file list extern pyproject.toml src, NA
+ueagle,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pydantic,Failed,Failed,Failed,Error, GH: No setup.py found
+kafka-utils,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-babel,Failed,Failed,Failed,Error, GH: Could not clone the repo
+seutils,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+scikit-kinematics,Failed,Failed,Failed,Error, GH: No setup.py found
+yapps2,14.04.0,2.2.0,Success,├── file list setup.py yapps, NA
+gelidum,0.6.0,0.6.0,Success,├── file list, NA
+py-linq,Failed,Failed,Failed,Error, GH: No setup.py found
+aws-cdk-aws-lambda,Failed,Failed,Failed,Error, GH: Could not clone the repo
+jgscm,0.1.9,0.1.9,Success,├── file list jgscm, NA
+flake8-deprecated,2.0.2.0,2.0.1,Success,├── file list CHANGES.rst README.rst requirements.txt setup.cfg setup.py, NA
+openshift,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+flask-pagedown,Failed,Failed,Failed,Error, GH: No version found in setup.py
+chex,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ecoaliface,0.5.0,0.5.0,Success,├── file list README.md, NA
+opentelemetry-instrumentation-sqlalchemy,Failed,Failed,Failed,Error, GH: Could not clone the repo
+ecoaliface,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cropfaces,0.0.76,0.0.77,Success,├── file list MANIFEST.in cropfaces setup.cfg setup.py, NA
+xstatic-magic-search,Failed,Failed,Failed,Error, GH: No setup.py found
+h2o-pysparkling-3-0,Failed,Failed,Failed,Error, GH: No setup.py found
+lapdog,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+sql-formatter,Failed,Failed,Failed,Error, GH: Could not clone the repo
+scikit-fmm,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-registry,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+flytekit,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+surveygizmo,Failed,Failed,Failed,Error, GH: Could not clone the repo
+djcacheutils,3.1.4,3.0.0,Success,├── file list cache_utils setup.py, NA
+atari-py,0.3.0,0.3.0,Success,├── file list README.md atari_py, NA
+sphinxcontrib-images,0.9.4,0.9.4,Success,├── file list MANIFEST.in setup.cfg sphinxcontrib_images_lightbox2, NA
+django-libs,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+guizero,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+visions,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-auto-prefetching,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+bleach,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+widgetastic-patternfly4,Failed,Failed,Failed,Error, GH: No setup.py found
+pbd,0.9,0.9,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+sphinxcontrib-autoprogram,0.1.8,0.1.8,Success,├── file list doc setup.cfg, NA
+tencentcloud-sdk-python-asw,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyimgur,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+py-expression-eval,Failed,Failed,Failed,Error, GH: Could not clone the repo
+opengeode-io,Failed,Failed,Failed,Error, GH: No setup.py found
+anltk,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mama,Failed,Failed,Failed,Error, GH: No setup.py found
+cuppa,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+hthpkg,Failed,Failed,Failed,Error, GH: No setup.py found
+gapic-google-cloud-spanner-admin-database-v1,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tencentcloud-sdk-python-facefusion,Failed,Failed,Failed,Error, GH: Could not clone the repo
+opentelemetry-instrumentation,Failed,Failed,Failed,Error, GH: Could not clone the repo
+et-micc-build,Failed,Failed,Failed,Error, GH: No setup.py found
+pretty-midi,0.2.10,0.2.10,Success,├── file list pretty_midi setup.py, NA
+pyright,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+cowsay,5.0,5.0,Success,├── file list LICENSE.txt README.md cowsay setup.cfg setup.py, NA
+cfripper,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+humps,0.2.2,0.2.2,Success,├── file list, NA
+citools,0.2.47,0.2.47,Success,├── file list setup.cfg test, NA
+contours,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+youtube-dl2,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyattck,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ncluster,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+stepfunctions,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+edx-django-utils,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pygaljs,1.0.2,1.0.2,Success,├── file list setup.cfg src, NA
+metadamage,Failed,Failed,Failed,Error, GH: Could not clone the repo
+parmap,Failed,Failed,Failed,Error, GH: No version found in setup.py
+alice-blue,2.0.3,0.0.4,Success,├── file list README.md alice_blue setup.cfg setup.py, NA
+aws-cdk-aws-elasticsearch,Failed,Failed,Failed,Error, GH: Could not clone the repo
+demon,2.0.6,2.0.6,Success,├── file list demon setup.cfg, NA
+opencc-python-reimplemented,0.1.7,0.1.7,Success,├── file list LICENSE.txt MANIFEST.in README.md opencc setup.cfg setup.py, NA
+bigquery-python,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pycricbuzz,2.4,2,Success,├── file list pycricbuzz setup.py, NA
+timezonefinderl,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+magnetos,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+fluent,Failed,Failed,Failed,Error, GH: No setup.py found
+cdk8s,Failed,Failed,Failed,Error, GH: No setup.py found
+excel2json,1.0.1,1.0.1,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+pandas-profiling,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+tencentcloud-sdk-python-monitor,Failed,Failed,Failed,Error, GH: Could not clone the repo
+skope-rules,1.0.1,1.0.0,Success,├── file list README.md doc setup.cfg setup.py skrules, NA
+citeproc-py-styles,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+parameterizedtestcase,0.1.0,0.1.0,Success,├── file list README.rst setup.cfg setup.py tox.ini, NA
+dwave-system,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+misaka,2.1.2,2.1.1,Success,├── file list LICENSE.txt README.rst THANKS build_ffi.py docs misaka setup.py tests, NA
+fudge,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-bmemcached,0.3.0,0.3.0,Success,├── file list, NA
+blobuploader,1.2.4,1.2.4,Success,├── file list README.md setup.py, NA
+pantsbuild-pants-contrib-python-checks,Failed,Failed,Failed,Error, GH: No setup.py found
+maxcube-api,0.4.3,0.4.3,Success,├── file list maxcube setup.cfg setup.py, NA
+dataproperty,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+public,2020.12.3,2020.12.3,Success,├── file list, NA
+tencentcloud-sdk-python-gpm,Failed,Failed,Failed,Error, GH: Could not clone the repo
+query-string,2020.12.3,2020.12.3,Success,├── file list, NA
+threedi-api-client,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-xray,Failed,Failed,Failed,Error, GH: Could not clone the repo
+dagster-celery,Failed,Failed,Failed,Error, GH: Could not clone the repo
+netron,Failed,Failed,Failed,Error, GH: No setup.py found
+sphinx-substitution-extensions,Failed,Failed,Failed,Error, GH: No setup.py found
+pysqueezebox,0.7.1,0.7.1,Success,├── file list setup.cfg, NA
+keras-tuner,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+logzero,1.7.0,1.7.0,Success,├── file list HISTORY.md docs setup.cfg, NA
+pivottablejs,0.9.0,0.9.0,Success,├── file list README.rst setup.cfg, NA
+kinto,Failed,Failed,Failed,Error, GH: No version found in setup.py
+mixpanel-utils,Failed,Failed,Failed,Error, GH: No setup.py found
+aws-cdk-aws-cloud9,Failed,Failed,Failed,Error, GH: Could not clone the repo
+tradingene,Failed,Failed,Failed,Error, GH: No setup.py found
+voiceplay,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+ansible-lint,Failed,Failed,Failed,Error, GH: No setup.py found
+delphai-utils,Failed,Failed,Failed,Error, GH: Could not clone the repo
+databricks-dbapi,Failed,Failed,Failed,Error, GH: No setup.py found
+pythonpy,Failed,Failed,Failed,Error, GH: Could not clone the repo
+mxnet-cu75mkl,Failed,Failed,Failed,Error, GH: No setup.py found
+undetected-chromedriver,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+azure-cli-advisor,Failed,Failed,Failed,Error, GH: Could not clone the repo
+colormath,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+requirements-builder,Failed,Failed,Failed,Error, GH: Could not clone the repo
+indexed-gzip-fileobj-fork-epicfaace,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cdlib,0.3.0,0.3.0,Success,├── file list README.md cdlib setup.cfg, NA
+schemathesis,Failed,Failed,Failed,Error, GH: No setup.py found
+chimas,Failed,Failed,Failed,Error, GH: Could not clone the repo
+vvm,0.1.0,0.1.0,Success,├── file list setup.cfg setup.py, NA
+pupy,Failed,Failed,Failed,Error, GH: No setup.py found
+flake8-blind-except,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+solvebio,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-models-redis-cache,Failed,Failed,Failed,Error, GH: No setup.py found
+typish,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+arbalest,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+easypydb,Failed,Failed,Failed,Error, GH: Could not clone the repo
+mox,0.5.3,0.5.3,Success,├── file list mox.py mox_test.py mox_test_helper.py setup.py stubout_testee.py, NA
+proactive-jupyter-kernel,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyzipper,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+fatpack,Failed,Failed,Failed,Error, GH: No setup.py found
+wrap,Failed,Failed,Failed,Error, GH: Could not clone the repo
+wdl-lsp,Failed,Failed,Failed,Error, GH: No setup.py found
+django-simple-history,Failed,Failed,Failed,Error, GH: No version found in setup.py
+inlineplz,0.51.0,0.51.0,Success,├── file list setup.cfg, NA
+hass-splunk,0.1.2,0.1.2,Success,├── file list setup.py, NA
+azure-storage-file,Failed,Failed,Failed,Error, GH: No setup.py found
+importlib,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+apacheconfig,Failed,Failed,Failed,Error, GH: No version found in setup.py
+trimesh,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+xxtea-py,1.0.4,1.0.3,Success,├── file list setup.py tests xxtea, NA
+pollevbot,Failed,Failed,Failed,Error, GH: No setup.py found
+mistune,Failed,Failed,Failed,Error, GH: No version found in setup.py
+piccata,2.0.3,2.0.3,Success,├── file list, NA
+interpret,Failed,Failed,Failed,Error, GH: Could not clone the repo
+invenio-files-rest,Failed,Failed,Failed,Error, GH: No version found in setup.py
+tokenize-rt,Failed,Failed,Failed,Error, GH: No version found in setup.py
+edx-ccx-keys,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+azure-mgmt-documentdb,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyobjc-framework-coremotion,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pythondata-cpu-rocket,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+node-semver,0.9.0,0.9.0,Success,├── file list LICENSE MANIFEST.in README.rst examples nodesemver setup.cfg setup.py, NA
+opencensus-ext-django,Failed,Failed,Failed,Error, GH: Could not clone the repo
+py-gfm,2.0.0,8664,Success,├── file list, NA
+flutes,0.3.0,0.3.0,Success,├── file list README.md flutes tests, NA
+edx-proctoring,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+sipprverse,0.2.49,0.2.49,Success,├── file list tests, NA
+geetools,Failed,Failed,Failed,Error, GH: Could not clone the repo
+spliceai,1.3.1,1.3.1,Success,├── file list README.md spliceai, NA
+asammdf,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-codestar-notifications,Failed,Failed,Failed,Error, GH: Could not clone the repo
+parfit,0.220,0.220,Success,├── file list parfit, NA
+pylbfgs,0.2.0.14,0.2.0.14,Success,├── file list lbfgs setup.cfg, NA
+advancedanalytics,1.36,1.39,Success,├── file list AdvancedAnalytics AdvancedAnalytics.egg-info setup.py, NA
+pytorch-transformers-pvt-nightly,Failed,Failed,Failed,Error, GH: Could not clone the repo
+nxpd,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pipelinewise-singer-python,2.0.1,2.0.1,Success,├── file list setup.py singer, NA
+flask-breadcrumbs,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-widget-tweaks,Failed,Failed,Failed,Error, GH: No version found in setup.py
+oli,0.0.21,0.0.21,Success,├── file list README.md, NA
+sentence-splitter,1.4,1.4,Success,├── file list setup.cfg, NA
+ipydatawidgets,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+awsglue-local,Failed,Failed,Failed,Error, GH: Could not clone the repo
+zope-browserresource,Failed,Failed,Failed,Error, GH: Could not clone the repo
+secretstorage,Failed,Failed,Failed,Error, GH: No setup.py found
+h2o-pysparkling-3-0,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyobjc-framework-discrecordingui,Failed,Failed,Failed,Error, GH: Could not clone the repo
+simc-support,Failed,Failed,Failed,Error, GH: No setup.py found
+hkavr,0.0.5,0.0.5,Success,├── file list README.md hkavr setup.py, NA
+dvc-cc,Failed,Failed,Failed,Error, GH: No setup.py found
+tmb,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+newrelic-plugins-agent,Failed,Failed,Failed,Error, GH: Could not clone the repo
+colorlover,0.3.0,0.3.0,Success,├── file list, NA
+text-models,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+autodynatrace,2.0.0,2.0.0,Success,├── file list LICENSE README.md autodynatrace setup.cfg setup.py tests, NA
+google-cloud-bigquery,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+httptest,Failed,Failed,Failed,Error, GH: No version found in setup.py
+bleach-whitelist,0.0.11,0.0.11,Success,├── file list, NA
+aiogqlc,Failed,Failed,Failed,Error, GH: No version found in setup.py
+flameprof,Failed,Failed,Failed,Error, GH: Could not clone the repo
+duo-client,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dozer,0.9.0,0.8,Success,├── file list .coveragerc CHANGELOG.rst README.rst appveyor.yml dozer release.mk setup.cfg setup.py tox.ini, NA
+eth-brownie,1.19.3,1.19.3,Success,├── file list CHANGELOG.md brownie requirements-windows.txt requirements.txt setup.cfg, NA
+krux-stdlib,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+azure-cli-dls,Failed,Failed,Failed,Error, GH: Could not clone the repo
+os-sys,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyforce,1.9.1,1.9.1,Success,├── file list, NA
+optcc,Failed,Failed,Failed,Error, GH: Could not clone the repo
+cmake-format,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyrser,Failed,Failed,Failed,Error, GH: Could not clone the repo
+edc-facility,Failed,Failed,Failed,Error, GH: No setup.py found
+ls-trace,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+blake3,Failed,Failed,Failed,Error, GH: No setup.py found
+python-gdcm,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-address,0.2.5,0.2.8,Success,├── file list pyproject.toml setup.cfg setup.py, NA
+argon2,0.1.10,0.1.10,Success,├── file list argon2.py phc-winner-argon2 setup.py, NA
+modin,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mypy-boto3-iotwireless,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pythainlp,4.0.2,4.0.2,Success,├── file list CONTRIBUTING.md pythainlp setup.cfg setup.py tests, NA
+chromosight,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+kinematics,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+satella,Failed,Failed,Failed,Error, GH: No version found in setup.py
+collective-solr,9.1.5.0,9.1.4,Success,├── file list CHANGES.rst docs setup.py src, NA
+fints,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+dagster-ssh,Failed,Failed,Failed,Error, GH: Could not clone the repo
+jdatetime,4.1.1,4.1.1,Success,├── file list README jdatetime setup.cfg tests PKG-INFO, NA
+pyiosxr,Failed,Failed,Failed,Error, GH: Could not clone the repo
+acme,Failed,Failed,Failed,Error, GH: Could not clone the repo
+kubepy,1.18.1.0,1.18.0,Success,├── file list CHANGELOG.md setup.cfg setup.py, NA
+javaproperties,Failed,Failed,Failed,Error, GH: No setup.py found
+bearychat-py,0.3.1,0.3.1,Success,├── file list, NA
+superhelp,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+geoplot,0.5.1,0.5.1,Success,├── file list, NA
+odsclient,Failed,Failed,Failed,Error, GH: No version found in setup.py
+nlprep,0.2.01,0.2.1,Success,├── file list, NA
+rtoc,3.0,3.0,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+mxnet-cu100,Failed,Failed,Failed,Error, GH: Could not clone the repo
+protobuf3-to-dict,0.2.7,0.1.5,Success,├── file list setup.py, NA
+nxapi-plumbing,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pyspark-asyncactions,0.0.5,0.0.4,Success,├── file list README.rst asyncactions setup.cfg setup.py, NA
+mypy-boto3-amp,Failed,Failed,Failed,Error, GH: Could not clone the repo
+genice,Failed,Failed,Failed,Error, GH: Could not clone the repo
+icecream,Failed,Failed,Failed,Error, GH: Could not clone the repo
+dynamics365crm-python,Failed,Failed,Failed,Error, GH: No setup.py found
+rarfile,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pytest-tornado,0.8.1,0.8.1,Success,├── file list setup.cfg, NA
+opentelemetry-exporter-google-cloud,Failed,Failed,Failed,Error, GH: Could not clone the repo
+qrtools,0.0.1,0.0.2,Success,├── file list setup.py src, NA
+justbackoff,0.6.0,0.6.0,Success,├── file list README.md setup.cfg, NA
+youtube-dlc,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+watchmaker,Failed,Failed,Failed,Error, GH: No version found in setup.py
+aws-cdk-aws-codestarnotifications,Failed,Failed,Failed,Error, GH: Could not clone the repo
+scription,0.86.211,0.86.20,Success,├── file list scription setup.py, NA
+portforward,0.5.0,0.5.0,Success,├── file list docs setup.cfg, NA
+sourcemap,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pinkboto,Failed,Failed,Failed,Error, GH: Could not clone the repo
+recsim,0.2.4,0.2.4,Success,├── file list recsim, NA
+azure-functions-devops-build,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+jsonplus,Failed,Failed,Failed,Error, GH: No setup.py found
+simplewebsocketserver,Failed,Failed,Failed,Error, GH: Could not clone the repo
+buildflaskapp,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+plydata,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+z3c-macro,3.0.0,2.3,Success,├── file list CHANGES.rst MANIFEST.in setup.cfg setup.py src tox.ini, NA
+galaxy-importer,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyaztro,0.3,0.3,Success,├── file list, NA
+aws-cdk-aws-detective,Failed,Failed,Failed,Error, GH: Could not clone the repo
+azure-cli-dms,Failed,Failed,Failed,Error, GH: Could not clone the repo
+datrie,0.8.2,0.8.2,Success,├── file list libdatrie setup.cfg, NA
+get-docker-secret,1.0.2,1.0.2,Success,├── file list, NA
+volta,0.7.2,0.7.3,Success,├── file list setup.py volta, NA
+salesforce-streaming-client,0.1.13,0.1.13,Success,├── file list README.rst src, NA
+export-to-telegraph,0.0.148,0.0.148,Success,├── file list, NA
+quality-report,Failed,Failed,Failed,Error, GH: No setup.py found
+pixiedust,1.1.19,1.1.19,Success,├── file list README.md setup.cfg, NA
+sagemaker-tensorflow-training,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+robotframework-screencaplibrary,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyspf,Failed,Failed,Failed,Error, GH: Could not clone the repo
+emtwo-extensions,Failed,Failed,Failed,Error, GH: No version found in setup.py
+cloudformation-cli-go-plugin,Failed,Failed,Failed,Error, GH: Could not clone the repo
+ming,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+robotbackgroundlogger,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+incuna-test-utils,Failed,Failed,Failed,Error, GH: Could not clone the repo
+django-migration-testcase,0.0.15,0.0.15,Success,├── file list, NA
+python-prtree,0.6.0,0.6.0,Success,├── file list src third, NA
+aws-cdk-aws-opsworkscm,Failed,Failed,Failed,Error, GH: Could not clone the repo
+pysdl2,Failed,Failed,Failed,Error, GH: No version found in setup.py
+django-loginas,Failed,Failed,Failed,Error, GH: Could not clone the repo
+redo,2.0.4,2.0.4,Success,├── file list setup.cfg setup.py src, NA
+tardis-client,Failed,Failed,Failed,Error, GH: No setup.py found
+aiohttp-jinja2,Failed,Failed,Failed,Error, GH: Could not clone the repo
+gecosistema-spatial,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+mirakuru,Failed,Failed,Failed,Error, GH: No setup.py found
+python-docx,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+futures,3.4.0,3.4.0,Success,├── file list setup.cfg, NA
+genomeworks-cuda-10-0,Failed,Failed,Failed,Error, GH: No setup.py found
+conf,0.4.1,0.3.1,Success,├── file list README.rst conf setup.py, NA
+class-namespaces,0.6.5,0.6.3,Success,├── file list README.rst setup.py, NA
+record,4.1.0,4.0,Success,├── file list CHANGES.rst setup.cfg setup.py src, NA
+nnaudio,Failed,Failed,Failed,Error, GH: No setup.py found
+dreal,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pymapd,Failed,Failed,Failed,Error, GH: No version found in setup.py
+bioinfokit,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+c2cgeoform,..2.1.28,2.1.26,Success,├── file list c2cgeoform setup.cfg setup.py tests.ini, NA
+geojson-rewind,Failed,Failed,Failed,Error, GH: No setup.py found
+kwconfig,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyobjc-framework-latentsemanticmapping,Failed,Failed,Failed,Error, GH: Could not clone the repo
+mypy-boto3-groundstation,Failed,Failed,Failed,Error, GH: Could not clone the repo
+paramiko-expect,0.3.5,0.3.5,Success,├── file list setup.cfg test, NA
+piexif,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+python-schema-registry-client,Failed,Failed,Failed,Error, GH: No setup.py found
+eddington,0.0.24.2,0.0.24.2,Success,├── file list setup.cfg src, NA
+sparkdl,Failed,Failed,Failed,Error, GH: No setup.py found
+factotum,0.1.6,0.1.6,Success,├── file list, NA
+azureml,0.2.7,0.2.7,Failed,Error, Not Error from GithHub PyPi: Could not fetch PyPi Source
+robotpy-wpimath,Failed,Failed,Failed,Error, GH: No version found in setup.py
+pyspark-util,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+napari-plugin-engine,Failed,Failed,Failed,Error, GH: No version found in setup.py
+flake8-variables-names,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+pyevtk,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+django-koldar-utils,Failed,Failed,Failed,Error, GH: No setup.py found
+red-discordbot,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+cloudformation-cli-typescript-plugin,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+importanize,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+noahong,0.10.0,0.11.0,Success,├── file list setup.py src, NA
+pytest-reportportal,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+schul-cloud-search-tests,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+plone-resourceeditor,4.0.1.0,4.0.0,Success,├── file list setup.cfg setup.py, NA
+pyobjc-framework-corewlan,Failed,Failed,Failed,Error, GH: Could not clone the repo
+xstatic-objectpath,Failed,Failed,Failed,Error, GH: No setup.py found
+twitter-common-confluence,Failed,Failed,Failed,Error, GH: No setup.py found
+accumulation-tree,0.6.2,0.6.2,Success,├── file list README.md, NA
+terraform-compliance,Failed,Failed,Failed,Error, GH: No version found after checking __init__.py
+bothub,0.1.30,0.1.30,Success,├── file list setup.cfg tests, NA
+netman,Failed,Failed,Failed,Error, GH: No version found in setup.py
+tencentcloud-sdk-python-ba,Failed,Failed,Failed,Error, GH: Could not clone the repo
+oyaml,1.0,1.0,Success,├── file list README.rst setup.cfg setup.py, NA
+tblib,2.0.0,2.0.0,Success,├── file list pyproject.toml src, NA
+mypy-boto3-swf,Failed,Failed,Failed,Error, GH: Could not clone the repo
+simba-uw-tf,1.59.3,1.3.12,Success,├── file list README.md setup.py simba, NA
+py3amf,0811,0.8.10,Success,├── file list CHANGES.txt MANIFEST.in cpyamf doc pyamf setup.cfg setup.py setupinfo.py, NA
+linode-python,1.2,1.1.1,Success,├── file list linode setup.py, NA
+aioconsole,0.6.2.0,0.6.1,Success,├── file list setup.cfg setup.py, NA
