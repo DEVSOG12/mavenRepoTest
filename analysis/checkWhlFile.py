@@ -18,6 +18,8 @@ def getLineStartPoint(path):
 
     return (k[-1] if len(k) > 0 else 1) + 1
 
+
+
 def check_whl_file(data):
     gitH = analyze.getRepoGH(data[1])
 
@@ -47,7 +49,16 @@ def check_whl_file(data):
         name = os.listdir(directory + "/dist")[0]
 
         # Compare the two wheel files
-        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
+        # os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
+
+        # Use reprotest to check if the file is reproducible
+
+        os.system("reprotest 'python3 setup.py bdist_wheel' {}".format(directory))
+
+
+
+
+
 
         # check if the file is reproducible
         if os.path.exists("output.html"):
@@ -65,33 +76,33 @@ if __name__ == '__main__':
     records = json.loads(open('data/records.json', 'r').read())
     print(len(records['queue']))
     # for record in records['queue']:
-    # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
-    # print(rep)
-
-    for record in records['queue']:
-        rep = check_whl_file(record)
-        if rep[0]:
-            records = json.loads(analyze.read_json()[0])
-            records["queue"].remove(record)
-            records["results"].append({
-                "project": record[0],
-                "gh_version": rep[1],
-                "status": rep[2],
-                })
-            analyze.write_json(records)
-            print("Done with {}".format(record[0]))
-        else:
-            records = json.loads(analyze.read_json()[0])
-            records["queue"].remove(record)
-            records["results"].append({
-                "project": record[0],
-                "gh_version": rep[2],
-                "status": rep[1],
-                "error": rep[3]
-                })
-            analyze.write_json(records)
-            print("Done with {}".format(record[0]))
-
+    rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
+    print(rep)
+    #
+    # for record in records['queue']:
+    #     rep = check_whl_file(record)
+    #     if rep[0]:
+    #         records = json.loads(analyze.read_json()[0])
+    #         records["queue"].remove(record)
+    #         records["results"].append({
+    #             "project": record[0],
+    #             "gh_version": rep[1],
+    #             "status": rep[2],
+    #             })
+    #         analyze.write_json(records)
+    #         print("Done with {}".format(record[0]))
+    #     else:
+    #         records = json.loads(analyze.read_json()[0])
+    #         records["queue"].remove(record)
+    #         records["results"].append({
+    #             "project": record[0],
+    #             "gh_version": rep[2],
+    #             "status": rep[1],
+    #             "error": rep[3]
+    #             })
+    #         analyze.write_json(records)
+    #         print("Done with {}".format(record[0]))
+    #
 
 
 

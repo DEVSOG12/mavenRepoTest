@@ -11,8 +11,8 @@ with open('data/records.json', 'r') as f:
     print(len(data["results"]))
 
     # create a csv file
-    with open('data/records_fourth.csv', 'w') as f:
-        f.write("name,gh_version,pypi_version,status,diffoscope,error\n")
+    with open('data/records_fifth.csv', 'w') as f:
+        f.write("name,gh_version,status,diffoscope,error\n")
         data = data["results"]
         for record in data:
             print(record)
