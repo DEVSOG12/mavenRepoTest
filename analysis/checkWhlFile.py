@@ -49,11 +49,11 @@ def check_whl_file(data):
         name = os.listdir(directory + "/dist")[0]
 
         # Compare the two wheel files
-        # os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
+        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
 
         # Use reprotest to check if the file is reproducible ignore zipinfo
 
-        os.system("reprotest 'python3 setup.py bdist_wheel' {} ".format(directory))
+        # os.system("reprotest 'python3 setup.py bdist_wheel' {} ".format(directory))
 
         # reprotest --diffoscope-args=--exclude-directory-metadata=recursive 'python3 setup.py bdist' 'dist/*.tar.gz'
 
@@ -81,30 +81,30 @@ if __name__ == '__main__':
     # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
     # print(rep)
     #
-    # for record in records['queue']:
-    #     rep = check_whl_file(record)
-    #     if rep[0]:
-    #         records = json.loads(analyze.read_json()[0])
-    #         records["queue"].remove(record)
-    #         records["results"].append({
-    #             "project": record[0],
-    #             "gh_version": rep[1],
-    #             "status": rep[2],
-    #             })
-    #         analyze.write_json(records)
-    #         print("Done with {}".format(record[0]))
-    #     else:
-    #         records = json.loads(analyze.read_json()[0])
-    #         records["queue"].remove(record)
-    #         records["results"].append({
-    #             "project": record[0],
-    #             "gh_version": rep[2],
-    #             "status": rep[1],
-    #             "error": rep[3]
-    #             })
-    #         analyze.write_json(records)
-    #         print("Done with {}".format(record[0]))
-    #
+    for record in records['queue']:
+        rep = check_whl_file(record)
+        if rep[0]:
+            records = json.loads(analyze.read_json()[0])
+            records["queue"].remove(record)
+            records["results"].append({
+                "project": record[0],
+                "gh_version": rep[1],
+                "status": rep[2],
+                })
+            analyze.write_json(records)
+            print("Done with {}".format(record[0]))
+        else:
+            records = json.loads(analyze.read_json()[0])
+            records["queue"].remove(record)
+            records["results"].append({
+                "project": record[0],
+                "gh_version": rep[2],
+                "status": rep[1],
+                "error": rep[3]
+                })
+            analyze.write_json(records)
+            print("Done with {}".format(record[0]))
+    
 
 
 
