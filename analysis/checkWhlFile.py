@@ -51,9 +51,11 @@ def check_whl_file(data):
         # Compare the two wheel files
         # os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
 
-        # Use reprotest to check if the file is reproducible
+        # Use reprotest to check if the file is reproducible ignore zipinfo
 
-        os.system("reprotest 'python3 setup.py bdist_wheel' {}".format(directory))
+        os.system("reprotest 'python3 setup.py bdist_wheel' {} ".format(directory))
+
+        # reprotest --diffoscope-args=--exclude-directory-metadata=recursive 'python3 setup.py bdist' 'dist/*.tar.gz'
 
 
 
@@ -72,12 +74,12 @@ def check_whl_file(data):
 
 
 if __name__ == '__main__':
-    # pickRandom(90)
+    # pickRandom(300)
     records = json.loads(open('data/records.json', 'r').read())
     print(len(records['queue']))
     # for record in records['queue']:
-    rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
-    print(rep)
+    # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
+    # print(rep)
     #
     # for record in records['queue']:
     #     rep = check_whl_file(record)
