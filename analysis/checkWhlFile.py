@@ -40,13 +40,15 @@ def check_whl_file(data):
             os.environ["SOURCE_DATE_EPOCH"] = "315532800"
 
         # Build the wheel file
-        os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w " + directory + "/dist")
+        os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w " + "./dist")
 
         # Build the wheel again with differnt name
-        os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w " + directory + "/dist2")
+        os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w "  + "./dist2")
 
         # Name of the wheel file. top file in dir
-        name = os.listdir(directory + "/dist")[0]
+        namel = os.listdir(directory + "/dist")
+
+        name = namel[0] if len(namel) > 0 else: pass
 
         # Compare the two wheel files
         os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
@@ -73,7 +75,7 @@ def check_whl_file(data):
 
 
 if __name__ == '__main__':
-    # pickRandom(2)
+    # pickRandom(5)
     records = json.loads(open('data/records.json', 'r').read())
     print(len(records['queue']))
     # # for record in records['queue']:
