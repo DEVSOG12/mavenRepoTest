@@ -55,7 +55,7 @@ def check_whl_file(data):
         if not name:
             return [False, "Error", "Not Determined", gitH[1]]
         # Compare the two wheel files
-        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html ./data/outs/{}.html ".format(name) + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
+        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html "+ directory + "/data/outs/{}.html ".format(name) + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
 
         # Use reprotest to check if the file is reproducible ignore zipinfo
 
@@ -68,7 +68,7 @@ def check_whl_file(data):
 
 
         # check if the file is reproducible
-        if os.path.exists("./data/outs/{}.html".format(name)):
+        if os.path.exists(directory + "/data/outs/{}.html".format(name)):
             return [False, "Not Reproducible", gitH[1] ,"NA"]
 
         else:
@@ -79,13 +79,13 @@ def check_whl_file(data):
 
 
 if __name__ == '__main__':
-    # pickRandom(26)
+    # pickRandom(49)
     records = json.loads(open('data/records.json', 'r').read())
-    print(len(records['queue']))
-    # # for record in records['queue']:
-    # # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
-    # # print(rep)
-    # #
+    # print(len(records['queue']))
+    # # # for record in records['queue']:
+    # # # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
+    # # # print(rep)
+    # # #
     for record in records['queue']:
         rep = check_whl_file(record)
         if rep[0]:
