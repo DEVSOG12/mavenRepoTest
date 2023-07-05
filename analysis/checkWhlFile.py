@@ -35,6 +35,8 @@ def check_whl_file(data):
         # Add a line after the import in the setup.py file
         directory = gitH[1]
 
+        print(directory)
+
         # Check if Env variable is set
         if not os.environ.get("SOURCE_DATE_EPOCH"):
             os.environ["SOURCE_DATE_EPOCH"] = "315532800"
@@ -48,10 +50,12 @@ def check_whl_file(data):
         # Name of the wheel file. top file in dir
         namel = os.listdir(directory + "/dist")
 
-        name = namel[0] if len(namel) > 0 else: pass
+        name = namel[0] if len(namel) > 0 else None
 
+        if not name:
+            return [False, "Error", "Not Determined", gitH[1]]
         # Compare the two wheel files
-        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html output.html " + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
+        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html ./data/outs/{}.html ".format(name) + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
 
         # Use reprotest to check if the file is reproducible ignore zipinfo
 
@@ -64,7 +68,7 @@ def check_whl_file(data):
 
 
         # check if the file is reproducible
-        if os.path.exists("output.html"):
+        if os.path.exists("./data/outs/{}.html".format(name)):
             return [False, "Not Reproducible", gitH[1] ,"NA"]
 
         else:
@@ -75,7 +79,7 @@ def check_whl_file(data):
 
 
 if __name__ == '__main__':
-    # pickRandom(5)
+    # pickRandom(26)
     records = json.loads(open('data/records.json', 'r').read())
     print(len(records['queue']))
     # # for record in records['queue']:
@@ -105,7 +109,7 @@ if __name__ == '__main__':
                 })
             analyze.write_json(records)
             print("Done with {}".format(record[0]))
-    
+
 
 
 
