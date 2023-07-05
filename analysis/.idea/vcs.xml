@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/google-ads-python/github_google-ads-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/jsonmodels/github_jsonmodels" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/travis-sphinx/github_travis-sphinx" vcs="Git" />
   </component>
 </project>

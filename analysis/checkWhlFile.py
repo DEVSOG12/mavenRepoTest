@@ -3,8 +3,16 @@ import os
 import analyze
 import json
 def pickRandom(n):
-    for i in range(n):
-        analyze.randomProject()
+    i = 0
+    while i < n:
+        if analyze.randomProject():
+            print("Success")
+            i += 1
+        else:
+            print("Failed")
+
+
+
 
 def getLineStartPoint(path):
     # Given the path for the setup.py file, return the line number where the the last import statement is
@@ -25,19 +33,11 @@ def check_whl_file(data):
 
     if gitH[0]:
         # Add a line after the import in the setup.py file
-        directory = gitH[2]
+        directory = gitH[1]
 
-        # edit the setup.py file and add:
-        # Line 1: import os and Line 2: os.environ["SOURCE_DATE_EPOCH"] = "315532800"
-        with open(directory + "/setup.py", 'r') as f:
-            lines = f.readlines()
-            num = getLineStartPoint(directory + "/setup.py")
-            lines.insert(num, "import os\n")
-            lines.insert(num + 1, 'os.environ["SOURCE_DATE_EPOCH"] = "315532800"\n')
-            f.close()
-        with open(directory + "/setup.py", 'w') as f:
-            f.writelines(lines)
-            f.close()
+        # Check if Env variable is set
+        if not os.environ.get("SOURCE_DATE_EPOCH"):
+            os.environ["SOURCE_DATE_EPOCH"] = "315532800"
 
         # Build the wheel file
         os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w " + directory + "/dist")
@@ -53,10 +53,9 @@ def check_whl_file(data):
 
         # Use reprotest to check if the file is reproducible ignore zipinfo
 
-        # os.system("reprotest 'python3 setup.py bdist_wheel' {} ".format(directory))
+        # os.system("reprotest --diffoscope-arg=\"--exclude-directory-metadata=recursive\" 'python3 setup.py bdist' 'dist/*.tar.gz'")
 
-        # reprotest --diffoscope-args=--exclude-directory-metadata=recursive 'python3 setup.py bdist' 'dist/*.tar.gz'
-
+        # reprotest --diffoscope-arg="--exclude-directory-metadata=recursive" 'python3 setup.py bdist' 'dist/*.tar.gz'
 
 
 
@@ -74,13 +73,13 @@ def check_whl_file(data):
 
 
 if __name__ == '__main__':
-    # pickRandom(300)
+    # pickRandom(2)
     records = json.loads(open('data/records.json', 'r').read())
     print(len(records['queue']))
-    # for record in records['queue']:
-    # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
-    # print(rep)
-    #
+    # # for record in records['queue']:
+    # # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
+    # # print(rep)
+    # #
     for record in records['queue']:
         rep = check_whl_file(record)
         if rep[0]:

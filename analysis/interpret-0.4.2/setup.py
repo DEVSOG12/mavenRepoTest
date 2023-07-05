@@ -3,6 +3,12 @@
 
 from setuptools import setup, find_packages
 
+import os
+
+os.environ["SOURCE_DATE_EPOCH"] = "315532800"
+
+
+
 name = "interpret"
 # NOTE: Version is replaced by a regex script.
 version = "0.4.2"

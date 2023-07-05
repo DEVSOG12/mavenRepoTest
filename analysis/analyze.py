@@ -61,42 +61,9 @@ def getRepoGH(link):
     #add a :@ before github
     link = link.replace('github', ':@github')
 
-
     try:
         Repo.clone_from(link, os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}'.format(link.split('/')[-1])))
-
-        # Get the version number from setup.py in the repo
-        version = None
-        name = None
-        try:
-            with open(os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}/setup.py'.format(link.split('/')[-1])), 'r') as f:
-                setup = f.readlines()
-                try:
-                    version = [i for i in setup if i.strip().startswith("version")][0].split('=')[1].strip().replace("'", "")
-                except Exception as e:
-                    print(e)
-                    print("No version found in setup.py")
-                    return [False, "No version found in setup.py", ]
-
-                # Check if version has  a digit in it
-                if not any(char.isdigit() for char in version):
-                    ifname = getMainFolder(os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}'.format(link.split('/')[-1])))
-                    if (ifname is list) and ifname[0]:
-                        name = ifname[1].split('/')[-1]
-                        # Load the version directly from __init__.py module
-
-                        with open(os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}/{1}/__init__.py'.format(link.split('/')[-1], name)), 'r') as f:
-                            init = f.readlines()
-                            version = [i for i in init if '__version__' in i][0].split('=')[1].strip().replace("'", "")
-                    else:
-                        print("No version found after checking __init__.py")
-                        return [False, "No version found after checking __init__.py", ]
-        except Exception as e:
-            print(e)
-            print("No setup.py found")
-            return [False, "No setup.py found", ]
-
-        return [True, version, os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}'.format(link.split('/')[-1]))]
+        return [True, os.path.join(os.path.dirname(__file__), 'data/repos/{0}/github_{0}'.format(link.split('/')[-1]))]
 
     except Exception as e:
         print("Could not clone the repo")
@@ -156,11 +123,21 @@ def randomProject():
         print("Already Selected")
         pass
     else:
+
+        # Check if Github link is valid by requesting it
+        try:
+            r = requests.get(read_csv()[rand].split(',')[1])
+            print("Github Link is valid")
+        except Exception as e:
+            print("Github Link is not valid")
+            print(e)
+            return False
+
         print("Selecting: " + read_csv()[rand].split(',')[0])
         print("Details: " + read_csv()[rand].split(',')[0] + " " + read_csv()[rand].split(',')[1])
         records["queue"].append([read_csv()[rand].split(',')[0], read_csv()[rand].split(',')[1]])
         write_json(records)
-        return list(read_csv()[rand].split(',')[0:2])
+        return True
 
         # case _:
         #     print("Invalid input")
