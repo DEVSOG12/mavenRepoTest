@@ -107,7 +107,7 @@ if __name__ == '__main__':
         os.system("cd ../..")
 
         if rep[0]:
-            record = json.loads(open('data/recordsTesting.json', 'r').read())
+            record = json.loads(open('~/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
             record = record['results']
             records.append({
                 "project": records[i][0],
@@ -118,7 +118,7 @@ if __name__ == '__main__':
             analyze.write_json(records)
             print("Done with {}".format(records[i][0]))
         else:
-            records = json.loads(open('data/recordsTesting.json', 'r').read())
+            records = json.loads(open('~/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
             records = records['results']
             records.append({
                 "project": records[i][0],
