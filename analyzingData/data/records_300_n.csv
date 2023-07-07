@@ -1,0 +1,299 @@
+name,status
+gapic-google-cloud-error-reporting-v1beta1,Not Determined
+xviz-avs,Not Determined
+lpc-checksum,Not Determined
+ambition-ae,Not Determined
+edx-sphinx-theme,Reproducible
+pydoe2,Reproducible
+device-detector,Reproducible
+func-timeout,Reproducible
+decorating,Reproducible
+osmnx,Not Determined
+mtwaffle,Reproducible
+pyboy,Reproducible
+recurring-ical-events,Reproducible
+apiclient,Reproducible
+pysqlite3,Not Determined
+cachy,Reproducible
+durationpy,Reproducible
+thingy,Reproducible
+collective-solr,Reproducible
+warrant,Reproducible
+django-stubs,Reproducible
+ceph-deploy,Reproducible
+pyobjc-framework-classkit,Not Determined
+lrcurve,Not Determined
+colorclass,Not Determined
+torweb,Not Determined
+pytest-metadata,Not Determined
+aionotify,Reproducible
+mbed-os-tools,Reproducible
+pymisp,Not Determined
+yalesmartalarmclient,Reproducible
+dosk,Not Determined
+plone-app-locales,Reproducible
+pfifo,Not Determined
+hap-python,Reproducible
+decopt,Reproducible
+py-nextbusnext,Reproducible
+django-sso-app,Reproducible
+products-genericsetup,Reproducible
+sphinx-version-warning,Reproducible
+dagster-dask,Not Determined
+googleauthentication,Reproducible
+celery-progress,Reproducible
+tencentcloud-sdk-python-iotvideoindustry,Reproducible
+pex,Not Determined
+haversine,Reproducible
+antidote,Reproducible
+tf-models-official,Not Determined
+commonmark,Reproducible
+arris-tg2492lg,Not Determined
+easyserializer,Reproducible
+mypy-boto3-kms,Not Determined
+mypy-boto3-mediaconvert,Not Determined
+cucumber-tag-expressions,Not Determined
+email-validator,Reproducible
+itchat,Not Determined
+airbrake,Not Determined
+django-simple-captcha,Reproducible
+afs2-datasource,Not Determined
+based-latex,Reproducible
+pyformat,Reproducible
+msal,Reproducible
+bpmn-rpa,Reproducible
+flake8-2020,Reproducible
+aws-solutions-constructs-core,Not Determined
+labml,Not Determined
+plyara,Reproducible
+salttesting,Reproducible
+fiftyone,Reproducible
+simple-discord,Not Determined
+fx-crash-sig,Reproducible
+redlock-py,Not Determined
+azure-iot-hub,Not Determined
+preshed,Not Determined
+mixpanel-py,Reproducible
+dbnd-airflow-monitor,Reproducible
+notion,Reproducible
+chaid,Reproducible
+argo-models,Reproducible
+jupyters3,Reproducible
+hackoregon-sandbox,Not Determined
+mypy-boto3-network-firewall,Not Determined
+incuna-test-utils,Not Determined
+keymaker,Reproducible
+attrs-strict,Reproducible
+bgtasks,Reproducible
+glibc,Not Determined
+txaws,Reproducible
+pyflunearyou,Not Determined
+mamonsu,Reproducible
+django-python3-ldap,Reproducible
+hca,Not Determined
+starlette,Not Determined
+wavelink,Reproducible
+pycontrol4,Reproducible
+yas3fs,Not Determined
+drf-api-tracking,Reproducible
+ourairports,Not Determined
+isy994v5,Not Determined
+utlz,Reproducible
+pylodstorage,Reproducible
+aiogtts,Reproducible
+dqsegdb2,Reproducible
+aiohttp-retry,Reproducible
+aws-cdk-aws-eks,Not Determined
+aws-cdk-aws-lookoutvision,Not Determined
+albumentations,Reproducible
+django-rest-framework-social-oauth2,Reproducible
+synolopy,Reproducible
+aws-cdk-aws-synthetics,Not Determined
+mpldatacursor,Not Determined
+moodyeth,Reproducible
+py-rouge,Reproducible
+dgl-cu111,Reproducible
+example-pkg-naturalett,Reproducible
+py2-ipaddress,Not Determined
+flake8-html,Reproducible
+isbnlib,Reproducible
+sgp4,Reproducible
+flask-logging-extras,Reproducible
+lrcurve,Not Determined
+runjenkins,Reproducible
+pysigset,Reproducible
+spglm,Reproducible
+rich,Not Determined
+azure-cli-deploymentmanager,Not Determined
+blurb,Not Determined
+intake,Reproducible
+pystemd,Not Determined
+eml-parser,Reproducible
+geode-conversion,Not Determined
+kodipydent-alt,Not Determined
+django-health-check,Reproducible
+mantarray-waveform-analysis,Reproducible
+pygram11,Not Determined
+testing-postgresql,Reproducible
+mega-py,Reproducible
+mypy-boto3-ivs,Not Determined
+pytorch-pretrained-bert,Reproducible
+resnest,Reproducible
+django-pagination-fork,Reproducible
+environs,Reproducible
+asyncache,Not Determined
+ndmg,Not Determined
+cssselect,Reproducible
+websockify,Reproducible
+protobuf3-to-dict,Reproducible
+endesive,Reproducible
+json-rpc,Reproducible
+getit,Reproducible
+azure-cli-ams,Not Determined
+pyobjc-framework-networkextension,Not Determined
+gnupg,Not Determined
+hdrpy,Reproducible
+mypy-boto3-kinesisanalyticsv2,Not Determined
+django-auth-adfs,Not Determined
+brotlipy,Not Determined
+gs-dmarc,Reproducible
+transit-python,Reproducible
+spanishconjugator,Reproducible
+altimeter,Not Determined
+azure-mgmt-iothub,Not Determined
+flax,Reproducible
+pyobjc-framework-diskarbitration,Not Determined
+buche,Not Determined
+polyaxon-dockerizer,Not Determined
+xmpppy,Reproducible
+prettierfier,Reproducible
+filesystems,Reproducible
+toucan-connectors,Not Determined
+timedelta,Reproducible
+django-channels-graphql-ws,Not Determined
+python-configuration,Not Determined
+pyrebase4,Reproducible
+environs,Not Determined
+subprocrunner,Reproducible
+openevsewifi,Not Determined
+css-parser,Reproducible
+json2object,Reproducible
+striprtf,Reproducible
+tethys-utils,Not Determined
+georss-ign-sismologia-client,Reproducible
+strenum,Reproducible
+pysocks,Reproducible
+jinja2-pluralize,Reproducible
+ansible-lint,Reproducible
+retry,Reproducible
+mypy-boto3-qldb-session,Not Determined
+urlunshort3,Not Determined
+cg,Reproducible
+descarteslabs,Reproducible
+edt,Not Determined
+pantsbuild-pants-contrib-node,Not Determined
+pysnmp-apps,Not Determined
+coinor-dippy,Not Determined
+distro,Reproducible
+aws-cdk-aws-servicecatalogappregistry,Not Determined
+infi-hbaapi,Not Determined
+rest-condition,Reproducible
+beerbolaget,Reproducible
+pandevice,Not Determined
+intervals,Reproducible
+pyiso,Reproducible
+pyramid-swagger,Reproducible
+rpcq,Reproducible
+indy-crypto,Not Determined
+mxnet-cu91,Not Determined
+colour-runner,Reproducible
+openpyxl-templates,Reproducible
+pynmea2,Reproducible
+magicdb,Not Determined
+connection,Reproducible
+pillow-pil,Reproducible
+twistedchecker,Reproducible
+cwltest,Reproducible
+antidote,Not Determined
+argparse-addons,Not Determined
+dxl-dxpy,Not Determined
+dictpath,Not Determined
+eyecu-bumblebee,Not Determined
+alignmentrs,Not Determined
+fastbpe,Reproducible
+pylightxl,Reproducible
+readee,Not Determined
+pymiscutils,Reproducible
+azure-mgmt-datalake-nspkg,Not Determined
+nameparser,Reproducible
+attrs-strict,Not Determined
+torch-cluster,Not Determined
+pytest-mongodb,Reproducible
+rackspace-monitoring-cli,Not Determined
+aiohttp-json-rpc,Not Determined
+expressintegrations,Not Determined
+google-pasta,Reproducible
+dotscience,Reproducible
+flasgger,Not Determined
+tzdata,Reproducible
+pyspark-flame,Not Determined
+rctorchprivate,Not Determined
+pyobjc-framework-social,Not Determined
+html-slacker,Reproducible
+djangocms-helper,Reproducible
+frictionless,Not Determined
+httplib2,Reproducible
+django-sns-view,Not Determined
+udata,Not Determined
+zope-securitypolicy,Reproducible
+hellofresh-oa-data,Not Determined
+discord-py-self,Reproducible
+azure-mgmt-eventhub,Not Determined
+nathanjamestoolbox,Reproducible
+stock-crawler-utils,Not Determined
+mmcls,Reproducible
+rax-default-network-flags-python-novaclient-ext,Reproducible
+aws-cdk-aws-ssm,Not Determined
+pytest-logger,Reproducible
+wiremock,Not Determined
+docker-registry-client,Reproducible
+mypy-boto3-savingsplans,Not Determined
+pantab,Not Determined
+sphinxcontrib-httpexample,Reproducible
+html-text,Reproducible
+splunk-hec-handler,Reproducible
+python-constraint,Reproducible
+flake8-pyi,Not Determined
+honeybee-radiance-folder,Reproducible
+django-politico-fake-news,Not Determined
+django-useragents,Reproducible
+yawsso,Reproducible
+pyspeedtest,Reproducible
+envoy-base-utils,Not Determined
+cocotbext-uart,Reproducible
+sphinx-material,Reproducible
+juriscraper,Reproducible
+py-translate,Not Determined
+dss-python,Reproducible
+setuptools,Reproducible
+prestige-irc,Reproducible
+mxdevtool,Not Determined
+mypy-boto3-finspace,Not Determined
+nanoplot,Reproducible
+scikit-kinematics,Not Determined
+backports-tempfile,Reproducible
+pycpd,Reproducible
+pymovie,Reproducible
+rfc3986-validator,Reproducible
+dataclasses-json,Reproducible
+types-protobuf,Reproducible
+django-qsstats-magic,Reproducible
+choice,Reproducible
+parallel-ssh,Reproducible
+plasmidplots,Not Determined
+ib-insync,Reproducible
+swimlane-records-updater,Reproducible
+shutils,Reproducible
+rbfopt,Reproducible
+jupyter-ui-poll,Reproducible
+thunderfit,Not Determined

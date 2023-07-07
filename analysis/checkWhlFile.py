@@ -41,74 +41,66 @@ def check_whl_file(data):
         if not os.environ.get("SOURCE_DATE_EPOCH"):
             os.environ["SOURCE_DATE_EPOCH"] = "315532800"
 
-        # Build the wheel file
-        os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w " + "./dist")
+        # Run reprotest in variations
+        # First, run it with the default settings and check if the whl file is reproducible
+        # If not, run it with the variations
+        # If it is reproducible, return the variations that made it reproducible
+        # If it is not reproducible, return the variations that made it not reproducible
 
-        # Build the wheel again with differnt name
-        os.system("cd " + directory + " && pip wheel . --no-deps --no-build-isolation --no-clean -w "  + "./dist2")
-
-        # Name of the wheel file. top file in dir
-        namel = os.listdir(directory + "/dist")
-
-        name = namel[0] if len(namel) > 0 else None
-
-        if not name:
-            return [False, "Error", "Not Determined", gitH[1]]
-        # Compare the two wheel files
-        os.system("diffoscope --exclude-directory-metadata=recursive" + " " + "--html "+ directory + "/data/outs/{}.html ".format(name) + directory + "/dist/{} ".format(name) + directory + "/dist2/{}".format(name))
-
-        # Use reprotest to check if the file is reproducible ignore zipinfo
-
-        # os.system("reprotest --diffoscope-arg=\"--exclude-directory-metadata=recursive\" 'python3 setup.py bdist' 'dist/*.tar.gz'")
-
-        # reprotest --diffoscope-arg="--exclude-directory-metadata=recursive" 'python3 setup.py bdist' 'dist/*.tar.gz'
-
-
-
-
-
-        # check if the file is reproducible
-        if os.path.exists(directory + "/data/outs/{}.html".format(name)):
-            return [False, "Not Reproducible", gitH[1] ,"NA"]
-
+        # +all
+        # reprotest --diffoscope-arg='--html=out.html' --variations=+all 'pip wheel . --no-deps --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'
+        os.system("reprotest --diffoscope-arg='--html={}.html' --variations=+all 'pip wheel . --no-deps --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0]))
+        # Check if the whl file is reproducible
+        if os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
+            # If it is reproducible, return the variations that made it reproducible
+            return [True, "Reproducible", ]
         else:
-            return [True, "Reproducible", gitH[1], "NA"]
+            print("Not reproducible with +all")
 
-    else:
-        return [False, "Error", "Not Determined", gitH[1]]
+
+
 
 
 if __name__ == '__main__':
     # pickRandom(49)
     records = json.loads(open('data/records.json', 'r').read())
+
+    # parse records a s a list
+    records = [record.split(',') for record in records]
+    print(records)
+
+    for i in range(10):
+        rep = check_whl_file(records[i])
+        print(rep)
     # print(len(records['queue']))
     # # # for record in records['queue']:
     # # # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
     # # # print(rep)
     # # #
-    for record in records['queue']:
-        rep = check_whl_file(record)
-        if rep[0]:
-            records = json.loads(analyze.read_json()[0])
-            records["queue"].remove(record)
-            records["results"].append({
-                "project": record[0],
-                "gh_version": rep[1],
-                "status": rep[2],
-                })
-            analyze.write_json(records)
-            print("Done with {}".format(record[0]))
-        else:
-            records = json.loads(analyze.read_json()[0])
-            records["queue"].remove(record)
-            records["results"].append({
-                "project": record[0],
-                "gh_version": rep[2],
-                "status": rep[1],
-                "error": rep[3]
-                })
-            analyze.write_json(records)
-            print("Done with {}".format(record[0]))
+
+    # for record in records['queue']:
+    #     rep = check_whl_file(record)
+    #     if rep[0]:
+    #         records = json.loads(analyze.read_json()[0])
+    #         records["queue"].remove(record)
+    #         records["results"].append({
+    #             "project": record[0],
+    #             "gh_version": rep[1],
+    #             "status": rep[2],
+    #             })
+    #         analyze.write_json(records)
+    #         print("Done with {}".format(record[0]))
+    #     else:
+    #         records = json.loads(analyze.read_json()[0])
+    #         records["queue"].remove(record)
+    #         records["results"].append({
+    #             "project": record[0],
+    #             "gh_version": rep[2],
+    #             "status": rep[1],
+    #             "error": rep[3]
+    #             })
+    #         analyze.write_json(records)
+    #         print("Done with {}".format(record[0]))
 
 
 

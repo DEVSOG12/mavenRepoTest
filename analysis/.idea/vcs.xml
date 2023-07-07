@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/taskcluster-lib-urls/github_taskcluster-lib-urls" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data/repos/text-fabric/github_text-fabric" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/aiogTTS/github_aiogTTS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/aiohttp_retry/github_aiohttp_retry" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/aionotify/github_aionotify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/repos/albumentations/github_albumentations" vcs="Git" />
   </component>
 </project>
