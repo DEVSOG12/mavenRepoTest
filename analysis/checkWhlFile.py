@@ -103,9 +103,12 @@ if __name__ == '__main__':
 
     for i in range(1):
         rep = check_whl_file(records[i])
+        # Change directory to main directory
+        os.system("cd ../..")
+
         if rep[0]:
-            records = json.loads(open('data/recordsTesting.json', 'r').read())
-            records = records['results']
+            record = json.loads(open('data/recordsTesting.json', 'r').read())
+            record = record['results']
             records.append({
                 "project": records[i][0],
                 "status": "Fully Reproducible",
