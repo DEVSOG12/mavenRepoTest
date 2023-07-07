@@ -73,7 +73,7 @@ def check_whl_file(data):
         if not os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
             os.system('rm -rf dist && rm {}.html'.format(data[0]))
             # If it is reproducible,
-            return [True, "Reproducible", ]
+            return [True, "Reproducible"]
         else:
             os.system('rm -rf dist && rm {}.html'.format(data[0]))
             print("Not reproducible with +all")
@@ -89,6 +89,8 @@ def check_whl_file(data):
                     os.system('rm -rf dist && rm {}.html'.format(data[0]))
                     variations_not_reproducible.append(variation)
             return [False, "Not reproducible", variations_not_reproducible, variations_reproducible]
+    else:
+        return [False, "No repo", gitH[1]]
 
 
 if __name__ == '__main__':
@@ -101,7 +103,29 @@ if __name__ == '__main__':
 
     for i in range(1):
         rep = check_whl_file(records[i])
-        print(rep)
+        if rep[0]:
+            records = json.loads(open('data/recordsTesting.json', 'r').read())
+            records.append({
+                "project": records[i][0],
+                "status": "Fully Reproducible",
+                "variationsNonReproducible": [],
+                "variationsReproducible": ["all"]
+                })
+            analyze.write_json(records)
+            print("Done with {}".format(records[i][0]))
+        else:
+            records = json.loads(open('data/recordsTesting.json', 'r').read())
+            records.append({
+                "project": records[i][0],
+                "status": "Not Reproducible",
+                "variationsNonReproducible": rep[2],
+                "variationsReproducible": rep[3]
+                })
+            analyze.write_json(records)
+
+
+
+
     # print(len(records['queue']))
     # # # for record in records['queue']:
     # # # rep = check_whl_file(['google-ads-python', "https://github.com/googleads/google-ads-python"])
