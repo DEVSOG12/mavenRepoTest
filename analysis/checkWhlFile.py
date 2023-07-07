@@ -105,6 +105,7 @@ if __name__ == '__main__':
         rep = check_whl_file(records[i])
         if rep[0]:
             records = json.loads(open('data/recordsTesting.json', 'r').read())
+            records = records['results']
             records.append({
                 "project": records[i][0],
                 "status": "Fully Reproducible",
@@ -115,6 +116,7 @@ if __name__ == '__main__':
             print("Done with {}".format(records[i][0]))
         else:
             records = json.loads(open('data/recordsTesting.json', 'r').read())
+            records = records['results']
             records.append({
                 "project": records[i][0],
                 "status": "Not Reproducible",
