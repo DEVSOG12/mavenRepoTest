@@ -62,22 +62,33 @@ def check_whl_file(data):
         # --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'
         os.system("reprotest --diffoscope-arg='--html={}.html' --variations=+all 'pip wheel . --no-deps "
                   "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0]))
+
+        possible_variations = ["environment", "build_path", "user_group.available+=builduser:builduser", "fileordering",
+                               "home", "kernel", "locales", "exec_path", "time", "timezone", "umask" ]
+
+        variations_reproducible = []
+        variations_not_reproducible = []
+
         # Check if the whl file is reproducible
         if not os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
             os.system('rm -rf dist && rm {}.html'.format(data[0]))
-            # If it is reproducible, return the variations that made it reproducible
+            # If it is reproducible,
             return [True, "Reproducible", ]
         else:
             os.system('rm -rf dist && rm {}.html'.format(data[0]))
             print("Not reproducible with +all")
-            # If not, run it with the variations +environment
-            os.system("reprotest --diffoscope-arg='--html={}.html' --variations=-all,locales --variations=environment,"
-                      " 'pip wheel . --no-deps --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(
-                data[0]))
 
-
-
-
+            for variation in possible_variations:
+                os.system("reprotest --diffoscope-arg='--html={}.html' --variations=-all,{} 'pip wheel . --no-deps "
+                          "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0], variation))
+                # Check if the whl file is reproducible
+                if not os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
+                    os.system('rm -rf dist && rm {}.html'.format(data[0]))
+                    variations_reproducible.append(variation)
+                else:
+                    os.system('rm -rf dist && rm {}.html'.format(data[0]))
+                    variations_not_reproducible.append(variation)
+            return [False, "Not reproducible", variations_not_reproducible, variations_reproducible]
 
 
 if __name__ == '__main__':
@@ -88,7 +99,7 @@ if __name__ == '__main__':
     records = [record.split(',') for record in records]
     print(records)
 
-    for i in range(10):
+    for i in range(1):
         rep = check_whl_file(records[i])
         print(rep)
     # print(len(records['queue']))
