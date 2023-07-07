@@ -41,6 +41,10 @@ def check_whl_file(data):
         if not os.environ.get("SOURCE_DATE_EPOCH"):
             os.environ["SOURCE_DATE_EPOCH"] = "315532800"
 
+        # check if it has a setup.py file
+        if not os.path.exists(os.path.join(directory, 'setup.py')):
+            pass
+
         # Run reprotest in variations
         # First, run it with the default settings and check if the whl file is reproducible
         # If not, run it with the variations
