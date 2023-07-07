@@ -58,15 +58,23 @@ def check_whl_file(data):
         # If it is reproducible, return the variations that made it reproducible
         # If it is not reproducible, return the variations that made it not reproducible
 
-        # +all
-        # reprotest --diffoscope-arg='--html=out.html' --variations=+all 'pip wheel . --no-deps --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'
-        os.system("reprotest --diffoscope-arg='--html={}.html' --variations=+all 'pip wheel . --no-deps --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0]))
+        # +all reprotest --diffoscope-arg='--html=out.html' --variations=+all 'pip wheel . --no-deps
+        # --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'
+        os.system("reprotest --diffoscope-arg='--html={}.html' --variations=+all 'pip wheel . --no-deps "
+                  "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0]))
         # Check if the whl file is reproducible
-        if os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
+        if not os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
+            os.system('rm -rf dist && rm {}.html'.format(data[0]))
             # If it is reproducible, return the variations that made it reproducible
             return [True, "Reproducible", ]
         else:
+            os.system('rm -rf dist && rm {}.html'.format(data[0]))
             print("Not reproducible with +all")
+            # If not, run it with the variations +environment
+            os.system("reprotest --diffoscope-arg='--html={}.html' --variations=-all,locales --variations=environment,"
+                      " 'pip wheel . --no-deps --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(
+                data[0]))
+
 
 
 
