@@ -14,7 +14,7 @@ def read_json():
         return f.readlines()
 
 def write_json(data):
-    with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'w') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'data/recordsTesting.json'), 'w') as f:
         json.dump(data, f)
 
 def parseDiffoscopeOutput(output):

@@ -101,32 +101,33 @@ if __name__ == '__main__':
     records = [record.split(',') for record in records]
     print(records)
 
-    for i in range(1):
+    for i in range(len(records)):
         rep = check_whl_file(records[i])
         # Change directory to main directory
-        os.system("cd ../..")
+        # os.system("cd ../..")
 
         if rep[0]:
-            record = json.loads(open('~/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
+            record = json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
             record = record['results']
-            records.append({
+            record.append({
                 "project": records[i][0],
                 "status": "Fully Reproducible",
                 "variationsNonReproducible": [],
                 "variationsReproducible": ["all"]
                 })
-            analyze.write_json(records)
+            analyze.write_json({"results": record})
             print("Done with {}".format(records[i][0]))
         else:
-            records = json.loads(open('~/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
-            records = records['results']
-            records.append({
+            record = json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
+            record = record['results']
+            record.append({
                 "project": records[i][0],
                 "status": "Not Reproducible",
                 "variationsNonReproducible": rep[2],
                 "variationsReproducible": rep[3]
                 })
-            analyze.write_json(records)
+            analyze.write_json({"results": record})
+            print("Done with {}".format(records[i][0]))
 
 
 
