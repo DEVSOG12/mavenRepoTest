@@ -29,7 +29,7 @@ def getLineStartPoint(path):
 
 
 def check_whl_file(data):
-    gitH = analyze.getRepoGH(data[1])
+    gitH = analyze.getRepoGH(data["url"])
 
     if gitH[0]:
         # Add a line after the import in the setup.py file
@@ -38,8 +38,8 @@ def check_whl_file(data):
         print(directory)
 
         # Check if Env variable is set
-        if not os.environ.get("SOURCE_DATE_EPOCH"):
-            os.environ["SOURCE_DATE_EPOCH"] = "315532800"
+        # if not os.environ.get("SOURCE_DATE_EPOCH"):
+        #     os.environ["SOURCE_DATE_EPOCH"] = "315532800"
 
         # Change directory to the repo
         os.chdir(directory)
@@ -60,8 +60,8 @@ def check_whl_file(data):
 
         # +all reprotest --diffoscope-arg='--html=out.html' --variations=+all 'pip wheel . --no-deps
         # --no-build-isolation --no-clean -w ./dist' 'dist/*.whl'
-        os.system("reprotest --diffoscope-arg='--html={}.html' --variations=+all 'pip wheel . --no-deps "
-                  "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0]))
+        os.system("reprotest --diffoscope-arg='--html=./diffoscopeLogs/{}/all.html' --variations=+all 'pip wheel . --no-deps "
+                  "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data["project"]))
 
         possible_variations = ["environment", "build_path", "user_group.available+=builduser:builduser", "fileordering",
                                "home", "kernel", "locales", "exec_path", "time", "timezone", "umask" ]
@@ -70,23 +70,26 @@ def check_whl_file(data):
         variations_not_reproducible = []
 
         # Check if the whl file is reproducible
-        if not os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
-            os.system('rm -rf dist && rm {}.html'.format(data[0]))
+        if not os.path.exists(os.path.join(directory, "./diffoscopeLogs/{}/all.html".format(data["project"]))):
+            os.system('rm -rf dist')
             # If it is reproducible,
             return [True, "Reproducible"]
         else:
-            os.system('rm -rf dist && rm {}.html'.format(data[0]))
+            os.system('rm -rf dist')
             print("Not reproducible with +all")
 
             for variation in possible_variations:
-                os.system("reprotest --diffoscope-arg='--html={}.html' --variations=-all,{} 'pip wheel . --no-deps "
-                          "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(data[0], variation))
+                os.system("reprotest --diffoscope-arg='--html=./diffoscopeLogs/{}/{}.html' --variations=-all,"
+                          "{} 'pip wheel . --no-deps"
+                          "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'"
+                          .format(data["project"], variation, variation))
                 # Check if the whl file is reproducible
-                if not os.path.exists(os.path.join(directory, "{}.html".format(data[0]))):
-                    os.system('rm -rf dist && rm {}.html'.format(data[0]))
+                if not os.path.exists(os.path.join(directory, "./diffoscopeLogs/{}/{}.html"
+                        .format(data["project"], variation))):
+                    os.system('rm -rf dist')
                     variations_reproducible.append(variation)
                 else:
-                    os.system('rm -rf dist && rm {}.html'.format(data[0]))
+                    os.system('rm -rf dist')
                     variations_not_reproducible.append(variation)
             return [False, "Not reproducible", variations_not_reproducible, variations_reproducible]
     else:
@@ -95,10 +98,10 @@ def check_whl_file(data):
 
 if __name__ == '__main__':
     # pickRandom(49)
-    records = json.loads(open('data/records.json', 'r').read())
+    records = json.loads(open('data/B_records.json', 'r').read())
 
     # parse records a s a list
-    records = [record.split(',') for record in records]
+    records = records['data']
     print(records)
 
     for i in range(len(records)):
@@ -107,27 +110,29 @@ if __name__ == '__main__':
         # os.system("cd ../..")
 
         if rep[0]:
-            record = json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
+            record = json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordTestingPlain.json', 'r').read())
             record = record['results']
             record.append({
-                "project": records[i][0],
+                "project": records[i]["project"],
+                "stars": records[i]["stars"],
                 "status": "Fully Reproducible",
                 "variationsNonReproducible": [],
                 "variationsReproducible": ["all"]
                 })
             analyze.write_json({"results": record})
-            print("Done with {}".format(records[i][0]))
+            print("Done with {}".format(records[i]["project"]))
         else:
-            record = json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordsTesting.json', 'r').read())
+            record = json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordTestingPlain.json', 'r').read())
             record = record['results']
             record.append({
-                "project": records[i][0],
+                "project": records[i]["project"],
+                "stars": records[i]["stars"],
                 "status": "Not Reproducible",
                 "variationsNonReproducible": rep[2],
                 "variationsReproducible": rep[3]
                 })
             analyze.write_json({"results": record})
-            print("Done with {}".format(records[i][0]))
+            print("Done with {}".format(records[i]["project"]))
 
 
 

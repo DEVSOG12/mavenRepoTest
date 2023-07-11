@@ -14,7 +14,7 @@ def read_json():
         return f.readlines()
 
 def write_json(data):
-    with open(os.path.join(os.path.dirname(__file__), 'data/recordsTesting.json'), 'w') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'w') as f:
         json.dump(data, f)
 
 def parseDiffoscopeOutput(output):
@@ -116,7 +116,7 @@ def randomProject():
 
     rand = random.randint(1, len(read_csv()))
 
-    records = json.loads(read_json()[0])
+    records = json.loads(open('data/records.json', 'r').read())
 
     print(records)
     if read_csv()[rand].split(',')[0] in records:
@@ -127,7 +127,16 @@ def randomProject():
         # Check if Github link is valid by requesting it
         try:
             r = requests.get(read_csv()[rand].split(',')[1])
-            print("Github Link is valid")
+            if r.status_code == 200:
+                # Check it doesn't redirect to another page
+                if r.url == read_csv()[rand].split(',')[1]:
+                    print("Github Link is valid")
+                else:
+                    print("Github Link is not valid")
+                    return False
+            else:
+                print("Github Link is not valid")
+                return False
         except Exception as e:
             print("Github Link is not valid")
             print(e)
@@ -135,7 +144,7 @@ def randomProject():
 
         print("Selecting: " + read_csv()[rand].split(',')[0])
         print("Details: " + read_csv()[rand].split(',')[0] + " " + read_csv()[rand].split(',')[1])
-        records["queue"].append([read_csv()[rand].split(',')[0], read_csv()[rand].split(',')[1]])
+        records.append(read_csv()[rand].split(',')[0])
         write_json(records)
         return True
 
@@ -207,12 +216,9 @@ def main():
 
 
 if __name__ == "__main__":
-    n = input("Number of projects to run: ")
-    for i in range(int(n)):
-        print("Running project: " + str(i))
-        main()
-     # Remove all the repos downloaded
-    os.system("rm -rf data/repos/*")
+    while len(json.loads(read_json()[0])) != 350:
+        randomProject()
+
 
 
 
