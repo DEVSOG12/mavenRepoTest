@@ -10,7 +10,7 @@ def read_csv():
         return f.readlines()
 
 def read_json():
-    with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'r') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'data/pypi_python_620.json'), 'r') as f:
         return f.readlines()
 
 def write_json(data):
@@ -116,7 +116,7 @@ def randomProject():
 
     rand = random.randint(1, len(read_csv()))
 
-    records = json.loads(open('data/records.json', 'r').read())
+    records = json.loads(open('data/pypi_python_620.json', 'r').read())
 
     rec_p = [i['project'] for i in records['data']]
 
@@ -154,7 +154,7 @@ def randomProject():
             }
 
         )
-        with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'w') as f:
+        with open(os.path.join(os.path.dirname(__file__), 'data/pypi_python_620.json'), 'w') as f:
             json.dump(records, f)
         return True
 
@@ -226,7 +226,7 @@ def main():
 
 
 if __name__ == "__main__":
-    while len(json.loads(read_json()[0])) != 410:
+    while len(json.loads(read_json()[0])) != 500:
         randomProject()
 
 

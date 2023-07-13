@@ -1,7 +1,7 @@
 # from analyze import versionize, parseDiffoscopeOutput
 
 import json
-import requests
+# import requests
 
 # def tranform():
 #     rep = ["awscli-plugin-endpoint", "aws-cdk-aws-cloudtrail", "webrtcvad", "gast", "upb-lib", "simple-term-menu", "gapic-google-cloud-logging-v2", "branca", "bertopic", "grafana-api", "word2vec", "technopy", "logger-bundle", "makefun", "azure-cognitiveservices-search-websearch", "split-folders", "connected-components-3d", "papermill", "lorem", "pyshac", "bytecode", "astral", "myo", "jsonpickle", "stackprinter", "docxbuilder", "edalize", "pymartini", "mypy-boto3-network-firewall", "azure-cli-backup", "python-pcre", "cfn-flip", "django-admin-multiple-choice-list-filter", "exchange-calendars", "easytrader", "flashday", "grpc-google-cloud-pubsub-v1", "resnest", "tfhelper", "ory-hydra-client", "selenium-base", "tencentcloud-sdk-python-taf", "mistletoe", "runai", "baymax", "urlextract", "minisom", "behave-pandas", "ulid2", "mkdocs-git-committers-plugin", "samsungtvws", "proactive", "django-pandas", "pydmxcontrol", "pymilvus", "vk-api", "oschmod", "bebi103", "cloudtools", "mypy-boto3-ec2", "pytest-flask", "download", "capy", "mypy-boto3-athena", "pythondata-cpu-rocket", "socketio-client", "nxpd", "data-converter", "qiskit-terra", "aws-cdk-aws-cloud9", "pygmsh", "pytest-custom-exit-code", "tencentcloud-sdk-python-iir", "sbvirtualdisplay", "rest-condition", "django-map-widgets", "tencentcloud-sdk-python-ecm", "articledateextractor", "insightface", "django-token", "tox-travis", "fcm-django", "python-gmaps", "wechaty-grpc", "django-feature-policy", "cprint", "django-oscar", "av", "aiohttp-json-api", "mkdocs-macros-plugin", "django-angular", "flake8-gl-codeclimate", "speak2mary", "pbd", "flow-network", "citeproc-py-styles", "stix2-patterns", "django-sso-app", "mkdocs-minify-plugin", "fuzzyfinder", "python-easyconfig", "mypy-boto3-elastictranscoder", "collections-extended", "feincms3", "javaobj-py3", "pyshorteners", "s3contents", "transmission-rpc", "pyminknow", "stone", "pytricia", "pkgconfig", "djangocms-installer", "tableaudocumentapi", "fatpack", "falcon-apispec", "zlhawq", "sobol-seq", "picmistandard", "museval", "dgl-cu101", "utlz", "azure-cognitiveservices-search-nspkg", "circuitbreaker", "azure", "peewee", "validx", "flake8-eradicate", "tencentcloud-sdk-python-tem", "django-db-readonly", "pyobjc-framework-fileproviderui", "snuggs", "ppscore", "vdms", "awscliv2", "linecache2", "dynamicforms", "trio-asyncio", "pytest-rerunfailures", "compressive-transformer-pytorch", "pym2149", "ldapdomaindump", "django-pizza", "jupyterlab-widgets", "kaggler", "pyzbar", "saspy", "opentelemetry-semantic-conventions", "quantum-gateway", "mypy-boto3-ssm-contacts", "ai", "twitterapi", "firexapp", "tencentcloud-sdk-python-tsw", "structlog-sentry", "django-registration", "pygments-markdown-lexer", "dyn", "pygeohash", "pyproject-parser", "pandas-alive", "textgenrnn", "nosecomplete", "kglobal", "aws-cdk-aws-codeartifact", "awslimitchecker", "b3j0f-utils", "zookeeper", "bit", "robotframework-assertion-engine", "datacube", "mypy-boto3-pinpoint-email", "pytgcalls"]
@@ -69,10 +69,11 @@ import requests
 
 # # curl -ni "https://api.github.com/search/repositories?q=more+useful+keyboard" -H 'Accept: application/vnd.github.preview'
 
-with open('data/recordsTestingPlain.json', 'r') as f:
+with open('data/pypi_python_620.json', 'r') as f:
     records = json.load(f)
 
-    print(len(records['results']))
+    print(len(records['data']))
 
     # Make a distrubution of number of distinct projects
+
 
