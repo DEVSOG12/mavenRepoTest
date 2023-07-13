@@ -59,6 +59,8 @@ def check_whl_file(data):
                                            "/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs/{}".format(
                                                    data["project"]))):
             os.system("mkdir /home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs/{}".format(data["project"]))
+        else:
+            pass
 
         # Run reprotest in variations
         # First, run it with the default settings and check if the whl file is reproducible
@@ -145,6 +147,7 @@ if __name__ == '__main__':
             print("Done with {}".format(records[i]["project"]))
         else:
             if rep[1] == "No repo":
+                i += 1
                 continue
             record = json.loads(
                 open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlain.json', 'r').read())
