@@ -14,7 +14,7 @@ def read_json():
         return f.readlines()
 
 def write_json(data):
-    with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'w') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'data/recordsTestingPlain.json'), 'w') as f:
         json.dump(data, f)
 
 def parseDiffoscopeOutput(output):
@@ -118,8 +118,10 @@ def randomProject():
 
     records = json.loads(open('data/records.json', 'r').read())
 
-    print(records)
-    if read_csv()[rand].split(',')[0] in records:
+    rec_p = [i['project'] for i in records['data']]
+
+    # print(records)
+    if read_csv()[rand].split(',')[0] in rec_p:
         print("Already Selected")
         pass
     else:
@@ -144,8 +146,16 @@ def randomProject():
 
         print("Selecting: " + read_csv()[rand].split(',')[0])
         print("Details: " + read_csv()[rand].split(',')[0] + " " + read_csv()[rand].split(',')[1])
-        records.append(read_csv()[rand].split(',')[0])
-        write_json(records)
+        records["data"].append(
+            {
+                "project": read_csv()[rand].split(',')[0],
+                "url": read_csv()[rand].split(',')[1],
+                "stars": -1
+            }
+
+        )
+        with open(os.path.join(os.path.dirname(__file__), 'data/records.json'), 'w') as f:
+            json.dump(records, f)
         return True
 
         # case _:
@@ -216,7 +226,7 @@ def main():
 
 
 if __name__ == "__main__":
-    while len(json.loads(read_json()[0])) != 350:
+    while len(json.loads(read_json()[0])) != 410:
         randomProject()
 
 
