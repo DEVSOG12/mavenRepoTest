@@ -69,11 +69,11 @@ import json
 
 # # curl -ni "https://api.github.com/search/repositories?q=more+useful+keyboard" -H 'Accept: application/vnd.github.preview'
 
-with open('data/pypi_python_620.json', 'r') as f:
-    records = json.load(f)
+# with open('data/pypi_python_620.json', 'r') as f:
+#     records = json.load(f)
 
-    print(len(records['data']))
+#     print(len(records['data']))
 
-    # Make a distrubution of number of distinct projects
+#     # Make a distrubution of number of distinct projects
 
 

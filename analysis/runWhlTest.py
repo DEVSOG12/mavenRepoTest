@@ -29,16 +29,20 @@ def runWhlTest(repoInfo, resultFile):
         return [False, "No setup.py file"]
 
     # Check if the repo has a diffoscopeLogs folder
-    if not os.path.exists('/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs/{}'.format(repoInfo[0])):
-        os.mkdir('/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs/{}'.format(repoInfo[0]))
+    if not os.path.exists('/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs{}'.format(resultFile)):
+        os.mkdir('/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs{}'.format(resultFile))
+
+
+    if not os.path.exists('/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs{}/{}'.format(resultFile,repoInfo[0])):
+        os.mkdir('/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogs{}/{}'.format(resultFile,repoInfo[0]))
 
     # Change directory to the repo
     os.chdir('/home/osolarin/ReproducibleTests/analysis/data/whlTest/{}'.format(repoInfo[0]))
 
     # Run the test
     exit_code = os.system("reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/analysis/data"
-                          "/diffoscopeLogs/{}/all.html' --variations=+all 'pip wheel . --no-deps"
-                          "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(repoInfo[0]))
+                          "/diffoscopeLogs{}/{}/all.html' --variations=+all 'pip wheel . --no-deps "
+                          "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(resultFile, repoInfo[0]))
 
     print("Exit Code: ", exit_code)
 
@@ -62,8 +66,8 @@ def runWhlTest(repoInfo, resultFile):
         # Try all other variations
         for variation in possible_variations:
             exit_code = os.system("reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/analysis/data"
-                                  "/diffoscopeLogs/{}/{}.html' --variations=+{} 'pip wheel . --no-deps"
-                                  "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(repoInfo[0],
+                                  "/diffoscopeLogs{}/{}/{}.html' --variations=+{} 'pip wheel . --no-deps "
+                                  "--no-build-isolation --no-clean -w ./dist' 'dist/*.whl'".format(resultFile, repoInfo[0],
                                                                                                     variation,
                                                                                                     variation))
             if exit_code == 0:
@@ -99,7 +103,8 @@ if __name__ == '__main__':
         "data"]
 
     numberOfProjects = k
-    while len(json.loads(open("/home/osolarin/ReproducibleTests/analysis/data/.json".format(finalizeName), 'r').read())[
+    k = len(dataset) - 1
+    while len(json.loads(open("/home/osolarin/ReproducibleTests/analysis/data/{}.json".format(finalizeName), 'r').read())[
                   "results"]) < numberOfProjects and k > 0:
         success = runWhlTest([dataset[k]["project"], dataset[k]["url"], dataset[k]["stars"]], finalizeName)
         if success[0]:
