@@ -71,7 +71,7 @@ def testGoReproducible(repoInfo, resultFileName):
     variations_not_reproducible = []
 
     try:
-        repo = Repo.clone_from(repoInfo[1], '/Users/oreofe/Projects/test/reproducibleTests/GoRepro/data/repos/{}'.format(repoInfo[0].replace("/", "_")))
+        repo = Repo.clone_from(repoInfo[1], '/home/osolarin/ReproducibleTests/GoRepro/data/repos/{}'.format(repoInfo[0].replace("/", "_")))
     except Exception as e:
         print("Could not clone the repo", e)
         return [False, "No repo"]
@@ -79,19 +79,19 @@ def testGoReproducible(repoInfo, resultFileName):
 
 
     # Check if the repo has a diffoscopeLogs folder
-    if not os.path.exists('/Users/oreofe/Projects/test/reproducibleTests/GoRepro/data/diffoscopeLogs{}'.format(resultFileName)):
-        os.mkdir('/Users/oreofe/Projects/test/reproducibleTests/GoRepro/data/diffoscopeLogs{}'.format(resultFileName))
+    if not os.path.exists('/home/osolarin/ReproducibleTests/GoRepro/data/diffoscopeLogs{}'.format(resultFileName)):
+        os.mkdir('/home/osolarin/ReproducibleTests/GoRepro/data/diffoscopeLogs{}'.format(resultFileName))
 
 
-    if not os.path.exists('/Users/oreofe/Projects/test/reproducibleTests/GoRepro/data/diffoscopeLogs{}/{}'.format(resultFileName, repoInfo[0].replace("/", "_"))):
-        os.mkdir('/Users/oreofe/Projects/test/reproducibleTests/GoRepro/data/diffoscopeLogs{}/{}'.format(resultFileName, repoInfo[0].replace("/", "_")))
+    if not os.path.exists('/home/osolarin/ReproducibleTests/GoRepro/data/diffoscopeLogs{}/{}'.format(resultFileName, repoInfo[0].replace("/", "_"))):
+        os.mkdir('/home/osolarin/ReproducibleTests/GoRepro/data/diffoscopeLogs{}/{}'.format(resultFileName, repoInfo[0].replace("/", "_")))
 
     # Change directory to the repo
-    os.chdir('/Users/oreofe/Projects/test/reproducibleTests/GoRepro/data/repos/{}'.format(
+    os.chdir('/home/osolarin/ReproducibleTests/GoRepro/data/repos/{}'.format(
         repoInfo[0].replace("/", "_"), repoInfo[0].replace("/", "_")))
 
     # Run the test
-    command = "reprotest --diffoscope-arg='--html=/Users/oreofe/Projects/test/reproducibleTests/GoRepro/" \
+    command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
               "data/diffoscopeLogs{}/{}/all.html' --variations=+all "\
               "\"go build -mod=mod -modcacherw -ldflags '-s -w -extldflags=-Z' -trimpath -o dist/bin\" "\
               "'dist/*'".format(resultFileName, repoInfo[0])
