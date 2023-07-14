@@ -125,7 +125,7 @@ if __name__ == '__main__':
     records = records['data']
     print(records)
     i = 0
-    while len(json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlain.json', 'r').read())[
+    while len(json.loads(open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlainAfterEpoch.json', 'r').read())[
                   'results']) < 400:
         rep = check_whl_file(records[i])
         # Change directory to main directory
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 
         if rep[0]:
             record = json.loads(
-                open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlain.json', 'r').read())
+                open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlainAfterEpoch.json', 'r').read())
             record = record['results']
             record.append({
                 "project": records[i]["project"],
@@ -150,7 +150,7 @@ if __name__ == '__main__':
                 i += 1
                 continue
             record = json.loads(
-                open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlain.json', 'r').read())
+                open('/home/osolarin/ReproducibleTests/analysis/data/recordsTestingPlainAfterEpoch.json', 'r').read())
             record = record['results']
             record.append({
                 "project": records[i]["project"],

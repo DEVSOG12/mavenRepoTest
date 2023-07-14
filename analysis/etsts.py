@@ -1,6 +1,7 @@
 # from analyze import versionize, parseDiffoscopeOutput
 
 import json
+import csv
 # import requests
 
 # def tranform():
@@ -76,4 +77,17 @@ import json
 
 #     # Make a distrubution of number of distinct projects
 
+
+with open('data/recordsTestingPlainTop100AfterEpoch.json', 'r') as f:
+    records = json.load(f)['results']
+
+    s = open('data/recordsTestingPlainTop100AfterEpoch.csv', 'w')
+    s.write("project, status, reproducibleVariants, nonReproducibleVariants, stars\n")
+    for i in range(len(records)):
+        s.write("{}, {}, {}, {}, {}\n".format(
+            records[i]['project'],
+            records[i]['status'],
+            str(records[i]['variationsReproducible']).replace(',',';'),
+            str(records[i]['variationsNonReproducible']).replace(',',';'),
+            records[i]['stars']))
 
