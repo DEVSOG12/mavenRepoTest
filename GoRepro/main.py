@@ -94,7 +94,7 @@ def testGoReproducible(repoInfo, resultFileName):
     command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
               "data/diffoscopeLogs{}/{}/all.html' --variations=+all "\
               "\"go build -mod=mod -modcacherw -ldflags '-s -w -extldflags=-Z' -trimpath -o dist/bin\" "\
-              "'dist/*'".format(resultFileName, repoInfo[0])
+              "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"))
     print(command)
     exit_code = os.system(command)
 
@@ -121,7 +121,7 @@ def testGoReproducible(repoInfo, resultFileName):
             command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
                       "data/diffoscopeLogs{}/{}/all.html' --variations=+{} " \
                       "\"go build -mod=mod -modcacherw -ldflags '-s -w -extldflags=-Z' -trimpath -o dist/bin\" " \
-                      "'dist/*'".format(resultFileName, repoInfo[0], variation)
+                      "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"), variation)
             print(command)
             exit_code = os.system(command)
             if exit_code == 0:
@@ -142,7 +142,7 @@ def testGoReproducible(repoInfo, resultFileName):
 
         print(record)
 
-        with open('/home/osolarin/ReproducibleTests/analysis/data/{}.json'.format(resultFileName), 'w') as f:
+        with open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format(resultFileName), 'w') as f:
             json.dump({"results": record}, f)
 
         return [True, "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible"]
@@ -155,7 +155,8 @@ if __name__ == "__main__":
         data = json.load(f)
         print(len(data['data']))
 
-        for i in range(1):
-            testGoReproducible([data['data'][i]['project'], data['data'][i]['url']], "go_Random400Results")
+        for i in range(0, len(data['data'])):
+            if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_Random400Results"):
+                continue
 
 
