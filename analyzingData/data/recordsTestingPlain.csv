@@ -1,0 +1,364 @@
+project, status, reproducibleVariants, nonReproducibleVariants, stars
+aiogtts, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7
+aiogtts, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7
+aiohttp-retry, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['environment'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], 192
+aionotify, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'exec_path'], ['build_path'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 115
+albumentations, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 12261
+ansible-lint, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 0
+antidote, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 84
+apiclient, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'home'; 'locales'; 'time'; 'umask'], 87
+argo-models, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'umask'], 8
+attrs-strict, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 47
+backports-tempfile, Not Reproducible, ['user_group.available+=builduser:builduser'; 'time'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'timezone'; 'umask'], -1
+based-latex, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+beerbolaget, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+bgtasks, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+bpmn-rpa, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+cachy, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+celery-progress, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+ceph-deploy, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'exec_path'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+cg, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+chaid, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['environment'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+choice, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+cocotbext-uart, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+collective-solr, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+colour-runner, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+commonmark, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+connection, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+css-parser, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'; 'timezone'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+cssselect, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+cwltest, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+dataclasses-json, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+dbnd-airflow-monitor, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'], ['environment'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+decopt, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+decorating, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+descarteslabs, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+device-detector, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+dgl-cu111, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'exec_path'], ['environment'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+discord-py-self, Not Reproducible, ['user_group.available+=builduser:builduser'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+distro, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+django-health-check, Not Reproducible, ['user_group.available+=builduser:builduser'; 'time'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'timezone'; 'umask'], -1
+django-pagination-fork, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'locales'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+django-python3-ldap, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+django-qsstats-magic, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+django-rest-framework-social-oauth2, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+django-simple-captcha, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'locales'; 'timezone'], ['environment'; 'build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+django-sso-app, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+django-stubs, Not Reproducible, ['user_group.available+=builduser:builduser'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+django-useragents, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+djangocms-helper, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+docker-registry-client, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+dotscience, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+dqsegdb2, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+drf-api-tracking, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+dss-python, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+durationpy, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+easyserializer, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+edx-sphinx-theme, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+email-validator, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+eml-parser, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+endesive, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+environs, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+example-pkg-naturalett, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+fastbpe, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+fiftyone, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+filesystems, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+flake8-2020, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+flake8-html, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+flask-logging-extras, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+flax, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+func-timeout, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+fx-crash-sig, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+georss-ign-sismologia-client, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+getit, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+google-pasta, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+googleauthentication, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 0
+gs-dmarc, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1
+hap-python, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], 539
+haversine, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'locales'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 263
+hdrpy, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+honeybee-radiance-folder, Fully Reproducible, ['all'], [], 0
+html-slacker, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], 16
+html-text, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 118
+httplib2, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 469
+ib-insync, Fully Reproducible, ['all'], [], 2235
+intake, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+intervals, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+isbnlib, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'locales'; 'timezone'], ['environment'; 'build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+jinja2-pluralize, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+json-rpc, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+json2object, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+jupyter-ui-poll, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+jupyters3, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+juriscraper, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+keymaker, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+mamonsu, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+mantarray-waveform-analysis, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+mbed-os-tools, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'locales'; 'timezone'], ['environment'; 'build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+mega-py, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+mixpanel-py, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+mmcls, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+moodyeth, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+msal, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+mtwaffle, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+nameparser, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+nanoplot, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+nathanjamestoolbox, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+notion, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+openpyxl-templates, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+parallel-ssh, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'locales'; 'timezone'], ['environment'; 'build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+pillow-pil, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+plone-app-locales, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+plyara, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+prestige-irc, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+prettierfier, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+products-genericsetup, Not Reproducible, ['user_group.available+=builduser:builduser'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+protobuf3-to-dict, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+py-nextbusnext, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+py-rouge, Not Reproducible, ['user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pyboy, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pycontrol4, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+pycpd, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+pydoe2, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pyformat, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+pyiso, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pylightxl, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['environment'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pylodstorage, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+pymiscutils, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['environment'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pymovie, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+pynmea2, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pyramid-swagger, Not Reproducible, ['user_group.available+=builduser:builduser'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+pyrebase4, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pysigset, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+pysocks, Not Reproducible, ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pyspeedtest, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+pytest-logger, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+pytest-mongodb, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+python-constraint, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pytorch-pretrained-bert, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+rax-default-network-flags-python-novaclient-ext, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+rbfopt, Fully Reproducible, ['all'], [], -1
+recurring-ical-events, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+resnest, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+rest-condition, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+retry, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+rfc3986-validator, Fully Reproducible, ['all'], [], -1
+rpcq, Not Reproducible, ['user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+runjenkins, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+salttesting, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+setuptools, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+sgp4, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+shutils, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+spanishconjugator, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+spglm, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+sphinx-material, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+sphinx-version-warning, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+sphinxcontrib-httpexample, Fully Reproducible, ['all'], [], -1
+splunk-hec-handler, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+strenum, Fully Reproducible, ['all'], [], -1
+striprtf, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+subprocrunner, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'], ['environment'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+swimlane-records-updater, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+synolopy, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+tencentcloud-sdk-python-iotvideoindustry, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+testing-postgresql, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+thingy, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+timedelta, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+transit-python, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+twistedchecker, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'; 'timezone'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+txaws, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'exec_path'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+types-protobuf, Not Reproducible, ['user_group.available+=builduser:builduser'; 'locales'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'time'; 'timezone'; 'umask'], -1
+tzdata, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+utlz, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+warrant, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'exec_path'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+wavelink, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+websockify, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+xmpppy, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+yalesmartalarmclient, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+yawsso, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+zope-securitypolicy, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['environment'; 'build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+ai, Fully Reproducible, ['all'], [], 20
+aiohttp-json-api, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 18
+articledateextractor, Not Reproducible, ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 115
+astral, Fully Reproducible, ['all'], [], 192
+av, Fully Reproducible, ['all'], [], 1922
+aws-cdk-aws-cloud9, Fully Reproducible, ['all'], [], 10401
+awscli-plugin-endpoint, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 197
+awscliv2, Fully Reproducible, ['all'], [], 0
+awslimitchecker, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'exec_path'; 'time'; 'umask'], 513
+azure, Fully Reproducible, ['all'], [], 3755
+azure-cli-backup, Fully Reproducible, ['all'], [], 3624
+b3j0f-utils, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['environment'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 0
+baymax, Fully Reproducible, ['all'], [], 32
+bebi103, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 13
+behave-pandas, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 14
+bertopic, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'timezone'], ['environment'; 'build_path'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], 4458
+bit, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1156
+branca, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], 99
+bytecode, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 273
+capy, Fully Reproducible, ['all'], [], 0
+cfn-flip, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 967
+circuitbreaker, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 399
+citeproc-py-styles, Fully Reproducible, ['all'], [], 5
+cloudtools, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 36
+collections-extended, Fully Reproducible, ['all'], [], 43
+compressive-transformer-pytorch, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 133
+cprint, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 16
+data-converter, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], 2
+datacube, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 448
+django-admin-multiple-choice-list-filter, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], 53
+django-angular, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1243
+django-db-readonly, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], 107
+django-feature-policy, Fully Reproducible, ['all'], [], 1
+django-map-widgets, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['environment'; 'build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 424
+django-oscar, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5786
+django-pizza, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'exec_path'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 7
+django-token, Not Reproducible, ['user_group.available+=builduser:builduser'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 11
+djangocms-installer, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'locales'], ['build_path'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 173
+docxbuilder, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 22
+download, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 44
+dyn, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['environment'; 'build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 37
+dynamicforms, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 43
+easytrader, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 7249
+edalize, Not Reproducible, ['user_group.available+=builduser:builduser'; 'exec_path'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 526
+exchange-calendars, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], 291
+falcon-apispec, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 44
+fatpack, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 91
+fcm-django, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 684
+firexapp, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'timezone'], ['build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], 7
+flake8-eradicate, Fully Reproducible, ['all'], [], 302
+flake8-gl-codeclimate, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 22
+flashday, Fully Reproducible, ['all'], [], 0
+flow-network, Fully Reproducible, ['all'], [], 2
+fuzzyfinder, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 367
+gapic-google-cloud-logging-v2, Fully Reproducible, ['all'], [], 5711
+insightface, Fully Reproducible, ['all'], [], 16621
+javaobj-py3, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 75
+jsonpickle, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1142
+jupyterlab-widgets, Fully Reproducible, ['all'], [], 2836
+kaggler, Fully Reproducible, ['all'], [], 727
+kglobal, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 0
+linecache2, Fully Reproducible, ['all'], [], 1
+logger-bundle, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 0
+lorem, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], 24
+makefun, Fully Reproducible, ['all'], [], 92
+minisom, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1261
+mistletoe, Fully Reproducible, ['all'], [], 627
+mkdocs-macros-plugin, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], 208
+mkdocs-minify-plugin, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 96
+museval, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 154
+myo, Fully Reproducible, ['all'], [], 4
+mypy-boto3-athena, Fully Reproducible, ['all'], [], 3
+nosecomplete, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], 68
+nxpd, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 116
+ory-hydra-client, Fully Reproducible, ['all'], [], 112
+oschmod, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 16
+pandas-alive, Fully Reproducible, ['all'], [], 541
+papermill, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'locales'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5296
+pbd, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 85
+picmistandard, Fully Reproducible, ['all'], [], 29
+pkgconfig, Fully Reproducible, ['all'], [], 58
+proactive, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], 5
+pygeohash, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], 144
+pygments-markdown-lexer, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], 18
+pygmsh, Fully Reproducible, ['all'], [], 711
+pym2149, Fully Reproducible, ['all'], [], 8
+pymartini, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 70
+pymilvus, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 639
+pyminknow, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 8
+pyobjc-framework-fileproviderui, Fully Reproducible, ['all'], [], 411
+pyproject-parser, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 9
+pyshac, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 21
+pytest-custom-exit-code, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 26
+pytest-flask, Fully Reproducible, ['all'], [], 450
+pytest-rerunfailures, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 311
+pytgcalls, Fully Reproducible, ['all'], [], 447
+python-easyconfig, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'umask'], 5
+python-gmaps, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], 27
+python-pcre, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 57
+pythondata-cpu-rocket, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 11
+pytricia, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'], ['environment'; 'build_path'; 'time'; 'timezone'; 'umask'], 193
+qiskit-terra, Fully Reproducible, ['all'], [], 3674
+quantum-gateway, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 14
+robotframework-assertion-engine, Fully Reproducible, ['all'], [], 9
+runai, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], 115
+s3contents, Fully Reproducible, ['all'], [], 229
+samsungtvws, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], 164
+saspy, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 335
+sbvirtualdisplay, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4
+selenium-base, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3385
+simple-term-menu, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], 397
+snuggs, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 17
+sobol-seq, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 67
+socketio-client, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], 442
+speak2mary, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 2
+split-folders, Fully Reproducible, ['all'], [], 375
+stackprinter, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'kernel'], ['build_path'; 'fileordering'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1249
+stix2-patterns, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['environment'; 'build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 20
+stone, Not Reproducible, ['user_group.available+=builduser:builduser'; 'time'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'timezone'; 'umask'], 395
+structlog-sentry, Fully Reproducible, ['all'], [], 74
+tableaudocumentapi, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 300
+technopy, Not Reproducible, ['user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['environment'; 'build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3
+textgenrnn, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['build_path'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 4916
+tfhelper, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'locales'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2
+tox-travis, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], 205
+transmission-rpc, Fully Reproducible, ['all'], [], 112
+trio-asyncio, Not Reproducible, ['user_group.available+=builduser:builduser'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'umask'], 166
+twitterapi, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 916
+ulid2, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 31
+upb-lib, Fully Reproducible, ['all'], [], 3
+urlextract, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 212
+validx, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 16
+vdms, Fully Reproducible, ['all'], [], 71
+vk-api, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1274
+webrtcvad, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1684
+wechaty-grpc, Fully Reproducible, ['all'], [], 22
+word2vec, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2509
+zlhawq, Fully Reproducible, ['all'], [], 0
+zookeeper, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], 22
+binary, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+brottsplatskartan, Not Reproducible, ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+itkwidgets, Fully Reproducible, ['all'], [], -1
+django-readonly-field, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+python-rake, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+google-cloud-bigtable, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'exec_path'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+keras-transformer, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+pysupercluster, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+sslyze, Not Reproducible, ['user_group.available+=builduser:builduser'; 'kernel'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+approvaltests, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+discord-buttons, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+oemthermostat, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+vf-portalytics, Fully Reproducible, ['all'], [], -1
+pyhash, Fully Reproducible, ['all'], [], -1
+hammock, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+language-tags, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'time'; 'umask'], -1
+pytest-httpbin, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pyperf, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pytest-circleci, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'locales'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+drf-typed-views, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'], ['environment'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+atlassian-jwt-auth, Fully Reproducible, ['all'], [], -1
+sparkdl, Fully Reproducible, ['all'], [], -1
+openerz-api, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+expression-parser, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+tensorflow-privacy, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'exec_path'], ['build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+rrg, Fully Reproducible, ['all'], [], -1
+py-ultroid, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'; 'timezone'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'umask'], -1
+sc2gamelobby, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'], ['build_path'; 'home'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+carling, Fully Reproducible, ['all'], [], -1
+pynwb, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'kernel'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'locales'; 'exec_path'; 'time'; 'umask'], -1
+libscrc, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+blockchain-parser, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'], ['environment'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+cs-portlet-aemet, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pybase64, Fully Reproducible, ['all'], [], -1
+karapy, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'], ['build_path'; 'home'; 'locales'; 'time'; 'timezone'; 'umask'], -1
+csinsc, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'home'; 'locales'; 'time'; 'umask'], -1
+pystoi, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'fileordering'; 'home'; 'locales'; 'time'; 'umask'], -1
+py-zipkin, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'exec_path'; 'timezone'], ['build_path'; 'home'; 'locales'; 'time'; 'umask'], -1
+runipy, Not Reproducible, ['user_group.available+=builduser:builduser'; 'home'; 'kernel'; 'exec_path'; 'timezone'], ['environment'; 'build_path'; 'fileordering'; 'locales'; 'time'; 'umask'], -1
+django-querysetsequence, Not Reproducible, ['build_path'; 'user_group.available+=builduser:builduser'; 'home'; 'locales'], ['environment'; 'fileordering'; 'kernel'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+backports-functools-partialmethod, Not Reproducible, ['environment'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'kernel'; 'locales'], ['build_path'; 'home'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+pip-with-requires-python, Fully Reproducible, ['all'], [], -1
+django-url-shortening, Fully Reproducible, ['all'], [], -1
+mdt, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
+python-gvm, Fully Reproducible, ['all'], [], -1
+blackduck, Not Reproducible, ['user_group.available+=builduser:builduser'], ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], -1
