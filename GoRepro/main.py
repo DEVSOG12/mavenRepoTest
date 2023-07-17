@@ -119,9 +119,9 @@ def testGoReproducible(repoInfo, resultFileName):
         # Try all other variations
         for variation in possible_variations:
             command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
-                      "data/diffoscopeLogs{}/{}/all.html' --variations=+{} " \
+                      "data/diffoscopeLogs{}/{}/{}.html' --variations=+{} " \
                       "\"go build -mod=mod -modcacherw -ldflags '-s -w -extldflags=-Z' -trimpath -o dist/bin\" " \
-                      "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"), variation)
+                      "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"), variation, variation)
             print(command)
             exit_code = os.system(command)
             if exit_code == 0:
@@ -151,12 +151,12 @@ def testGoReproducible(repoInfo, resultFileName):
 if __name__ == "__main__":
     # pull_repos()
     # fixStars()
-    with open('data/go_Random400.json', 'r') as f:
+    with open('data/go_Top100.json', 'r') as f:
         data = json.load(f)
         print(len(data['data']))
 
         for i in range(0, len(data['data'])):
-            if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_Random400Results"):
+            if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_RandomTop100Results"):
                 continue
 
 
