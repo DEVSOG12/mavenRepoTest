@@ -223,13 +223,13 @@ def convert_csv():
 if __name__ == "__main__":
     # pull_repos()
     # fixStars()
-    convert_csv()
-    # with open('data/go_Random400.json', 'r') as f:
-    #     data = json.load(f)
-    #     print(len(data['data']))
-    #
-    #     for i in range(0, len(data['data'])):
-    #         if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_Random400Results"):
-    #             continue
+    # convert_csv()
+    with open('data/go_Random400.json', 'r') as f:
+        data = json.load(f)
+        print(len(data['data']))
+
+        for i in range(0, len(data['data'])):
+            if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_Random400Results"):
+                continue
 
 
