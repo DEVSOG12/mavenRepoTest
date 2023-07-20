@@ -13,7 +13,7 @@ def run_reprotest(repoInfo, resultFileName, variation):
               "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"), variation, variation)
     print(command)
     exit_code = os.system(command)
-    return variation if exit_code == 0 else None
+    return [True, variation] if exit_code == 0 else [False, variation]
 
 
 def fixStars():
@@ -138,29 +138,29 @@ def testGoReproducible(repoInfo, resultFileName):
         pool.join()
 
         for result in results:
-            if result is not None:
-                variations_reproducible.append(result)
+            if result[0]:
+                variations_reproducible.append(result[1])
             else:
-                variations_not_reproducible.append(result)
+                variations_not_reproducible.append(result[1])
 
-                # Record the results
-                record = json.loads(
-                    open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format(resultFileName), 'r').read())[
-                    "results"]
-                record.append({
-                    "project": repoInfo[0],
-                    "stars": repoInfo[2],
-                    "status": "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible",
-                    "variationsNonReproducible": variations_not_reproducible,
-                    "variationsReproducible": variations_reproducible
-                })
+        # Record the results
+        record = json.loads(
+            open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format(resultFileName), 'r').read())[
+            "results"]
+        record.append({
+            "project": repoInfo[0],
+            "stars": repoInfo[2],
+            "status": "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible",
+            "variationsNonReproducible": variations_not_reproducible,
+            "variationsReproducible": variations_reproducible
+        })
 
-                print(record)
+        print(record)
 
-                with open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format(resultFileName), 'w') as f:
-                    json.dump({"results": record}, f)
+        with open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format(resultFileName), 'w') as f:
+            json.dump({"results": record}, f)
 
-                return [True, "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible"]
+        return [True, "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible"]
         #
         # for variation in possible_variations:
         #     command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
