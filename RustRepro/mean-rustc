@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Usage: set RUSTC_WRAPPER to be this script and it'll warn if build script or proc macro is used
+
+for arg in "$@"
+do
+  # Do nothing if cargo is gathering info
+  if [[ $arg == "--print"* ]]; then
+    unset warning;
+    break;
+  fi
+
+  if [[ $prev_arg == "--crate-type" && $arg == "proc-macro" ]] || [[ $arg == "--crate-type=proc-macro" ]]; then
+      warning="$CARGO_PKG_NAME is using proc macros"
+  elif [[ $prev_arg == "--crate-name" && $arg == "build_script_"* ]] || [[ $arg == "--crate-name=build_script_"* ]]; then
+      warning="$CARGO_PKG_NAME is using build scripts"
+  fi
+
+  prev_arg=$arg;
+done
+
+if [[ "$warning" ]]; then
+  echo "MEAN-RUSTC-WARN: $warning";
+fi
+
+$@;
