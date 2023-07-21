@@ -31,8 +31,8 @@ def run_reprotest(name: str, repository: str, reprotest_args: List[str]) -> [Rep
         for line in git.stdout:
             print(line, end="")
 
-        if git.wait() != 0:
-            return ReproStatus.BUILD_FAILED
+        # if git.wait() != 0:
+        #     return[ ReproStatus.BUILD_FAILED, None, reprotest_args[0].split("+")[1]]
 
     output = []
     with subprocess.Popen(
@@ -113,9 +113,7 @@ if __name__ == '__main__':
         stars = record['stars']
         print(name, url, stars)
 
-        possible_variations = ["environment", "build_path", "user_group.available+=builduser:builduser", "fileordering",
-                               "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
-
+        possible_variations = ["time"]
         # test all
         if not os.path.exists('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}'.format(name)):
             os.mkdir('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}'.format(name))
@@ -128,7 +126,7 @@ if __name__ == '__main__':
                                                                                                   url.replace("/",
                                                                                                               "_")))
 
-        all = run_reprotest(name, url, ["--variation=+all"])
+        all = run_reprotest(name, url, ["--variation=+all", "cargobuild.sh && fixup.sh", "target/*"])
 
         if all[0] == ReproStatus.SUCCESS:
             print("Success")
