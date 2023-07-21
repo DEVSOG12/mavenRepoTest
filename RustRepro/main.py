@@ -36,7 +36,7 @@ def run_reprotest(name: str, repository: str, reprotest_args: List[str]) -> [Rep
 
     output = []
     with subprocess.Popen(
-            ["reprotest", "-s", name, *reprotest_args],
+            ["sudo", "reprotest", "-s", name, *reprotest_args],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
@@ -126,7 +126,7 @@ if __name__ == '__main__':
                                                                                                   url.replace("/",
                                                                                                               "_")))
 
-        all = run_reprotest(name, url, ["--variation=+all", "cargobuild.sh && fixup.sh", "target/*"])
+        all = run_reprotest(name, url, ["--variation=+all", "cargo build --release", "target/*"])
 
         if all[0] == ReproStatus.SUCCESS:
             print("Success")
@@ -151,7 +151,7 @@ if __name__ == '__main__':
             # Use multiprocessing to run reprotest commands in parallel
             pool = Pool()
             results = pool.starmap(run_reprotest,
-                                   [(name, url, ["--variation=+{}", "cargobuild.sh && fixup.sh", "target/*".format(variation)]) for variation in
+                                   [(name, url, ["--variation=+{}", "cargo build --release", "target/*".format(variation)]) for variation in
                                     possible_variations])
             pool.close()
             pool.join()
