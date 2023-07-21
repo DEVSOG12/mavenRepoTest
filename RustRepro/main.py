@@ -126,7 +126,7 @@ if __name__ == '__main__':
                                                                                                   url.replace("/",
                                                                                                               "_")))
 
-        all = run_reprotest(name, url, ["--variation=+all", "cargo build --release", "target/*"])
+        all = run_reprotest(name, url, ["--variation=+time", "sudo cargo build --release", "target/*"])
 
         if all[0] == ReproStatus.SUCCESS:
             print("Success")
@@ -151,7 +151,7 @@ if __name__ == '__main__':
             # Use multiprocessing to run reprotest commands in parallel
             pool = Pool()
             results = pool.starmap(run_reprotest,
-                                   [(name, url, ["--variation=+{}", "cargo build --release", "target/*".format(variation)]) for variation in
+                                   [(name, url, ["--variation=+{}", "sudo cargo build --release", "target/*".format(variation)]) for variation in
                                     possible_variations])
             pool.close()
             pool.join()
