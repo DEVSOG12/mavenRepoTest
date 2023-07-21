@@ -151,7 +151,7 @@ if __name__ == '__main__':
             # Use multiprocessing to run reprotest commands in parallel
             pool = Pool()
             results = pool.starmap(run_reprotest,
-                                   [(name, url, ["--variation=+{}".format(variation)]) for variation in
+                                   [(name, url, ["--variation=+{}", "cargobuild.sh && fixup.sh", "target/*".format(variation)]) for variation in
                                     possible_variations])
             pool.close()
             pool.join()
