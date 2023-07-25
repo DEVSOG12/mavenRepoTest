@@ -9,7 +9,7 @@ from multiprocessing import Pool
 def run_reprotest(repoInfo, resultFileName, variation):
     command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
               "data/diffoscopeLogs{}/{}/{}.html' --variations=+{} " \
-              "\"go build -mod=mod -modcacherw -ldflags '-s -w -extldflags=-Z' -trimpath -o dist/bin\" " \
+              "\"go build -mod=mod -modcacherw -trimpath -buildvcs=false -ldflags='-s -w -buildid=' -o dist/bin\"  " \
               "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"), variation, variation)
     print(command)
     exit_code = os.system(command)
@@ -223,13 +223,13 @@ def convert_csv():
 if __name__ == "__main__":
     # pull_repos()
     # fixStars()
-    # convert_csv()
-    with open('data/go_Random400.json', 'r') as f:
-        data = json.load(f)
-        print(len(data['data']))
+    convert_csv()
+    # with open('data/go_Random400.json', 'r') as f:
+    #     data = json.load(f)
+    #     print(len(data['data']))
 
-        for i in range(0, len(data['data'])):
-            if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_Random400Results"):
-                continue
+    #     for i in range(0, len(data['data'])):
+    #         if not testGoReproducible([data['data'][i]['project'], data['data'][i]['url'], data['data'][i]['stars']], "go_Random400Results"):
+    #             continue
 
 

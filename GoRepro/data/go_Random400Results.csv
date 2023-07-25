@@ -1,401 +1,401 @@
 project, status, reproducibleVariants, nonReproducibleVariants, stars
-github.com/nsf/termbox-go, Fully Reproducible, ['all'], [], 4291
-github.com/vishvananda/netlink, Fully Reproducible, ['all'], [], 2368
-github.com/blang/semver, Fully Reproducible, ['all'], [], 880
-github.com/julienschmidt/httprouter, Fully Reproducible, ['all'], [], 15139
-github.com/googleapis/gnostic, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 1440
-github.com/antchfx/xpath, Fully Reproducible, ['all'], [], 548
-github.com/aws/aws-sdk-go-v2, Fully Reproducible, ['all'], [], 2053
-github.com/influxdb/influxdb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 25778
-github.com/kr/pretty, Fully Reproducible, ['all'], [], 1144
-github.com/fatih/color, Fully Reproducible, ['all'], [], 6162
-github.com/golang/snappy, Fully Reproducible, ['all'], [], 1309
-github.com/mitchellh/copystructure, Fully Reproducible, ['all'], [], 243
-github.com/containerd/containerd, Fully Reproducible, ['all'], [], 13073
-github.com/natefinch/lumberjack, Fully Reproducible, ['all'], [], 4132
-github.com/hashicorp/go-multierror, Fully Reproducible, ['all'], [], 1230
-github.com/hashicorp/go-immutable-radix, Fully Reproducible, ['all'], [], 857
-github.com/google/gopacket, Fully Reproducible, ['all'], [], 5678
-github.com/elazarl/go-bindata-assetfs, Fully Reproducible, ['all'], [], 853
-github.com/robertkrimen/otto, Fully Reproducible, ['all'], [], 7188
-github.com/hashicorp/golang-lru, Fully Reproducible, ['all'], [], 3536
-github.com/valyala/fasttemplate, Fully Reproducible, ['all'], [], 711
-github.com/prometheus/client_golang, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4672
-github.com/dlclark/regexp2, Fully Reproducible, ['all'], [], 792
-gorm.io/gorm, Fully Reproducible, ['all'], [], 32841
-go.etcd.io/etcd/client/pkg/v3, Fully Reproducible, ['all'], [], 43902
-github.com/pkg/sftp, Fully Reproducible, ['all'], [], 1305
-github.com/otiai10/copy, Fully Reproducible, ['all'], [], 564
-github.com/jmespath/go-jmespath, Fully Reproducible, ['all'], [], 503
-go.opentelemetry.io/otel/sdk, Fully Reproducible, ['all'], [], 4020
-github.com/edsrzf/mmap-go, Fully Reproducible, ['all'], [], 661
-github.com/99designs/gqlgen, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 8992
-go.etcd.io/etcd/client/v3, Fully Reproducible, ['all'], [], 43902
-github.com/aws/aws-sdk-go, Fully Reproducible, ['all'], [], 8154
-gopkg.in/check.v1, Fully Reproducible, ['all'], [], 665
-github.com/getsentry/raven-go, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 555
-github.com/stretchr/objx, Fully Reproducible, ['all'], [], 566
-github.com/opencontainers/go-digest, Fully Reproducible, ['all'], [], 128
-github.com/jonboulle/clockwork, Fully Reproducible, ['all'], [], 448
-github.com/eclipse/paho.mqtt.golang, Fully Reproducible, ['all'], [], 2327
-github.com/hashicorp/yamux, Fully Reproducible, ['all'], [], 1775
-go.mongodb.org/mongo-driver, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7503
-github.com/containerd/cgroups, Fully Reproducible, ['all'], [], 974
-github.com/oklog/run, Fully Reproducible, ['all'], [], 1319
-github.com/vmware/govmomi, Fully Reproducible, ['all'], [], 2134
-github.com/lestrrat-go/jwx, Fully Reproducible, ['all'], [], 1540
-google.golang.org/api, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3501
-github.com/containerd/console, Fully Reproducible, ['all'], [], 93
-github.com/mattn/go-runewidth, Fully Reproducible, ['all'], [], 486
-github.com/ryanuber/columnize, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 152
-github.com/disintegration/imaging, Fully Reproducible, ['all'], [], 4696
-go.etcd.io/bbolt, Fully Reproducible, ['all'], [], 6681
-github.com/gobwas/glob, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 851
-github.com/jarcoal/httpmock, Fully Reproducible, ['all'], [], 1583
-github.com/kevinburke/ssh_config, Fully Reproducible, ['all'], [], 323
-github.com/mgechev/revive, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 4209
-github.com/gobuffalo/packr, Fully Reproducible, ['all'], [], 3335
-gopkg.in/inf.v0, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 40
-github.com/etcd-io/etcd, Fully Reproducible, ['all'], [], 43902
-go.etcd.io/etcd/server/v3, Fully Reproducible, ['all'], [], 43902
-github.com/gophercloud/gophercloud, Fully Reproducible, ['all'], [], 752
-cloud.google.com/go/storage, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-github.com/gobuffalo/flect, Fully Reproducible, ['all'], [], 91
-github.com/konsorten/go-windows-terminal-sequences, Fully Reproducible, ['all'], [], 27
-google.golang.org/protobuf, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2265
-github.com/mitchellh/reflectwalk, Fully Reproducible, ['all'], [], 194
-github.com/fsouza/go-dockerclient, Fully Reproducible, ['all'], [], 2050
-github.com/oschwald/geoip2-golang, Fully Reproducible, ['all'], [], 1588
-github.com/moby/buildkit, Fully Reproducible, ['all'], [], 6887
-github.com/shirou/gopsutil/v3, Fully Reproducible, ['all'], [], 9200
-github.com/lucas-clemente/quic-go, Fully Reproducible, ['all'], [], 8422
-github.com/emicklei/go-restful, Fully Reproducible, ['all'], [], 4781
-github.com/huin/goupnp, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 373
-github.com/boltdb/bolt, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 13607
-github.com/gobuffalo/packr/v2, Fully Reproducible, ['all'], [], 3335
-github.com/bitly/go-simplejson, Fully Reproducible, ['all'], [], 3694
-github.com/gotestyourself/gotestyourself, Fully Reproducible, ['all'], [], 437
-github.com/go-playground/validator, Fully Reproducible, ['all'], [], 13432
-github.com/rs/zerolog, Fully Reproducible, ['all'], [], 8436
-github.com/hashicorp/memberlist, Fully Reproducible, ['all'], [], 2992
-github.com/hashicorp/go-getter, Fully Reproducible, ['all'], [], 1468
-github.com/avast/retry-go, Fully Reproducible, ['all'], [], 1607
-github.com/urfave/negroni, Fully Reproducible, ['all'], [], 7334
-github.com/spf13/cast, Fully Reproducible, ['all'], [], 2915
-go.uber.org/zap, Fully Reproducible, ['all'], [], 17813
-cloud.google.com/go/pubsub, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-github.com/lucasb-eyer/go-colorful, Fully Reproducible, ['all'], [], 916
-github.com/ory/dockertest, Fully Reproducible, ['all'], [], 3527
-github.com/mholt/caddy, Fully Reproducible, ['all'], [], 48011
+github.com/kr/text, Fully Reproducible, ['all'], [], 77
+github.com/allegro/bigcache, Fully Reproducible, ['all'], [], 6601
+github.com/fsnotify/fsnotify, Fully Reproducible, ['all'], [], 8006
+github.com/hashicorp/vault/api, Fully Reproducible, ['all'], [], 27976
 github.com/beevik/ntp, Fully Reproducible, ['all'], [], 425
-github.com/hashicorp/go-hclog, Fully Reproducible, ['all'], [], 275
-github.com/klauspost/pgzip, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1023
-github.com/ugorji/go, Fully Reproducible, ['all'], [], 1750
-github.com/coreos/etcd, Fully Reproducible, ['all'], [], 43902
-github.com/mattn/go-shellwords, Fully Reproducible, ['all'], [], 372
-github.com/magefile/mage, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 3576
-github.com/dustin/go-humanize, Fully Reproducible, ['all'], [], 3460
-github.com/google/martian, Fully Reproducible, ['all'], [], 1886
-github.com/gdamore/tcell, Fully Reproducible, ['all'], [], 3987
-github.com/yudai/gojsondiff, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 483
-github.com/go-openapi/swag, Fully Reproducible, ['all'], [], 156
-github.com/swaggo/gin-swagger, Fully Reproducible, ['all'], [], 3040
-github.com/spaolacci/murmur3, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 531
-github.com/dnaeon/go-vcr, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 964
-github.com/spf13/viper, Fully Reproducible, ['all'], [], 23300
-github.com/posener/complete, Fully Reproducible, ['all'], [], 866
-github.com/sirupsen/logrus, Fully Reproducible, ['all'], [], 22747
-github.com/leodido/go-urn, Fully Reproducible, ['all'], [], 68
-github.com/gorilla/mux, Fully Reproducible, ['all'], [], 18190
-github.com/gorilla/handlers, Fully Reproducible, ['all'], [], 1527
-gopkg.in/cheggaaa/pb.v1, Fully Reproducible, ['all'], [], 3459
-github.com/hashicorp/go-uuid, Fully Reproducible, ['all'], [], 144
-github.com/docker/libnetwork, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1991
 github.com/hashicorp/go-version, Fully Reproducible, ['all'], [], 1379
-github.com/alicebob/miniredis, Fully Reproducible, ['all'], [], 2626
-gopkg.in/alecthomas/kingpin.v2, Fully Reproducible, ['all'], [], 3304
-github.com/jstemmer/go-junit-report, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 657
-github.com/elazarl/goproxy, Fully Reproducible, ['all'], [], 5423
-github.com/urfave/cli, Fully Reproducible, ['all'], [], 20367
-github.com/docker/distribution, Fully Reproducible, ['all'], [], 7691
-honnef.co/go/tools, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5279
-github.com/hashicorp/hcl, Fully Reproducible, ['all'], [], 4706
-k8s.io/klog, Fully Reproducible, ['all'], [], 462
-github.com/mattn/go-isatty, Fully Reproducible, ['all'], [], 705
-gopkg.in/tomb.v1, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 340
+github.com/ory/dockertest, Fully Reproducible, ['all'], [], 3527
+github.com/pborman/uuid, Fully Reproducible, ['all'], [], 368
+github.com/mitchellh/mapstructure, Fully Reproducible, ['all'], [], 6847
+github.com/hashicorp/consul, Fully Reproducible, ['all'], [], 26626
+go.opentelemetry.io/otel, Fully Reproducible, ['all'], [], 4020
+github.com/gopherjs/gopherjs, Fully Reproducible, ['all'], [], 12008
+github.com/beorn7/perks, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 84
+github.com/jmoiron/sqlx, Fully Reproducible, ['all'], [], 13675
 github.com/gosimple/slug, Fully Reproducible, ['all'], [], 952
-github.com/tidwall/pretty, Fully Reproducible, ['all'], [], 287
-github.com/hpcloud/tail, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2376
-github.com/go-playground/locales, Fully Reproducible, ['all'], [], 232
-github.com/cenkalti/backoff, Fully Reproducible, ['all'], [], 2885
+github.com/jessevdk/go-flags, Fully Reproducible, ['all'], [], 2193
+github.com/boltdb/bolt, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 13607
+github.com/streadway/amqp, Fully Reproducible, ['all'], [], 4655
+github.com/cespare/xxhash, Fully Reproducible, ['all'], [], 1453
+google.golang.org/protobuf, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2265
+github.com/hashicorp/go-memdb, Fully Reproducible, ['all'], [], 2579
+github.com/elazarl/go-bindata-assetfs, Fully Reproducible, ['all'], [], 853
+go.etcd.io/etcd/etcdctl/v3, Fully Reproducible, ['all'], [], 43902
+github.com/tidwall/gjson, Fully Reproducible, ['all'], [], 11468
+github.com/rakyll/statik, Fully Reproducible, ['all'], [], 3488
+gopkg.in/check.v1, Fully Reproducible, ['all'], [], 665
+github.com/pelletier/go-toml/v2, Fully Reproducible, ['all'], [], 1450
+github.com/cpuguy83/go-md2man, Fully Reproducible, ['all'], [], 160
+github.com/grpc-ecosystem/go-grpc-middleware, Fully Reproducible, ['all'], [], 5484
+github.com/blang/semver, Fully Reproducible, ['all'], [], 880
+github.com/minio/sha256-simd, Fully Reproducible, ['all'], [], 853
 go.uber.org/ratelimit, Fully Reproducible, ['all'], [], 3701
-github.com/spf13/pflag, Fully Reproducible, ['all'], [], 2118
-github.com/jtolds/gls, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 532
-go.etcd.io/etcd/api/v3, Fully Reproducible, ['all'], [], 43902
-github.com/coredns/coredns, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 10786
-github.com/chzyer/logex, Fully Reproducible, ['all'], [], 39
-github.com/go-openapi/spec, Fully Reproducible, ['all'], [], 342
-github.com/imdario/mergo, Fully Reproducible, ['all'], [], 2491
-github.com/hashicorp/go-sockaddr, Fully Reproducible, ['all'], [], 217
-github.com/onsi/ginkgo, Fully Reproducible, ['all'], [], 7226
-github.com/google/uuid, Fully Reproducible, ['all'], [], 4113
+github.com/mitchellh/go-testing-interface, Fully Reproducible, ['all'], [], 46
+github.com/matryer/is, Fully Reproducible, ['all'], [], 1536
+github.com/zenazn/goji, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3631
+github.com/fortytw2/leaktest, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 947
+github.com/aliyun/alibaba-cloud-sdk-go, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 1116
+github.com/stretchr/testify, Fully Reproducible, ['all'], [], 20012
+github.com/bitly/go-simplejson, Fully Reproducible, ['all'], [], 3694
+github.com/lucas-clemente/quic-go, Fully Reproducible, ['all'], [], 8422
 github.com/pkg/term, Fully Reproducible, ['all'], [], 342
-github.com/justinas/alice, Fully Reproducible, ['all'], [], 2782
-github.com/mitchellh/gox, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 4446
-github.com/gobuffalo/envy, Fully Reproducible, ['all'], [], 147
-github.com/btcsuite/btcd, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 5359
+github.com/googleapis/gax-go, Fully Reproducible, ['all'], [], 165
+github.com/evanphx/json-patch, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 800
+github.com/fogleman/gg, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3834
+github.com/karrick/godirwalk, Fully Reproducible, ['all'], [], 638
+gopkg.in/go-playground/validator.v8, Fully Reproducible, ['all'], [], 13432
+github.com/mailru/easyjson, Fully Reproducible, ['all'], [], 4144
+github.com/microcosm-cc/bluemonday, Fully Reproducible, ['all'], [], 2683
+gopkg.in/cheggaaa/pb.v1, Fully Reproducible, ['all'], [], 3459
+github.com/cespare/xxhash/v2, Fully Reproducible, ['all'], [], 1453
+github.com/go-logfmt/logfmt, Fully Reproducible, ['all'], [], 156
+github.com/google/btree, Fully Reproducible, ['all'], [], 3324
+go.uber.org/atomic, Fully Reproducible, ['all'], [], 1109
+gopkg.in/yaml.v3, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 6301
+github.com/kelseyhightower/envconfig, Fully Reproducible, ['all'], [], 4579
+github.com/davecgh/go-spew, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5311
+github.com/moby/buildkit, Fully Reproducible, ['all'], [], 6887
+github.com/prometheus/prometheus, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 48959
+github.com/hashicorp/raft, Fully Reproducible, ['all'], [], 7219
+github.com/sourcegraph/go-diff, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 388
+github.com/shirou/gopsutil/v3, Fully Reproducible, ['all'], [], 9200
+github.com/googleapis/gax-go/v2, Fully Reproducible, ['all'], [], 165
+github.com/swaggo/swag, Fully Reproducible, ['all'], [], 8385
+github.com/peterbourgon/diskv, Fully Reproducible, ['all'], [], 1113
+github.com/hashicorp/golang-lru, Fully Reproducible, ['all'], [], 3536
+github.com/jinzhu/now, Fully Reproducible, ['all'], [], 3985
 github.com/google/gofuzz, Fully Reproducible, ['all'], [], 1406
-github.com/ziutek/mymysql, Fully Reproducible, ['all'], [], 725
+github.com/golang-jwt/jwt/v4, Fully Reproducible, ['all'], [], 4503
+github.com/go-openapi/swag, Fully Reproducible, ['all'], [], 156
+github.com/cenkalti/backoff/v4, Fully Reproducible, ['all'], [], 2885
+github.com/ugorji/go, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 1750
+github.com/mitchellh/go-wordwrap, Fully Reproducible, ['all'], [], 69
+github.com/creack/pty, Fully Reproducible, ['all'], [], 1412
+github.com/nats-io/gnatsd, Fully Reproducible, ['all'], [], 12992
+github.com/rs/zerolog, Fully Reproducible, ['all'], [], 8436
+github.com/lestrrat-go/jwx, Fully Reproducible, ['all'], [], 1540
+github.com/coreos/go-systemd, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2177
+github.com/pkg/profile, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 1868
+github.com/mholt/archiver, Fully Reproducible, ['all'], [], 4003
+gopkg.in/macaron.v1, Fully Reproducible, ['all'], [], 3352
+google.golang.org/appengine, Fully Reproducible, ['all'], [], 635
+github.com/yuin/gopher-lua, Fully Reproducible, ['all'], [], 5452
+github.com/mattn/go-colorable, Fully Reproducible, ['all'], [], 685
+honnef.co/go/tools, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5279
+github.com/minio/minio-go, Fully Reproducible, ['all'], [], 1968
+github.com/mattn/go-shellwords, Fully Reproducible, ['all'], [], 372
+github.com/go-ldap/ldap, Fully Reproducible, ['all'], [], 1978
+github.com/pingcap/tidb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 34330
+github.com/kevinburke/ssh_config, Fully Reproducible, ['all'], [], 323
+github.com/gorilla/context, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 411
+github.com/dlclark/regexp2, Fully Reproducible, ['all'], [], 792
+github.com/spaolacci/murmur3, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 531
+github.com/onsi/ginkgo, Fully Reproducible, ['all'], [], 7226
+go.mongodb.org/mongo-driver, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7503
+github.com/antchfx/xpath, Fully Reproducible, ['all'], [], 548
+github.com/ulikunitz/xz, Fully Reproducible, ['all'], [], 417
+github.com/robertkrimen/otto, Fully Reproducible, ['all'], [], 7188
+gopkg.in/gomail.v2, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3960
+github.com/golang/snappy, Fully Reproducible, ['all'], [], 1309
+github.com/aws/aws-sdk-go, Fully Reproducible, ['all'], [], 8154
+github.com/huin/goupnp, Fully Reproducible, ['all'], [], 373
+github.com/smartystreets/goconvey, Fully Reproducible, ['all'], [], 7802
+cloud.google.com/go, Fully Reproducible, ['all'], [], 3326
+github.com/mitchellh/go-ps, Fully Reproducible, ['all'], [], 918
+github.com/gdamore/tcell, Fully Reproducible, ['all'], [], 3987
+github.com/golang/groupcache, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 12155
+gorm.io/gorm, Fully Reproducible, ['all'], [], 32841
+github.com/cheggaaa/pb, Fully Reproducible, ['all'], [], 3459
+github.com/jstemmer/go-junit-report, Fully Reproducible, ['all'], [], 657
+go.etcd.io/etcd/raft/v3, Fully Reproducible, ['all'], [], 43902
+github.com/subosito/gotenv, Fully Reproducible, ['all'], [], 249
+github.com/json-iterator/go, Fully Reproducible, ['all'], [], 12388
+github.com/pquerna/otp, Fully Reproducible, ['all'], [], 1589
+github.com/coreos/etcd, Fully Reproducible, ['all'], [], 43902
+github.com/hashicorp/go-hclog, Fully Reproducible, ['all'], [], 275
+github.com/dustin/go-humanize, Fully Reproducible, ['all'], [], 3460
+github.com/gobuffalo/packr, Fully Reproducible, ['all'], [], 3335
+github.com/alecthomas/chroma, Fully Reproducible, ['all'], [], 3835
+github.com/jarcoal/httpmock, Fully Reproducible, ['all'], [], 1583
+github.com/felixge/httpsnoop, Fully Reproducible, ['all'], [], 756
+google.golang.org/api, Fully Reproducible, ['all'], [], 3501
+github.com/hashicorp/memberlist, Fully Reproducible, ['all'], [], 2992
+github.com/hashicorp/serf, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5536
+github.com/jackc/pgx, Fully Reproducible, ['all'], [], 7353
+gopkg.in/gcfg.v1, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 161
+github.com/gotestyourself/gotestyourself, Fully Reproducible, ['all'], [], 437
+github.com/opencontainers/runc, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 10378
+github.com/google/martian, Fully Reproducible, ['all'], [], 1886
+github.com/hashicorp/go-multierror, Fully Reproducible, ['all'], [], 1230
+github.com/coreos/go-semver, Fully Reproducible, ['all'], [], 307
+github.com/russross/blackfriday/v2, Fully Reproducible, ['all'], [], 5184
+github.com/coredns/coredns, Fully Reproducible, ['all'], [], 10786
 github.com/andybalholm/brotli, Fully Reproducible, ['all'], [], 466
 github.com/kisielk/gotool, Fully Reproducible, ['all'], [], 59
-cloud.google.com/go/datastore, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-github.com/nats-io/stan.go, Fully Reproducible, ['all'], [], 684
-github.com/coreos/go-oidc, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1504
-github.com/containerd/typeurl, Fully Reproducible, ['all'], [], 48
-gopkg.in/macaron.v1, Fully Reproducible, ['all'], [], 3352
-github.com/gin-gonic/gin, Fully Reproducible, ['all'], [], 69835
-github.com/karrick/godirwalk, Fully Reproducible, ['all'], [], 638
-github.com/hashicorp/terraform, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 37960
-github.com/andybalholm/cascadia, Fully Reproducible, ['all'], [], 602
-github.com/cloudflare/cfssl, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7718
+github.com/go-kit/kit, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 25159
 gopkg.in/gorp.v1, Fully Reproducible, ['all'], [], 3621
-github.com/klauspost/cpuid/v2, Fully Reproducible, ['all'], [], 834
-github.com/mitchellh/mapstructure, Fully Reproducible, ['all'], [], 6847
-github.com/cockroachdb/apd, Fully Reproducible, ['all'], [], 533
-github.com/microcosm-cc/bluemonday, Fully Reproducible, ['all'], [], 2683
-github.com/peterh/liner, Fully Reproducible, ['all'], [], 887
+gopkg.in/fsnotify.v1, Fully Reproducible, ['all'], [], 8006
+github.com/jtolds/gls, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 532
 github.com/nicksnyder/go-i18n, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2261
-github.com/gorilla/sessions, Fully Reproducible, ['all'], [], 2502
-github.com/nats-io/nats.go, Fully Reproducible, ['all'], [], 4621
-github.com/juju/ratelimit, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2532
-github.com/mitchellh/go-ps, Fully Reproducible, ['all'], [], 918
-gopkg.in/go-playground/validator.v9, Fully Reproducible, ['all'], [], 13432
-github.com/dgraph-io/badger, Fully Reproducible, ['all'], [], 12429
-github.com/go-test/deep, Fully Reproducible, ['all'], [], 648
-github.com/cpuguy83/go-md2man, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 160
-github.com/go-stack/stack, Fully Reproducible, ['all'], [], 376
-gopkg.in/airbrake/gobrake.v2, Fully Reproducible, ['all'], [], 98
-github.com/go-ldap/ldap, Fully Reproducible, ['all'], [], 1978
-github.com/docker/go-connections, Fully Reproducible, ['all'], [], 175
-github.com/mitchellh/go-wordwrap, Fully Reproducible, ['all'], [], 69
-github.com/mistifyio/go-zfs, Fully Reproducible, ['all'], [], 108
-github.com/aliyun/aliyun-oss-go-sdk, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 859
-github.com/logrusorgru/aurora, Fully Reproducible, ['all'], [], 1258
-github.com/pborman/uuid, Fully Reproducible, ['all'], [], 368
-github.com/xeipuuv/gojsonschema, Fully Reproducible, ['all'], [], 1857
-go.opentelemetry.io/otel, Fully Reproducible, ['all'], [], 4020
-github.com/briandowns/spinner, Fully Reproducible, ['all'], [], 2015
-github.com/hashicorp/go-msgpack, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 61
-github.com/google/certificate-transparency-go, Fully Reproducible, ['all'], [], 713
+github.com/urfave/cli/v2, Fully Reproducible, ['all'], [], 20367
 github.com/valyala/bytebufferpool, Fully Reproducible, ['all'], [], 864
-github.com/xordataexchange/crypt, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 511
-github.com/streadway/amqp, Fully Reproducible, ['all'], [], 4655
-github.com/google/cadvisor, Fully Reproducible, ['all'], [], 15207
-github.com/casbin/casbin, Fully Reproducible, ['all'], [], 15092
-github.com/robfig/cron, Fully Reproducible, ['all'], [], 11225
-github.com/googleapis/gax-go/v2, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 165
-github.com/golang/groupcache, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 12155
-github.com/aliyun/alibaba-cloud-sdk-go, Fully Reproducible, ['all'], [], 1116
-go.uber.org/atomic, Fully Reproducible, ['all'], [], 1109
-github.com/google/btree, Fully Reproducible, ['all'], [], 3324
-github.com/fortytw2/leaktest, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 947
-github.com/prometheus/procfs, Fully Reproducible, ['all'], [], 651
-github.com/jinzhu/now, Fully Reproducible, ['all'], [], 3985
-github.com/rs/xid, Fully Reproducible, ['all'], [], 3299
-github.com/libp2p/go-libp2p, Fully Reproducible, ['all'], [], 5290
-github.com/inconshreveable/mousetrap, Fully Reproducible, ['all'], [], 188
-github.com/opentracing/opentracing-go, Fully Reproducible, ['all'], [], 3299
-go.etcd.io/etcd/etcdctl/v3, Fully Reproducible, ['all'], [], 43902
-google.golang.org/appengine, Fully Reproducible, ['all'], [], 635
-github.com/docker/spdystream, Fully Reproducible, ['all'], [], 134
-github.com/tinylib/msgp, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 1594
-github.com/rs/cors, Fully Reproducible, ['all'], [], 2384
-github.com/ghodss/yaml, Fully Reproducible, ['all'], [], 872
-github.com/docker/cli, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4116
-gopkg.in/gomail.v2, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3960
-go.etcd.io/etcd/client/v2, Fully Reproducible, ['all'], [], 43902
-github.com/gorilla/schema, Fully Reproducible, ['all'], [], 1170
-github.com/huandu/xstrings, Fully Reproducible, ['all'], [], 1133
-github.com/mailru/easyjson, Fully Reproducible, ['all'], [], 4144
-helm.sh/helm/v3, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 24611
-github.com/pelletier/go-toml, Fully Reproducible, ['all'], [], 1450
-github.com/ncw/rclone, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 39149
-github.com/docker/go-units, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 154
-github.com/pmezard/go-difflib, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 311
-github.com/client9/misspell, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1174
-github.com/digitalocean/godo, Fully Reproducible, ['all'], [], 1314
-github.com/patrickmn/go-cache, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7198
-github.com/google/go-cmp, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3358
-gopkg.in/yaml.v3, Fully Reproducible, ['all'], [], 6301
-github.com/gorilla/websocket, Fully Reproducible, ['all'], [], 19170
-github.com/mattn/go-colorable, Fully Reproducible, ['all'], [], 685
-github.com/nats-io/gnatsd, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 12992
-github.com/go-errors/errors, Fully Reproducible, ['all'], [], 663
-github.com/russross/blackfriday, Fully Reproducible, ['all'], [], 5184
-k8s.io/client-go, Fully Reproducible, ['all'], [], 6751
-cloud.google.com/go/compute, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-github.com/fsnotify/fsnotify, Fully Reproducible, ['all'], [], 8006
-github.com/hashicorp/go-retryablehttp, Fully Reproducible, ['all'], [], 1578
+k8s.io/klog, Fully Reproducible, ['all'], [], 462
+github.com/klauspost/cpuid, Fully Reproducible, ['all'], [], 834
+github.com/elazarl/goproxy, Fully Reproducible, ['all'], [], 5423
+github.com/xlab/treeprint, Fully Reproducible, ['all'], [], 348
+github.com/chzyer/readline, Fully Reproducible, ['all'], [], 1821
 go.uber.org/multierr, Fully Reproducible, ['all'], [], 781
-github.com/json-iterator/go, Fully Reproducible, ['all'], [], 12388
-github.com/fogleman/gg, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3834
-gopkg.in/gcfg.v1, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 161
-github.com/magiconair/properties, Fully Reproducible, ['all'], [], 283
-github.com/hashicorp/vault/api, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 27976
-github.com/pingcap/tidb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 34330
-github.com/go-logfmt/logfmt, Fully Reproducible, ['all'], [], 156
-gopkg.in/go-playground/validator.v8, Fully Reproducible, ['all'], [], 13432
-github.com/jinzhu/inflection, Fully Reproducible, ['all'], [], 411
-github.com/nats-io/nuid, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 331
-github.com/pkg/profile, Fully Reproducible, ['all'], [], 1868
-github.com/hashicorp/go-memdb, Fully Reproducible, ['all'], [], 2579
-github.com/containerd/fifo, Fully Reproducible, ['all'], [], 77
-github.com/googleapis/gax-go, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 165
-github.com/spf13/afero, Fully Reproducible, ['all'], [], 5082
-github.com/BurntSushi/toml, Fully Reproducible, ['all'], [], 4233
+github.com/hashicorp/go-uuid, Fully Reproducible, ['all'], [], 144
+go.opentelemetry.io/otel/sdk, Fully Reproducible, ['all'], [], 4020
+github.com/spf13/cobra, Fully Reproducible, ['all'], [], 32423
+github.com/satori/go.uuid, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4648
+github.com/lunixbochs/vtclean, Fully Reproducible, ['all'], [], 85
+github.com/peterh/liner, Fully Reproducible, ['all'], [], 887
+github.com/mdlayher/netlink, Fully Reproducible, ['all'], [], 792
+github.com/gobuffalo/flect, Fully Reproducible, ['all'], [], 91
+github.com/spf13/cast, Fully Reproducible, ['all'], [], 2915
+github.com/gobwas/glob, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 851
+github.com/patrickmn/go-cache, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7198
+github.com/gliderlabs/ssh, Fully Reproducible, ['all'], [], 2946
+google.golang.org/grpc, Fully Reproducible, ['all'], [], 18384
+gopkg.in/natefinch/lumberjack.v2, Fully Reproducible, ['all'], [], 4132
+github.com/edsrzf/mmap-go, Fully Reproducible, ['all'], [], 661
+github.com/libp2p/go-libp2p, Fully Reproducible, ['all'], [], 5290
+gopkg.in/airbrake/gobrake.v2, Fully Reproducible, ['all'], [], 98
+github.com/oklog/ulid, Fully Reproducible, ['all'], [], 3505
+github.com/fsouza/go-dockerclient, Fully Reproducible, ['all'], [], 2050
+cloud.google.com/go/datastore, Fully Reproducible, ['all'], [], 3326
+cloud.google.com/go/storage, Fully Reproducible, ['all'], [], 3326
+github.com/armon/go-radix, Fully Reproducible, ['all'], [], 568
+github.com/mholt/caddy, Fully Reproducible, ['all'], [], 48011
+github.com/urfave/cli, Fully Reproducible, ['all'], [], 20367
+github.com/hashicorp/yamux, Fully Reproducible, ['all'], [], 1775
+github.com/mistifyio/go-zfs, Fully Reproducible, ['all'], [], 108
+github.com/alicebob/miniredis, Fully Reproducible, ['all'], [], 2626
+github.com/rs/cors, Fully Reproducible, ['all'], [], 2384
+github.com/containerd/containerd, Fully Reproducible, ['all'], [], 13073
+github.com/influxdb/influxdb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 25778
+github.com/aws/aws-sdk-go-v2, Fully Reproducible, ['all'], [], 2053
+github.com/gorilla/securecookie, Fully Reproducible, ['all'], [], 608
+github.com/jonboulle/clockwork, Fully Reproducible, ['all'], [], 448
+github.com/nats-io/stan.go, Fully Reproducible, ['all'], [], 684
+github.com/rs/xid, Fully Reproducible, ['all'], [], 3299
+github.com/google/uuid, Fully Reproducible, ['all'], [], 4113
+github.com/coreos/go-oidc, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1504
+github.com/nsf/termbox-go, Fully Reproducible, ['all'], [], 4291
+github.com/ncw/rclone, Fully Reproducible, ['all'], [], 39149
+github.com/gorilla/websocket, Fully Reproducible, ['all'], [], 19170
+github.com/hashicorp/go-plugin, Fully Reproducible, ['all'], [], 4420
+github.com/gorilla/mux, Fully Reproducible, ['all'], [], 18190
+github.com/justinas/alice, Fully Reproducible, ['all'], [], 2782
+github.com/google/cadvisor, Fully Reproducible, ['all'], [], 15207
+github.com/sirupsen/logrus, Fully Reproducible, ['all'], [], 22747
 github.com/go-redsync/redsync, Fully Reproducible, ['all'], [], 2560
-github.com/ethereum/go-ethereum, Fully Reproducible, ['all'], [], 42902
-github.com/prometheus/common, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 235
-github.com/go-logr/logr, Fully Reproducible, ['all'], [], 951
-github.com/rjeczalik/notify, Fully Reproducible, ['all'], [], 794
-github.com/gofrs/flock, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 357
-github.com/miekg/dns, Fully Reproducible, ['all'], [], 7085
-github.com/go-openapi/jsonreference, Fully Reproducible, ['all'], [], 14
-github.com/kelseyhightower/envconfig, Fully Reproducible, ['all'], [], 4579
-github.com/gocql/gocql, Fully Reproducible, ['all'], [], 2426
-github.com/stretchr/testify, Fully Reproducible, ['all'], [], 20012
-github.com/shirou/gopsutil, Fully Reproducible, ['all'], [], 9200
-go.etcd.io/etcd/pkg/v3, Fully Reproducible, ['all'], [], 43902
-github.com/lib/pq, Fully Reproducible, ['all'], [], 8140
-github.com/benbjohnson/clock, Fully Reproducible, ['all'], [], 646
-github.com/segmentio/kafka-go, Fully Reproducible, ['all'], [], 6292
-github.com/valyala/fasthttp, Fully Reproducible, ['all'], [], 19718
-github.com/gammazero/workerpool, Fully Reproducible, ['all'], [], 892
-github.com/felixge/httpsnoop, Fully Reproducible, ['all'], [], 756
-github.com/dave/jennifer, Fully Reproducible, ['all'], [], 2809
+github.com/graphql-go/graphql, Fully Reproducible, ['all'], [], 9275
+go.etcd.io/etcd/client/v3, Fully Reproducible, ['all'], [], 43902
+github.com/godbus/dbus, Fully Reproducible, ['all'], [], 862
+github.com/mitchellh/cli, Fully Reproducible, ['all'], [], 1604
+github.com/denisenkom/go-mssqldb, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 1661
+github.com/huandu/xstrings, Fully Reproducible, ['all'], [], 1133
+github.com/syndtr/goleveldb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5744
+github.com/go-playground/validator, Fully Reproducible, ['all'], [], 13432
+github.com/jpillora/backoff, Fully Reproducible, ['all'], [], 518
+github.com/swaggo/gin-swagger, Fully Reproducible, ['all'], [], 3040
+github.com/xeipuuv/gojsonschema, Fully Reproducible, ['all'], [], 1857
+github.com/beevik/etree, Fully Reproducible, ['all'], [], 1082
 github.com/go-redis/redis, Fully Reproducible, ['all'], [], 17472
 go.etcd.io/etcd/tests/v3, Fully Reproducible, ['all'], [], 43902
-github.com/jessevdk/go-flags, Fully Reproducible, ['all'], [], 2193
-github.com/cespare/xxhash/v2, Fully Reproducible, ['all'], [], 1453
-gopkg.in/yaml.v2, Fully Reproducible, ['all'], [], 6301
+github.com/gobuffalo/envy, Fully Reproducible, ['all'], [], 147
+github.com/otiai10/copy, Fully Reproducible, ['all'], [], 564
 github.com/onsi/gomega, Fully Reproducible, ['all'], [], 1914
-cloud.google.com/go/logging, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-github.com/russross/blackfriday/v2, Fully Reproducible, ['all'], [], 5184
-gopkg.in/src-d/go-git.v4, Fully Reproducible, ['all'], [], 4939
-github.com/sourcegraph/go-diff, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 388
-github.com/peterbourgon/diskv, Fully Reproducible, ['all'], [], 1113
-github.com/hashicorp/raft, Fully Reproducible, ['all'], [], 7219
-github.com/gobwas/ws, Fully Reproducible, ['all'], [], 5476
-gopkg.in/fsnotify.v1, Fully Reproducible, ['all'], [], 8006
-github.com/go-sql-driver/mysql, Fully Reproducible, ['all'], [], 13452
-github.com/deckarep/golang-set, Fully Reproducible, ['all'], [], 3191
-github.com/bgentry/speakeasy, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 106
-github.com/vmihailenco/msgpack, Fully Reproducible, ['all'], [], 1954
-github.com/subosito/gotenv, Fully Reproducible, ['all'], [], 249
-github.com/zenazn/goji, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3631
-github.com/openzipkin/zipkin-go, Fully Reproducible, ['all'], [], 552
-github.com/go-gorp/gorp, Fully Reproducible, ['all'], [], 3621
-github.com/cespare/xxhash, Fully Reproducible, ['all'], [], 1453
-github.com/denisenkom/go-mssqldb, Fully Reproducible, ['all'], [], 1661
-github.com/mholt/archiver, Fully Reproducible, ['all'], [], 4003
-github.com/securego/gosec, Fully Reproducible, ['all'], [], 6943
-gopkg.in/yaml.v1, Fully Reproducible, ['all'], [], 6301
-github.com/golang-jwt/jwt/v4, Fully Reproducible, ['all'], [], 4503
-go.opentelemetry.io/otel/trace, Fully Reproducible, ['all'], [], 4020
-github.com/emicklei/proto, Fully Reproducible, ['all'], [], 530
-github.com/influxdata/influxdb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 25778
-github.com/minio/sha256-simd, Fully Reproducible, ['all'], [], 853
-github.com/klauspost/compress, Fully Reproducible, ['all'], [], 3276
-github.com/go-playground/validator/v10, Fully Reproducible, ['all'], [], 13432
-github.com/kr/text, Fully Reproducible, ['all'], [], 77
-github.com/pierrec/lz4, Fully Reproducible, ['all'], [], 767
-github.com/hashicorp/errwrap, Fully Reproducible, ['all'], [], 342
-github.com/uber/jaeger-client-go, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1340
-github.com/rakyll/statik, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 3488
-github.com/rivo/uniseg, Fully Reproducible, ['all'], [], 332
-github.com/containerd/ttrpc, Fully Reproducible, ['all'], [], 473
-github.com/eapache/queue, Fully Reproducible, ['all'], [], 473
-github.com/philhofer/fwd, Fully Reproducible, ['all'], [], 64
-github.com/ulikunitz/xz, Fully Reproducible, ['all'], [], 417
-github.com/micro/go-micro, Fully Reproducible, ['all'], [], 20624
-github.com/kisielk/errcheck, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 1990
-github.com/hashicorp/consul/api, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 26626
-github.com/xlab/treeprint, Fully Reproducible, ['all'], [], 348
-github.com/labstack/echo, Fully Reproducible, ['all'], [], 25967
-github.com/grpc-ecosystem/grpc-gateway, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 15635
-github.com/xanzy/go-gitlab, Fully Reproducible, ['all'], [], 2046
-github.com/olekukonko/tablewriter, Fully Reproducible, ['all'], [], 3778
-github.com/tidwall/gjson, Fully Reproducible, ['all'], [], 11468
-github.com/frankban/quicktest, Fully Reproducible, ['all'], [], 462
-github.com/beevik/etree, Fully Reproducible, ['all'], [], 1082
-github.com/minio/minio-go, Fully Reproducible, ['all'], [], 1968
-github.com/alecthomas/chroma, Fully Reproducible, ['all'], [], 3835
-github.com/hashicorp/go-plugin, Fully Reproducible, ['all'], [], 4420
-github.com/willf/bitset, Fully Reproducible, ['all'], [], 1108
-cloud.google.com/go/bigquery, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-go.etcd.io/etcd/raft/v3, Fully Reproducible, ['all'], [], 43902
 github.com/bmatcuk/doublestar, Fully Reproducible, ['all'], [], 365
-github.com/beorn7/perks, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 84
-github.com/go-chi/chi, Fully Reproducible, ['all'], [], 14455
-github.com/goreleaser/goreleaser, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 11841
-github.com/emirpasic/gods, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 13747
-github.com/rubenv/sql-migrate, Fully Reproducible, ['all'], [], 2866
-github.com/aws/aws-sdk-go-v2/service/sts, Fully Reproducible, ['all'], [], 2053
-github.com/alecthomas/kingpin, Fully Reproducible, ['all'], [], 3304
-github.com/cli/cli, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 32745
-github.com/hashicorp/serf, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5536
-github.com/segmentio/ksuid, Fully Reproducible, ['all'], [], 4147
-github.com/cheggaaa/pb, Fully Reproducible, ['all'], [], 3459
+github.com/valyala/fasthttp, Fully Reproducible, ['all'], [], 19718
+github.com/pkg/sftp, Fully Reproducible, ['all'], [], 1305
+github.com/andybalholm/cascadia, Fully Reproducible, ['all'], [], 602
+github.com/ziutek/mymysql, Fully Reproducible, ['all'], [], 725
+github.com/go-telegram-bot-api/telegram-bot-api, Fully Reproducible, ['all'], [], 4696
 github.com/boombuler/barcode, Fully Reproducible, ['all'], [], 1262
-github.com/envoyproxy/protoc-gen-validate, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 3324
-github.com/ugorji/go/codec, Fully Reproducible, ['all'], [], 1750
-github.com/mitchellh/cli, Fully Reproducible, ['all'], [], 1604
-github.com/jmoiron/sqlx, Fully Reproducible, ['all'], [], 13675
-github.com/montanaflynn/stats, Fully Reproducible, ['all'], [], 2773
-github.com/chzyer/readline, Fully Reproducible, ['all'], [], 1821
-github.com/modern-go/reflect2, Fully Reproducible, ['all'], [], 661
-github.com/matryer/is, Fully Reproducible, ['all'], [], 1536
-github.com/godbus/dbus, Fully Reproducible, ['all'], [], 862
-github.com/kylelemons/godebug, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 288
-cloud.google.com/go/compute/metadata, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3326
-github.com/go-openapi/jsonpointer, Fully Reproducible, ['all'], [], 26
-github.com/fatih/structs, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3762
-github.com/gorilla/context, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 411
-gopkg.in/urfave/cli.v1, Fully Reproducible, ['all'], [], 20367
-github.com/mitchellh/go-testing-interface, Fully Reproducible, ['all'], [], 46
-github.com/joho/godotenv, Fully Reproducible, ['all'], [], 6159
-github.com/oklog/ulid, Fully Reproducible, ['all'], [], 3505
-github.com/graphql-go/graphql, Fully Reproducible, ['all'], [], 9275
-go.uber.org/fx, Fully Reproducible, ['all'], [], 4076
-github.com/gofrs/uuid, Fully Reproducible, ['all'], [], 1333
-github.com/lunixbochs/vtclean, Fully Reproducible, ['all'], [], 85
-github.com/coreos/go-semver, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 307
-github.com/go-ole/go-ole, Fully Reproducible, ['all'], [], 986
-github.com/gliderlabs/ssh, Fully Reproducible, ['all'], [], 2946
-github.com/pquerna/otp, Fully Reproducible, ['all'], [], 1589
-gopkg.in/natefinch/lumberjack.v2, Fully Reproducible, ['all'], [], 4132
-github.com/cenkalti/backoff/v4, Fully Reproducible, ['all'], [], 2885
-github.com/swaggo/swag, Fully Reproducible, ['all'], [], 8385
-github.com/graph-gophers/graphql-go, Fully Reproducible, ['all'], [], 4296
-github.com/shopspring/decimal, Fully Reproducible, ['all'], [], 4847
-github.com/prometheus/prometheus, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 48959
-github.com/go-logr/zapr, Fully Reproducible, ['all'], [], 99
-github.com/grpc-ecosystem/go-grpc-prometheus, Fully Reproducible, ['all'], [], 1054
-github.com/urfave/cli/v2, Fully Reproducible, ['all'], [], 20367
-github.com/smartystreets/assertions, Fully Reproducible, ['all'], [], 86
-go.etcd.io/etcd, Fully Reproducible, ['all'], [], 43902
-github.com/go-ini/ini, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3026
-github.com/caarlos0/env, Fully Reproducible, ['all'], [], 3626
-github.com/armon/go-metrics, Fully Reproducible, ['all'], [], 1300
-github.com/grpc-ecosystem/go-grpc-middleware, Fully Reproducible, ['all'], [], 5484
-github.com/gofiber/fiber/v2, Fully Reproducible, ['all'], [], 26992
-github.com/allegro/bigcache, Fully Reproducible, ['all'], [], 6601
-github.com/klauspost/cpuid, Fully Reproducible, ['all'], [], 834
-github.com/spf13/cobra, Fully Reproducible, ['all'], [], 32423
-github.com/mitchellh/go-homedir, Fully Reproducible, ['all'], [], 930
-github.com/eapache/go-resiliency, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1513
-github.com/syndtr/goleveldb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5744
-github.com/hashicorp/vault, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 27976
-github.com/mattn/goveralls, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'; 'home'], 757
-github.com/creack/pty, Fully Reproducible, ['all'], [], 1412
+github.com/dgraph-io/badger, Fully Reproducible, ['all'], [], 12429
+github.com/ryanuber/columnize, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 152
+github.com/yudai/gojsondiff, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 483
+github.com/go-sql-driver/mysql, Fully Reproducible, ['all'], [], 13452
+github.com/hashicorp/go-msgpack, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 61
+github.com/gin-gonic/gin, Fully Reproducible, ['all'], [], 69835
+github.com/hashicorp/go-sockaddr, Fully Reproducible, ['all'], [], 217
+github.com/goreleaser/goreleaser, Fully Reproducible, ['all'], [], 11841
+github.com/eapache/queue, Fully Reproducible, ['all'], [], 473
+github.com/buger/jsonparser, Fully Reproducible, ['all'], [], 4892
+go.etcd.io/etcd/pkg/v3, Fully Reproducible, ['all'], [], 43902
 github.com/go-playground/universal-translator, Fully Reproducible, ['all'], [], 311
+github.com/getsentry/raven-go, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 555
+github.com/BurntSushi/toml, Fully Reproducible, ['all'], [], 4233
+github.com/briandowns/spinner, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 2015
+github.com/hashicorp/consul/api, Fully Reproducible, ['all'], [], 26626
+github.com/lucasb-eyer/go-colorful, Fully Reproducible, ['all'], [], 916
+github.com/docker/go-units, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 154
+github.com/openzipkin/zipkin-go, Fully Reproducible, ['all'], [], 552
+github.com/containerd/typeurl, Fully Reproducible, ['all'], [], 48
+github.com/hashicorp/vault/sdk, Fully Reproducible, ['all'], [], 27976
+github.com/urfave/negroni, Fully Reproducible, ['all'], [], 7334
+cloud.google.com/go/compute, Fully Reproducible, ['all'], [], 3326
+k8s.io/client-go, Fully Reproducible, ['all'], [], 6751
+github.com/mattn/go-isatty, Fully Reproducible, ['all'], [], 705
+github.com/hpcloud/tail, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2376
+github.com/cloudflare/cfssl, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7718
+github.com/prometheus/common, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 235
+github.com/cenkalti/backoff, Fully Reproducible, ['all'], [], 2885
+github.com/opentracing/opentracing-go, Fully Reproducible, ['all'], [], 3299
+github.com/leodido/go-urn, Fully Reproducible, ['all'], [], 68
+github.com/posener/complete, Fully Reproducible, ['all'], [], 866
+github.com/gogo/protobuf, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5562
+github.com/fatih/color, Fully Reproducible, ['all'], [], 6162
+github.com/ghodss/yaml, Fully Reproducible, ['all'], [], 872
+github.com/hashicorp/errwrap, Fully Reproducible, ['all'], [], 342
+github.com/mitchellh/hashstructure, Fully Reproducible, ['all'], [], 693
+github.com/hashicorp/hcl, Fully Reproducible, ['all'], [], 4706
+github.com/spf13/jwalterweatherman, Fully Reproducible, ['all'], [], 223
+github.com/containerd/fifo, Fully Reproducible, ['all'], [], 77
+github.com/willf/bitset, Fully Reproducible, ['all'], [], 1108
+github.com/segmentio/ksuid, Fully Reproducible, ['all'], [], 4147
+github.com/fatih/structs, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3762
+github.com/mitchellh/copystructure, Fully Reproducible, ['all'], [], 243
+github.com/hashicorp/go-retryablehttp, Fully Reproducible, ['all'], [], 1578
+github.com/googleapis/gnostic, Fully Reproducible, ['all'], [], 1440
+github.com/oschwald/geoip2-golang, Fully Reproducible, ['all'], [], 1588
+github.com/eclipse/paho.mqtt.golang, Fully Reproducible, ['all'], [], 2327
+github.com/montanaflynn/stats, Fully Reproducible, ['all'], [], 2773
+github.com/imdario/mergo, Fully Reproducible, ['all'], [], 2491
+github.com/mitchellh/gox, Fully Reproducible, ['all'], [], 4446
+github.com/inconshreveable/log15, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1083
+github.com/joho/godotenv, Fully Reproducible, ['all'], [], 6159
+github.com/frankban/quicktest, Fully Reproducible, ['all'], [], 462
+github.com/golang/glog, Fully Reproducible, ['all'], [], 3331
+gopkg.in/tomb.v1, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 340
+github.com/magefile/mage, Fully Reproducible, ['all'], [], 3576
+github.com/gorilla/sessions, Fully Reproducible, ['all'], [], 2502
+github.com/rubenv/sql-migrate, Fully Reproducible, ['all'], [], 2866
+go.etcd.io/etcd, Fully Reproducible, ['all'], [], 43902
+github.com/go-openapi/spec, Fully Reproducible, ['all'], [], 342
+github.com/mgechev/revive, Fully Reproducible, ['all'], [], 4209
+go.uber.org/zap, Fully Reproducible, ['all'], [], 17813
+github.com/vishvananda/netlink, Fully Reproducible, ['all'], [], 2368
+github.com/magiconair/properties, Fully Reproducible, ['all'], [], 283
+github.com/nats-io/nats.go, Fully Reproducible, ['all'], [], 4621
+github.com/spf13/viper, Fully Reproducible, ['all'], [], 23300
+github.com/benbjohnson/clock, Fully Reproducible, ['all'], [], 646
+github.com/bgentry/speakeasy, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 106
+github.com/prometheus/procfs, Fully Reproducible, ['all'], [], 651
+github.com/dave/jennifer, Fully Reproducible, ['all'], [], 2809
+github.com/pierrec/lz4, Fully Reproducible, ['all'], [], 767
+go.etcd.io/etcd/api/v3, Fully Reproducible, ['all'], [], 43902
+github.com/natefinch/lumberjack, Fully Reproducible, ['all'], [], 4132
+github.com/masterminds/semver, Fully Reproducible, ['all'], [], 1009
+github.com/shirou/gopsutil, Fully Reproducible, ['all'], [], 9200
+gopkg.in/ini.v1, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3026
+github.com/opencontainers/go-digest, Fully Reproducible, ['all'], [], 128
+github.com/securego/gosec, Fully Reproducible, ['all'], [], 6943
+cloud.google.com/go/pubsub, Fully Reproducible, ['all'], [], 3326
+github.com/gammazero/workerpool, Fully Reproducible, ['all'], [], 892
+github.com/dnaeon/go-vcr, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 964
+github.com/ugorji/go/codec, Partially Reproducible, ['environment'; 'build_path'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['user_group.available+=builduser:builduser'], 1750
+github.com/aliyun/aliyun-oss-go-sdk, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 859
+github.com/gophercloud/gophercloud, Fully Reproducible, ['all'], [], 752
+github.com/segmentio/kafka-go, Fully Reproducible, ['all'], [], 6292
+github.com/containerd/cgroups, Fully Reproducible, ['all'], [], 974
+github.com/gocql/gocql, Fully Reproducible, ['all'], [], 2426
+github.com/rjeczalik/notify, Fully Reproducible, ['all'], [], 794
+cloud.google.com/go/compute/metadata, Fully Reproducible, ['all'], [], 3326
+github.com/emicklei/proto, Fully Reproducible, ['all'], [], 530
+cloud.google.com/go/bigquery, Fully Reproducible, ['all'], [], 3326
+github.com/philhofer/fwd, Fully Reproducible, ['all'], [], 64
+github.com/pmezard/go-difflib, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 311
+github.com/mattn/go-runewidth, Fully Reproducible, ['all'], [], 486
+github.com/dgrijalva/jwt-go, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 10616
+github.com/matttproud/golang_protobuf_extensions, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 48
+github.com/99designs/gqlgen, Fully Reproducible, ['all'], [], 8992
+github.com/vmware/govmomi, Fully Reproducible, ['all'], [], 2134
+github.com/spf13/afero, Fully Reproducible, ['all'], [], 5082
+github.com/cockroachdb/apd, Fully Reproducible, ['all'], [], 533
+github.com/eapache/go-resiliency, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1513
+github.com/robfig/cron, Fully Reproducible, ['all'], [], 11225
+github.com/olekukonko/tablewriter, Fully Reproducible, ['all'], [], 3778
+github.com/containerd/console, Fully Reproducible, ['all'], [], 93
+github.com/emirpasic/gods, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 13747
+github.com/docker/docker, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 66239
+github.com/rivo/uniseg, Fully Reproducible, ['all'], [], 332
+github.com/digitalocean/godo, Fully Reproducible, ['all'], [], 1314
+github.com/client9/misspell, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1174
+k8s.io/kubernetes, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 93622
+github.com/deckarep/golang-set, Fully Reproducible, ['all'], [], 3191
+github.com/nats-io/nuid, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 331
+github.com/docker/spdystream, Fully Reproducible, ['all'], [], 134
+go.etcd.io/etcd/client/v2, Fully Reproducible, ['all'], [], 43902
+github.com/mattn/goveralls, Fully Reproducible, ['all'], [], 757
+github.com/hashicorp/go-immutable-radix, Fully Reproducible, ['all'], [], 857
+github.com/google/go-cmp, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3358
+github.com/envoyproxy/protoc-gen-validate, Fully Reproducible, ['all'], [], 3324
+github.com/jmespath/go-jmespath, Fully Reproducible, ['all'], [], 503
+github.com/go-logr/logr, Fully Reproducible, ['all'], [], 951
+github.com/go-playground/locales, Fully Reproducible, ['all'], [], 232
+github.com/gorilla/schema, Fully Reproducible, ['all'], [], 1170
+github.com/go-stack/stack, Fully Reproducible, ['all'], [], 376
+github.com/casbin/casbin, Fully Reproducible, ['all'], [], 15092
+github.com/uber/jaeger-client-go, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1340
+github.com/go-ini/ini, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3026
+github.com/go-openapi/jsonpointer, Fully Reproducible, ['all'], [], 26
+github.com/go-chi/chi, Fully Reproducible, ['all'], [], 14455
+github.com/google/go-querystring, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1541
+github.com/alecthomas/kingpin, Fully Reproducible, ['all'], [], 3304
+github.com/go-openapi/jsonreference, Fully Reproducible, ['all'], [], 14
+github.com/valyala/fasttemplate, Fully Reproducible, ['all'], [], 711
+github.com/vmihailenco/msgpack, Fully Reproducible, ['all'], [], 1954
+github.com/spf13/pflag, Fully Reproducible, ['all'], [], 2118
+github.com/kisielk/errcheck, Fully Reproducible, ['all'], [], 1990
+go.opentelemetry.io/otel/trace, Fully Reproducible, ['all'], [], 4020
+github.com/docker/go-connections, Fully Reproducible, ['all'], [], 175
+github.com/klauspost/pgzip, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1023
+github.com/stretchr/objx, Fully Reproducible, ['all'], [], 566
+cloud.google.com/go/logging, Fully Reproducible, ['all'], [], 3326
+github.com/klauspost/compress, Fully Reproducible, ['all'], [], 3276
+github.com/disintegration/imaging, Fully Reproducible, ['all'], [], 4696
+github.com/go-errors/errors, Fully Reproducible, ['all'], [], 663
+github.com/go-ole/go-ole, Fully Reproducible, ['all'], [], 986
+github.com/gobwas/ws, Fully Reproducible, ['all'], [], 5476
+github.com/gobuffalo/packr/v2, Fully Reproducible, ['all'], [], 3335
+github.com/sergi/go-diff, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1448
+github.com/miekg/dns, Fully Reproducible, ['all'], [], 7085
+github.com/kr/pretty, Fully Reproducible, ['all'], [], 1144
+github.com/tidwall/pretty, Fully Reproducible, ['all'], [], 287
+github.com/prometheus/client_golang, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4672
+github.com/oklog/run, Fully Reproducible, ['all'], [], 1319
+github.com/jinzhu/inflection, Fully Reproducible, ['all'], [], 411
+github.com/hashicorp/go-getter, Fully Reproducible, ['all'], [], 1468
+github.com/smartystreets/assertions, Fully Reproducible, ['all'], [], 86
+github.com/pelletier/go-toml, Fully Reproducible, ['all'], [], 1450
+gopkg.in/alecthomas/kingpin.v2, Fully Reproducible, ['all'], [], 3304
+github.com/hashicorp/vault, Fully Reproducible, ['all'], [], 27976
+github.com/mitchellh/reflectwalk, Fully Reproducible, ['all'], [], 194
+github.com/pkg/errors, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7917
+github.com/chzyer/logex, Fully Reproducible, ['all'], [], 39
+github.com/kylelemons/godebug, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 288
+github.com/google/gopacket, Fully Reproducible, ['all'], [], 5678
+github.com/google/certificate-transparency-go, Fully Reproducible, ['all'], [], 713
+github.com/gofiber/fiber/v2, Fully Reproducible, ['all'], [], 26992
+gopkg.in/go-playground/validator.v9, Fully Reproducible, ['all'], [], 13432
+github.com/ethereum/go-ethereum, Fully Reproducible, ['all'], [], 42902
+github.com/klauspost/cpuid/v2, Fully Reproducible, ['all'], [], 834
+github.com/micro/go-micro, Fully Reproducible, ['all'], [], 20624
+github.com/xordataexchange/crypt, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 511
+github.com/google/go-github, Not Reproducible, [], ['environment'; 'build_path'; 'user_group.available+=builduser:builduser'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 9446
+github.com/go-test/deep, Fully Reproducible, ['all'], [], 648
+github.com/btcsuite/btcd, Fully Reproducible, ['all'], [], 5359
+github.com/etcd-io/etcd, Fully Reproducible, ['all'], [], 43902
+github.com/oschwald/maxminddb-golang, Fully Reproducible, ['all'], [], 480
+github.com/modern-go/reflect2, Fully Reproducible, ['all'], [], 661
+go.etcd.io/etcd/client/pkg/v3, Fully Reproducible, ['all'], [], 43902
+github.com/caarlos0/env, Fully Reproducible, ['all'], [], 3626
+github.com/shopspring/decimal, Fully Reproducible, ['all'], [], 4847
+github.com/tinylib/msgp, Fully Reproducible, ['all'], [], 1594
+github.com/go-gorp/gorp, Fully Reproducible, ['all'], [], 3621
+github.com/labstack/echo, Fully Reproducible, ['all'], [], 25967
