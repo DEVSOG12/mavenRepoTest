@@ -104,7 +104,7 @@ def testGoReproducible(repoInfo, resultFileName):
     # Run the test
     command = "sudo reprotest --diffoscope-arg='--html=/home/osolarin/ReproducibleTests/GoRepro/" \
               "data/diffoscopeLogs{}/{}/all.html' --variations=+all "\
-              "\"go build -mod=mod -modcacherw -ldflags '-s -w -extldflags=-Z' -trimpath -o dist/bin\" "\
+              "\"go build -trimpath -buildvcs=false -ldflags='-s -w -buildid=' -o dist/bin\" "\
               "'dist/*'".format(resultFileName, repoInfo[0].replace("/", "_"))
     print(command)
     exit_code = os.system(command)

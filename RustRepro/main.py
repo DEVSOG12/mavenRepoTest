@@ -22,14 +22,17 @@ class ReproStatus(Enum):
 
 
 def run_reprotest(name: str, repository: str, reprotest_args: List[str]) -> [ReproStatus, List[str]]:
-    with subprocess.Popen(
-            ["git", "clone", "--depth", "1", repository, name],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-    ) as git:
-        for line in git.stdout:
-            print(line, end="")
+    
+    # Check if the repository is already cloned
+    if not os.path.exists(name):
+        with subprocess.Popen(
+                ["git", "clone", "--depth", "1", repository, name],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+        ) as git:
+            for line in git.stdout:
+                print(line, end="")
 
         # if git.wait() != 0:
         #     return[ ReproStatus.BUILD_FAILED, None, reprotest_args[0].split("+")[1]]
@@ -41,6 +44,8 @@ def run_reprotest(name: str, repository: str, reprotest_args: List[str]) -> [Rep
             stderr=subprocess.STDOUT,
             text=True,
     ) as reprotest:
+        if reprotest_args[0].split("=")[0] == "--config-file":
+            reprotest_args[0] = "+all"
         for line in reprotest.stdout:
             print(line, end="")
             output.append(line)
@@ -52,13 +57,13 @@ def run_reprotest(name: str, repository: str, reprotest_args: List[str]) -> [Rep
         ):
             # we don't really have a better way to detect the failure was from diffoscope
             if any(line.startswith("MEAN-RUSTC-WARN") for line in output):
-                status = [ReproStatus.NON_REPRODUCTION_WITH_THIRD_PARTY_BUILD_CODE, output]
+                status = [ReproStatus.NON_REPRODUCTION_WITH_THIRD_PARTY_BUILD_CODE, output, reprotest_args[0].split("+")[1] ]
             else:
                 status = [ReproStatus.NON_REPRODUCTION, output, reprotest_args[0].split("+")[1]]
         else:
             status = [ReproStatus.BUILD_FAILED, output, reprotest_args[0].split("+")[1]]
 
-    shutil.rmtree(name)
+    # shutil.rmtree(name)
     return status
 
 
@@ -113,7 +118,7 @@ if __name__ == '__main__':
         stars = record['stars']
         print(name, url, stars)
 
-        possible_variations = ["time"]
+        possible_variations = ["environment", "build_path", "fileordering", "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
         # test all
         if not os.path.exists('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}'.format(name)):
             os.mkdir('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}'.format(name))
@@ -126,13 +131,13 @@ if __name__ == '__main__':
                                                                                                   url.replace("/",
                                                                                                               "_")))
 
-        all = run_reprotest(name, url, ["--variation=+time", "sudo cargo build --release", "target/*"])
+        all = run_reprotest(name, url, ["--config-file=/home/osolarin/ReproducibleTests/RustRepro/.reprotestrc", "sudo cargo build --release", "target/*"])
 
         if all[0] == ReproStatus.SUCCESS:
             print("Success")
             # Its reproducible
             record = json.loads(
-                open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format("cargo400Results"), 'r').read())[
+                open('/home/osolarin/ReproducibleTests/RustRepro/data/{}.json'.format("cargo400Results"), 'r').read())[
                 "results"]
             record.append({
                 "project": name,
@@ -142,7 +147,30 @@ if __name__ == '__main__':
                 "variationsReproducible": ["all"]
             })
 
+            # write to file
+            with open('/home/osolarin/ReproducibleTests/RustRepro/data/{}.json'.format("cargo400Results"), 'w') as f:
+                json.dump({"results": record}, f)
+                f.close()
+
+
+
         else:
+
+            #Save the diffoscope logs
+            with open('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}/{}/{}.txt'.format(name,
+                                                                                                            url.replace(
+                                                                                                                "/",
+                                                                                                                "_"),
+                                                                                                            "all"),
+                        'w') as f:
+                
+                f.writelines(all[1])
+                f.close()
+
+
+
+
+            
             # Try all other variations
             variations_reproducible = []
             variations_not_reproducible = []
@@ -151,21 +179,23 @@ if __name__ == '__main__':
             # Use multiprocessing to run reprotest commands in parallel
             pool = Pool()
             results = pool.starmap(run_reprotest,
-                                   [(name, url, ["--variation=+{}", "sudo cargo build --release", "target/*".format(variation)]) for variation in
+                                   [(name, url, ["--variation=+{}".format(variation), "sudo cargo build --release", "target/*"]) for variation in
                                     possible_variations])
             pool.close()
             pool.join()
+            shutil.rmtree(name)
+
 
             for result in results:
                 if result[0] == ReproStatus.SUCCESS:
                     variations_reproducible.append(result[2])
                 elif result[0] == ReproStatus.NON_REPRODUCTION:
-                    with open('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}/{}/{}.txt'.format(name,
+                    with open('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}/{}.txt'.format(name,
                                                                                                                   url.replace(
                                                                                                                       "/",
                                                                                                                       "_"),
                                                                                                                   result[
-                                                                                                                      1]),
+                                                                                                                      2]),
                               'w') as f:
                         f.writelines(result[1])
                         f.close()
@@ -177,14 +207,14 @@ if __name__ == '__main__':
                                                                                                                       "/",
                                                                                                                       "_"),
                                                                                                                   result[
-                                                                                                                      1]),
+                                                                                                                      2]),
                               'w') as f:
                         f.writelines(result[1])
                         f.close()
 
             # Record the results
             record = json.loads(
-                open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format("cargo400Results"),
+                open('/home/osolarin/ReproducibleTests/RustRepro/data/{}.json'.format("cargo400Results"),
                      'r').read())[
                 "results"]
             record.append({
@@ -198,7 +228,7 @@ if __name__ == '__main__':
 
             print(record)
 
-            with open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format("cargo400Results"), 'w') as f:
+            with open('/home/osolarin/ReproducibleTests/RustRepro/data/{}.json'.format("cargo400Results"), 'w') as f:
                 json.dump({"results": record}, f)
 
 
