@@ -131,7 +131,7 @@ if __name__ == '__main__':
                                                                                                   url.replace("/",
                                                                                                               "_")))
 
-        all = run_reprotest(name, url, ["--config-file=/home/osolarin/ReproducibleTests/RustRepro/.reprotestrc", "sudo cargo build --release", "target/*"])
+        all = run_reprotest(name, url, ["--config-file=/home/osolarin/ReproducibleTests/RustRepro/.reprotestrc", "sudo cargo package", "target/package/*.crate*"])
 
         if all[0] == ReproStatus.SUCCESS:
             print("Success")

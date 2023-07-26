@@ -42,8 +42,10 @@ def check_whl_file(data):
         print(directory)
 
         # Check if Env variable is set
-        # if not os.environ.get("SOURCE_DATE_EPOCH"):
-        #     os.environ["SOURCE_DATE_EPOCH"] = "315532800"
+        if not os.environ.get("SOURCE_DATE_EPOCH"):
+            os.environ["SOURCE_DATE_EPOCH"] = "315532800"
+
+        os.umask(0o022)
 
         # Change directory to the repo
         os.chdir(directory)
