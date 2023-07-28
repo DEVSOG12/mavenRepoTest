@@ -10,7 +10,7 @@ def runWhlTest(repoInfo, resultFile):
 
     print("Running whl test for {}".format(repoInfo[0]))
 
-    possible_variations = ["environment", "build_path", "user_group.available+=builduser:builduser", "fileordering",
+    possible_variations = ["environment", "build_path", "user_group", "fileordering",
                            "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
 
     variations_reproducible = []

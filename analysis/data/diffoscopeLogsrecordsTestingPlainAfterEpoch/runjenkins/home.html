@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer" />
+  <meta name="generator" content="diffoscope" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAM8SURBVFiF7dZdaJZlGAfw3/O+e9XNjy3XllZzWImBxIpifqTgsmUHBSIeBNFBdRh0UHQ0xGdb66CFBIERZEFRQRRUw0HkQkLMYQSBdpCFWdgSP6jpNn2393k68Nn2bj3vXtb6UOh/cl/39b/u67mem/913zf/4z9GUDw5xNI8n5WIzW9m/QF2YluJmI8203mALzEvLWAerRs4Pz6vSIkZSlsYk0/GkaB0zEgyDgWMlijyWsJuS2fkQwu8pqpMTA0ypeiShG71Bp0rU8Q+A47MWEDgvHZbZl/Av4SpIgxVYB3IqwZDmoUuYkzosDaNchpAoFqkSmgjGPWzLieF1k3JHVsjvCJQHBYaSy9g1E3m+QImQiK9SbNGqJDzuiDZ0lggQJCsyelDq8BB47sbCWTsnvhG3kqcLL833eqF4hk1EOoTOjZjnnaRdq2l6KtMAyl4/g23bKJrun+Mt9uOq7nvqOVbebWYy9Adc1fM/R/3CO780dONbIeFPHsPw+ULeM5ZHTbXHfUtXpxOZzgT5z02UGsZThRzF/ilht9G+fr4zfbfccIxXIa7uVTup69i7LJXaEEqF3on1d9ludBLpVLOVoT1lky9QYtwQ6p3WAVqSyUslWwSbRrkPJrMtgn0iBVk7BPJ4sGE24EPQKW3jLgdzWKLBTbg0yTuZeGkDsp2gcUGDesHGQ/gK5G8nLMigWiCe3jCrnTRiJ9EYjm1ImsUEq5l8hScPXbpsVtlKhfan+pv0yD0ZqmU5XegGBmnDIo/pylj8oYLOP3Eab/v5Zmi6EtZ3vv1FU/2r7LioYSL2dNybbdiMdptFU57++20Vqh+iq/Tap1WpaWY611wmyWyUzxZDbIWTvEV1Ildn5agfBumoUMTtoisFvhebAAHZWxX0ChwTuScvHdVeVykToysMyJ7ittwbmj31J+6IrRDp5XTfBt1WJ+WYnZdMB0F3xlUgD5uDVj2Sa+a4SrzH+FeyHHmw17V112waBOZgP4WczkLZsILar1fpIliMU4XZoK/poE0XHl+N8v6QcGAUbVymnDIZVnzrTXqGzmnhKLxZX/niyiDjIJgwg4Se1GR/Y8idGPysh6fr0i1i/AHMWHgrwUJgNAAAAAASUVORK5CYII=" />
+  <title>/usr/bin/diffoscope --exclude-directory-metadata=yes --html=/home/osolarin/ReproducibleTests/analysis/data/diffoscopeLogsrecordsTestingPlainAfterEpoch/runjenkins/home.html --no-progress /tmp/tmph1e43896/control /tmp/tmph1e43896/experiment-1</title>
+<style>
+body.diffoscope {
+  background: white;
+  color: black;
+}
+.diffoscope .footer {
+  font-size: small;
+}
+.diffoscope .difference {
+  border: outset #888 1px;
+  background: #E8E8E8;
+  background: rgba(0,0,0,.1);
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+.diffoscope .difference table {
+  table-layout: fixed;
+  width: 100%;
+  border: 0;
+}
+.diffoscope .difference th,
+.diffoscope .difference td {
+  border: 0;
+}
+.diffoscope table.diff {
+  border: 0;
+  border-collapse:collapse;
+  font-size:0.75em;
+  font-family: 'Lucida Console', monospace;
+  word-break: break-word;
+}
+.diffoscope table.diff tr:hover td {
+  background: #FFFF00;
+}
+.diffoscope .line {
+  color:#8080a0
+}
+.diffoscope th {
+  background: black;
+  color: white
+}
+.diffoscope .diffunmodified td {
+  background: #D0D0E0
+}
+.diffoscope .diffhunk td {
+  background: #A0A0A0
+}
+.diffoscope .diffadded td {
+  background: #CCFFCC
+}
+.diffoscope .diffdeleted td {
+  background: #FFCCCC
+}
+.diffoscope .diffchanged td {
+  background: #FFFFA0
+}
+.diffoscope ins, del {
+  background: #E0C880;
+  text-decoration: none
+}
+.diffoscope .dp {
+  color: #B08080
+}
+.diffoscope .comment {
+  font-style: italic;
+}
+.diffoscope .comment.multiline {
+  font-style: normal;
+  font-family: monospace;
+  white-space: pre;
+}
+.diffoscope .source {
+  font-weight: bold;
+}
+.diffoscope .error {
+  border: solid black 1px;
+  background: red;
+  color: white;
+  padding: 0.2em;
+}
+.diffoscope .anchor {
+  margin-left: 0.5em;
+  font-size: 80%;
+  color: #333;
+  text-decoration: none;
+  display: none;
+}
+.diffoscope .diffheader:hover .anchor {
+  display: inline;
+}
+.diffoscope .diffcontrol, .diffoscope .diffcontrol-nochildren {
+  float: left;
+  margin-right: 0.3em;
+  cursor: pointer;
+  display: none; /* currently, only available in html-dir output where jquery is enabled */
+}
+.diffoscope .colines {
+  width: 3em;
+}
+.diffoscope .coldiff {
+  width: 99%;
+}
+.diffoscope .diffsize {
+  float: right;
+}
+.diffoscope table.diff tr.ondemand td, .diffoscope div.ondemand-details {
+  background: #f99;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.diffoscope table.diff tr.ondemand:hover td, .diffoscope div.ondemand-details:hover {
+  background: #faa;
+  cursor: pointer;
+}
+</style>
+</head>
+<body class="diffoscope">
+<div class="difference">
+  <div class="diffheader">
+  <div class="diffcontrol diffcontrol-double">⊟</div>
+  <div><span class="diffsize">4.86 KB</span></div>
+  <div><span class="source">/tmp/tmph1e43896/control</span> vs.</div>
+  <div id="top"><span class="source">/tmp/tmph1e43896/experiment-1</span>
+    <a class="anchor" href="#top">¶</a>
+  </div>
+  </div>
+  <div class="difference">
+    <div class="diffheader">
+    <div class="diffcontrol diffcontrol-double">⊟</div>
+    <div><span class="diffsize">4.81 KB</span></div>
+    <div><span class="source">/tmp/tmph1e43896/control/source-root</span> vs.</div>
+    <div id="Dtmp-tmph-e------control-source-root"><span class="source">/tmp/tmph1e43896/experiment-1/source-root</span>
+      <a class="anchor" href="#Dtmp-tmph-e------control-source-root">¶</a>
+    </div>
+    </div>
+    <div class="difference">
+      <div class="diffheader">
+      <div class="diffcontrol diffcontrol-double">⊟</div>
+      <div><span class="diffsize">4.73 KB</span></div>
+      <div><span class="source">/tmp/tmph1e43896/control/source-root/dist</span> vs.</div>
+      <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist"><span class="source">/tmp/tmph1e43896/experiment-1/source-root/dist</span>
+        <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist">¶</a>
+      </div>
+      </div>
+      <div class="difference">
+        <div class="diffheader">
+        <div class="diffcontrol">⊟</div>
+        <div><span class="diffsize">120 B</span></div>
+        <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist---file-list"><span class="source">file list</span>
+          <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist---file-list">¶</a>
+        </div>
+        </div>
+<table class="diff">
+<colgroup><col class="colines"/><col class="coldiff"/>
+<col class="colines"/><col class="coldiff"/></colgroup>
+<tr style="display:none;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr class="diffhunk"><td colspan="2">Offset 1, 1 lines modified</td><td colspan="2">Offset 1, 1 lines modified</td></tr>
+<tr class="diffchanged"><td class="diffline">1 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>-py3-none-any.whl</td><td class="diffline">1 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>-py3-none-any.whl</td></tr>
+</table>      </div>
+      <div class="difference">
+        <div class="diffheader">
+        <div class="diffcontrol diffcontrol-double">⊟</div>
+        <div><span class="diffsize">4.53 KB</span></div>
+        <div><span class="source">/tmp/tmph1e43896/control/source-root/dist/runjenkins-2023.7.27.77341-py3-none-any.whl</span> vs.</div>
+        <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl"><span class="source">/tmp/tmph1e43896/experiment-1/source-root/dist/runjenkins-2023.7.27.77343-py3-none-any.whl</span>
+          <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl">¶</a>
+        </div>
+        </div>
+        <div class="difference">
+          <div class="diffheader">
+          <div class="diffcontrol">⊟</div>
+          <div><span class="diffsize">1.51 KB</span></div>
+          <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---zipinfo---"><span class="source">zipinfo {}</span>
+            <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---zipinfo---">¶</a>
+          </div>
+          </div>
+<table class="diff">
+<colgroup><col class="colines"/><col class="coldiff"/>
+<col class="colines"/><col class="coldiff"/></colgroup>
+<tr style="display:none;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr class="diffhunk"><td colspan="2">Offset 1, 9 lines modified</td><td colspan="2">Offset 1, 9 lines modified</td></tr>
+<tr class="diffchanged"><td class="diffline">1 </td><td class="diffpresent">Zip<span class="dp">·</span>file<span class="dp">·</span>size:<span class="dp">·</span>557<del>6</del><span class="dp">·</span>bytes,<span class="dp">·</span>number<span class="dp">·</span>of<span class="dp">·</span>entries:<span class="dp">·</span>7</td><td class="diffline">1 </td><td class="diffpresent">Zip<span class="dp">·</span>file<span class="dp">·</span>size:<span class="dp">·</span>557<ins>5</ins><span class="dp">·</span>bytes,<span class="dp">·</span>number<span class="dp">·</span>of<span class="dp">·</span>entries:<span class="dp">·</span>7</td></tr>
+<tr class="diffunmodified"><td class="diffline">2 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>7822<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins.py</td><td class="diffline">2 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>7822<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins.py</td></tr>
+<tr class="diffchanged"><td class="diffline">3 </td><td class="diffpresent">-rw-rw-r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>1070<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/LICENSE</td><td class="diffline">3 </td><td class="diffpresent">-rw-rw-r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>1070<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/LICENSE</td></tr>
+<tr class="diffchanged"><td class="diffline">4 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>1668<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/METADATA</td><td class="diffline">4 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>1668<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/METADATA</td></tr>
+<tr class="diffchanged"><td class="diffline">5 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>92<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/WHEEL</td><td class="diffline">5 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>92<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/WHEEL</td></tr>
+<tr class="diffchanged"><td class="diffline">6 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>47<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/entry_points.txt</td><td class="diffline">6 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>47<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/entry_points.txt</td></tr>
+<tr class="diffchanged"><td class="diffline">7 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>11<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/top_level.txt</td><td class="diffline">7 </td><td class="diffpresent">-rw-r--r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>11<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/top_level.txt</td></tr>
+<tr class="diffchanged"><td class="diffline">8 </td><td class="diffpresent">?rw-rw-r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>629<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/RECORD</td><td class="diffline">8 </td><td class="diffpresent">?rw-rw-r--<span class="dp">·</span><span class="dp">·</span>2.0<span class="dp">·</span>unx<span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span><span class="dp">·</span>629<span class="dp">·</span>b-<span class="dp">·</span>defN<span class="dp">·</span>80-Jan-01<span class="dp">·</span>00:00<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/RECORD</td></tr>
+<tr class="diffchanged"><td class="diffline">9 </td><td class="diffpresent">7<span class="dp">·</span>files,<span class="dp">·</span>11339<span class="dp">·</span>bytes<span class="dp">·</span>uncompressed,<span class="dp">·</span>444<del>2</del><span class="dp">·</span>bytes<span class="dp">·</span>compressed:<span class="dp">·</span><span class="dp">·</span>60.8%</td><td class="diffline">9 </td><td class="diffpresent">7<span class="dp">·</span>files,<span class="dp">·</span>11339<span class="dp">·</span>bytes<span class="dp">·</span>uncompressed,<span class="dp">·</span>444<ins>1</ins><span class="dp">·</span>bytes<span class="dp">·</span>compressed:<span class="dp">·</span><span class="dp">·</span>60.8%</td></tr>
+</table>        </div>
+        <div class="difference">
+          <div class="diffheader">
+          <div class="diffcontrol">⊟</div>
+          <div><span class="diffsize">976 B</span></div>
+          <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---zipnote--TEMP--diffoscope_b--kod-j_mph-e------tmpn--ka-b-_.zip"><span class="source">zipnote «TEMP»/diffoscope_b92kod2j_mph1e43896/tmpn45ka0b9_.zip</span>
+            <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---zipnote--TEMP--diffoscope_b--kod-j_mph-e------tmpn--ka-b-_.zip">¶</a>
+          </div>
+          </div>
+<table class="diff">
+<colgroup><col class="colines"/><col class="coldiff"/>
+<col class="colines"/><col class="coldiff"/></colgroup>
+<tr style="display:none;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr class="diffhunk"><td colspan="2">Offset 1, 22 lines modified</td><td colspan="2">Offset 1, 22 lines modified</td></tr>
+<tr class="diffunmodified"><td class="diffline">1 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins.py</td><td class="diffline">1 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins.py</td></tr>
+<tr class="diffunmodified"><td class="diffline">2 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">2 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffchanged"><td class="diffline">3 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/LICENSE</td><td class="diffline">3 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/LICENSE</td></tr>
+<tr class="diffunmodified"><td class="diffline">4 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">4 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffchanged"><td class="diffline">5 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/METADATA</td><td class="diffline">5 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/METADATA</td></tr>
+<tr class="diffunmodified"><td class="diffline">6 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">6 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffchanged"><td class="diffline">7 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/WHEEL</td><td class="diffline">7 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/WHEEL</td></tr>
+<tr class="diffunmodified"><td class="diffline">8 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">8 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffchanged"><td class="diffline">9 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/entry_points.txt</td><td class="diffline">9 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/entry_points.txt</td></tr>
+<tr class="diffunmodified"><td class="diffline">10 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">10 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffchanged"><td class="diffline">11 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/top_level.txt</td><td class="diffline">11 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/top_level.txt</td></tr>
+<tr class="diffunmodified"><td class="diffline">12 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">12 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffchanged"><td class="diffline">13 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<del>1</del>.dist-info/RECORD</td><td class="diffline">13 </td><td class="diffpresent">Filename:<span class="dp">·</span>runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/RECORD</td></tr>
+<tr class="diffunmodified"><td class="diffline">14 </td><td class="diffpresent">Comment:<span class="dp">·</span></td><td class="diffline">14 </td><td class="diffpresent">Comment:<span class="dp">·</span></td></tr>
+<tr class="diffunmodified"><td colspan="2"> </td><td colspan="2"> </td></tr>
+<tr class="diffunmodified"><td class="diffline">15 </td><td class="diffpresent">Zip<span class="dp">·</span>file<span class="dp">·</span>comment:<span class="dp">·</span></td><td class="diffline">15 </td><td class="diffpresent">Zip<span class="dp">·</span>file<span class="dp">·</span>comment:<span class="dp">·</span></td></tr>
+</table>        </div>
+        <div class="difference">
+          <div class="diffheader">
+          <div class="diffcontrol diffcontrol-double">⊟</div>
+          <div><span class="diffsize">127 B</span></div>
+          <div><span class="source">runjenkins-2023.7.27.77341.dist-info/LICENSE</span> vs.</div>
+          <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---runjenkins-----.-.--.-----.dist-info-LICENSE"><span class="source">runjenkins-2023.7.27.77343.dist-info/LICENSE</span>
+            <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---runjenkins-----.-.--.-----.dist-info-LICENSE">¶</a>
+          </div>
+          </div>
+          <div class="comment">Files identical despite different names
+          </div>
+        </div>
+        <div class="difference">
+          <div class="diffheader">
+          <div class="diffcontrol diffcontrol-double">⊟</div>
+          <div><span class="diffsize">469 B</span></div>
+          <div><span class="source">runjenkins-2023.7.27.77341.dist-info/METADATA</span> vs.</div>
+          <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---runjenkins-----.-.--.-----.dist-info-METADATA"><span class="source">runjenkins-2023.7.27.77343.dist-info/METADATA</span>
+            <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---runjenkins-----.-.--.-----.dist-info-METADATA">¶</a>
+          </div>
+          </div>
+          <div class="comment">Files 1% similar despite different names
+          </div>
+<table class="diff">
+<colgroup><col class="colines"/><col class="coldiff"/>
+<col class="colines"/><col class="coldiff"/></colgroup>
+<tr style="display:none;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr class="diffhunk"><td colspan="2">Offset 1, 10 lines modified</td><td colspan="2">Offset 1, 10 lines modified</td></tr>
+<tr class="diffunmodified"><td class="diffline">1 </td><td class="diffpresent">Metadata-Version:<span class="dp">·</span>2.1</td><td class="diffline">1 </td><td class="diffpresent">Metadata-Version:<span class="dp">·</span>2.1</td></tr>
+<tr class="diffunmodified"><td class="diffline">2 </td><td class="diffpresent">Name:<span class="dp">·</span>runjenkins</td><td class="diffline">2 </td><td class="diffpresent">Name:<span class="dp">·</span>runjenkins</td></tr>
+<tr class="diffchanged"><td class="diffline">3 </td><td class="diffpresent">Version:<span class="dp">·</span>2023.7.27.7734<del>1</del></td><td class="diffline">3 </td><td class="diffpresent">Version:<span class="dp">·</span>2023.7.27.7734<ins>3</ins></td></tr>
+<tr class="diffunmodified"><td class="diffline">4 </td><td class="diffpresent">Summary:<span class="dp">·</span>Run<span class="dp">·</span>jenkins<span class="dp">·</span>jobs<span class="dp">·</span>from<span class="dp">·</span>the<span class="dp">·</span>cli<span class="dp">·</span>using<span class="dp">·</span>yaml<span class="dp">·</span>configs</td><td class="diffline">4 </td><td class="diffpresent">Summary:<span class="dp">·</span>Run<span class="dp">·</span>jenkins<span class="dp">·</span>jobs<span class="dp">·</span>from<span class="dp">·</span>the<span class="dp">·</span>cli<span class="dp">·</span>using<span class="dp">·</span>yaml<span class="dp">·</span>configs</td></tr>
+<tr class="diffunmodified"><td class="diffline">5 </td><td class="diffpresent">Home-page:<span class="dp">·</span>https://github.com/hughsaunders/runjenkins</td><td class="diffline">5 </td><td class="diffpresent">Home-page:<span class="dp">·</span>https://github.com/hughsaunders/runjenkins</td></tr>
+<tr class="diffunmodified"><td class="diffline">6 </td><td class="diffpresent">Author:<span class="dp">·</span>Hugh<span class="dp">·</span>Saunders</td><td class="diffline">6 </td><td class="diffpresent">Author:<span class="dp">·</span>Hugh<span class="dp">·</span>Saunders</td></tr>
+<tr class="diffunmodified"><td class="diffline">7 </td><td class="diffpresent">Author-email:<span class="dp">·</span>hugh@wherenow.org</td><td class="diffline">7 </td><td class="diffpresent">Author-email:<span class="dp">·</span>hugh@wherenow.org</td></tr>
+<tr class="diffunmodified"><td class="diffline">8 </td><td class="diffpresent">License:<span class="dp">·</span>Apache</td><td class="diffline">8 </td><td class="diffpresent">License:<span class="dp">·</span>Apache</td></tr>
+<tr class="diffunmodified"><td class="diffline">9 </td><td class="diffpresent">Platform:<span class="dp">·</span>UNKNOWN</td><td class="diffline">9 </td><td class="diffpresent">Platform:<span class="dp">·</span>UNKNOWN</td></tr>
+<tr class="diffunmodified"><td class="diffline">10 </td><td class="diffpresent">Requires-Python:<span class="dp">·</span>&gt;=3</td><td class="diffline">10 </td><td class="diffpresent">Requires-Python:<span class="dp">·</span>&gt;=3</td></tr>
+</table>        </div>
+        <div class="difference">
+          <div class="diffheader">
+          <div class="diffcontrol diffcontrol-double">⊟</div>
+          <div><span class="diffsize">1.31 KB</span></div>
+          <div><span class="source">runjenkins-2023.7.27.77341.dist-info/RECORD</span> vs.</div>
+          <div id="Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---runjenkins-----.-.--.-----.dist-info-RECORD"><span class="source">runjenkins-2023.7.27.77343.dist-info/RECORD</span>
+            <a class="anchor" href="#Dtmp-tmph-e------control-source-root----tmp-tmph-e------control-source-root-dist----tmp-tmph-e------control-source-root-dist-runjenkins-----.-.--.------py--none-any.whl---runjenkins-----.-.--.-----.dist-info-RECORD">¶</a>
+          </div>
+          </div>
+          <div class="comment">Files 24% similar despite different names
+          </div>
+<table class="diff">
+<colgroup><col class="colines"/><col class="coldiff"/>
+<col class="colines"/><col class="coldiff"/></colgroup>
+<tr style="display:none;"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr class="diffhunk"><td colspan="2">Offset 1, 7 lines modified</td><td colspan="2">Offset 1, 7 lines modified</td></tr>
+<tr class="diffunmodified"><td class="diffline">1 </td><td class="diffpresent">runjenkins.py,sha256=EIJZ4Y99JAdd7uhhpL14fqjdXLW_hDFGq2TKu752THQ,7822</td><td class="diffline">1 </td><td class="diffpresent">runjenkins.py,sha256=EIJZ4Y99JAdd7uhhpL14fqjdXLW_hDFGq2TKu752THQ,7822</td></tr>
+<tr class="diffchanged"><td class="diffline">2 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>.dist-info/LICENSE,sha256=hvLmBbRuxUf7WJp1DZnui5qbFlBDhJKYekO7lxyg-Bs,1070</td><td class="diffline">2 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/LICENSE,sha256=hvLmBbRuxUf7WJp1DZnui5qbFlBDhJKYekO7lxyg-Bs,1070</td></tr>
+<tr class="diffchanged"><td class="diffline">3 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>.dist-info/METADATA,sha256=<del>v</del><del>UzO8RoLlW-9Ez4J9ka</del>8<del>cYJ7H</del>8<del>NahVuC9u_MT8cwEg0</del>,1668</td><td class="diffline">3 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/METADATA,sha256=<ins>tS8H4kFroqCfNyZP29</ins>8<ins>gJFrr</ins>8<ins>M</ins><ins>2XOZFtfESwfpm6_sg</ins>,1668</td></tr>
+<tr class="diffchanged"><td class="diffline">4 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92</td><td class="diffline">4 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92</td></tr>
+<tr class="diffchanged"><td class="diffline">5 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>.dist-info/entry_points.txt,sha256=K5oSx9whSHaXwTrwl2ASN3QiI45TL3R3Kjc7XyrP0sY,47</td><td class="diffline">5 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/entry_points.txt,sha256=K5oSx9whSHaXwTrwl2ASN3QiI45TL3R3Kjc7XyrP0sY,47</td></tr>
+<tr class="diffchanged"><td class="diffline">6 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>.dist-info/top_level.txt,sha256=hkOxD4dxc6EpAGlQKzZ_KmHokNxNrHppdj4K_lHlINY,11</td><td class="diffline">6 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/top_level.txt,sha256=hkOxD4dxc6EpAGlQKzZ_KmHokNxNrHppdj4K_lHlINY,11</td></tr>
+<tr class="diffchanged"><td class="diffline">7 </td><td class="diffpresent">runjenkins-2023.7.27.7734<del>1</del>.dist-info/RECORD,,</td><td class="diffline">7 </td><td class="diffpresent">runjenkins-2023.7.27.7734<ins>3</ins>.dist-info/RECORD,,</td></tr>
+</table>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+Generated by
+<a href="https://diffoscope.org" rel="noopener noreferrer" target="_blank">
+diffoscope</a> 242
+</div>
+</body>
+</html>
+
