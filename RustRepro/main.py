@@ -118,7 +118,7 @@ if __name__ == '__main__':
         stars = record['stars']
         print(name, url, stars)
 
-        possible_variations = ["environment", "build_path", "fileordering", "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
+        possible_variations = ["environment", "fileordering", "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
         # test all
         if not os.path.exists('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}'.format(name)):
             os.mkdir('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}'.format(name))
@@ -156,21 +156,6 @@ if __name__ == '__main__':
 
         else:
 
-            #Save the diffoscope logs
-            with open('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}/{}/{}.txt'.format(name,
-                                                                                                            url.replace(
-                                                                                                                "/",
-                                                                                                                "_"),
-                                                                                                            "all"),
-                        'w') as f:
-                
-                f.writelines(all[1])
-                f.close()
-
-
-
-
-            
             # Try all other variations
             variations_reproducible = []
             variations_not_reproducible = []
@@ -190,27 +175,9 @@ if __name__ == '__main__':
                 if result[0] == ReproStatus.SUCCESS:
                     variations_reproducible.append(result[2])
                 elif result[0] == ReproStatus.NON_REPRODUCTION:
-                    with open('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}/{}.txt'.format(name,
-                                                                                                                  url.replace(
-                                                                                                                      "/",
-                                                                                                                      "_"),
-                                                                                                                  result[
-                                                                                                                      2]),
-                              'w') as f:
-                        f.writelines(result[1])
-                        f.close()
                     variations_not_reproducible.append(result[2])
                 else:
                     variation_errors.append(result[2])
-                    with open('/home/osolarin/ReproducibleTests/RustRepro/data/diffoscopeLogs{}/{}/{}.txt'.format(name,
-                                                                                                                  url.replace(
-                                                                                                                      "/",
-                                                                                                                      "_"),
-                                                                                                                  result[
-                                                                                                                      2]),
-                              'w') as f:
-                        f.writelines(result[1])
-                        f.close()
 
             # Record the results
             record = json.loads(
