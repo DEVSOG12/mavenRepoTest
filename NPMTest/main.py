@@ -64,9 +64,11 @@ def runTest():
             # change directory
             os.chdir(name)
 
+            os.system("mkdir dest")
+
             # run reprotest
 
-            exit_code = os.system("reprotest --config-file=/home/osolarin/.reprotsestrc 'npm pack --pack-destination='./dest'' 'dest/*.tgz'")
+            exit_code = os.system("reprotest --variation=+environment,fileordering,locales,exec_path,time,timezone,umask 'npm pack --pack-destination='./dest'' 'dest/*.tgz'")
 
             if exit_code == 0:
                 # Fully Reproducible
@@ -84,8 +86,6 @@ def runTest():
 
                 with open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'w') as f:
                     json.dump({"results": record}, f)
-                return [True, "Fully Reproducible"]
-
             else:
                 # Try all other variations
                 variations_reproducible = []
@@ -106,7 +106,7 @@ def runTest():
 
                 # Record the results
                 record = json.loads(
-                    open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format("NPMTest_400_res"), 'r').read())[
+                    open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'r').read())[
                     "results"]
                 record.append({
                     "project": name,
@@ -118,13 +118,13 @@ def runTest():
 
                 print(record)
 
-                with open('/home/osolarin/ReproducibleTests/GoRepro/data/{}.json'.format("NPMTest_400_res"), 'w') as f:
+                with open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'w') as f:
                     json.dump({"results": record}, f)
 
-                return [True, "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible"]
 
         except:
             print("Error")
 
 if __name__ == '__main__':
-    pull_repos()
+    # pull_repos()
+    runTest()
