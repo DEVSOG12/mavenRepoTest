@@ -99,14 +99,39 @@ def pull_repos():
     with open('data/cargo_400.json', 'w') as outfile:
         final = {"data": resources}
         json.dump(final, outfile)
+def convert_csv():
+    with open('data/cargo400Results.json', 'r') as f:
+        records = json.load(f)['results']
+
+        # If len(records) > 400: records = records[:400]
+
+        # if len(records) > 400:
+        #     # Radomly select 400
+        #     records = random.sample(records, 400)
+
+        s = open('data/cargo400Results.csv', 'w')
+        s.write("project, status, reproducibleVariants, nonReproducibleVariants, stars\n")
+        for i in range(len(records)):
+            s.write("{}, {}, {}, {}, {}\n".format(
+                records[i]['project'],
+                records[i]['status'],
+                str(records[i]['variationsReproducible']).replace(',', ';'),
+                str(records[i]['variationsNonReproducible']).replace(',', ';'),
+                records[i]['stars']))
+        s.close()
+
+        # Save the randomly sampled records
+        with open('data/go_Random400Results.json', 'w') as f:
+            json.dump({"results": records}, f)
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    # convert_csv()
     # pull_repos()
     # fixStars()
     # print_hi('PyCharm')
-
+    # raise Exception("wahala")
     with open('data/cargo_400.json', 'r') as f:
         records = json.load(f)['data']
         f.close()

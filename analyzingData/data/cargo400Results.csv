@@ -1,0 +1,230 @@
+project, status, reproducibleVariants, nonReproducibleVariants, stars
+clap, Fully Reproducible, ['all'], [], 11656
+serde, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 7342
+tokio, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+hyper, Fully Reproducible, ['all'], [], 12143
+serde_derive, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 7342
+futures, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+serde_json, Fully Reproducible, ['all'], [], 4009
+regex, Fully Reproducible, ['all'], [], 2975
+syn, Fully Reproducible, ['all'], [], 2323
+libc, Fully Reproducible, ['all'], [], 1704
+bytes, Fully Reproducible, ['all'], [], 1305
+quote, Fully Reproducible, ['all'], [], 1058
+url, Fully Reproducible, ['all'], [], 1043
+proc-macro2, Fully Reproducible, ['all'], [], 547
+rayon, Fully Reproducible, ['all'], [], 8798
+anyhow, Fully Reproducible, ['all'], [], 4209
+thiserror, Fully Reproducible, ['all'], [], 3350
+log, Fully Reproducible, ['all'], [], 1769
+rand, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1360
+uuid, Fully Reproducible, ['all'], [], 826
+byteorder, Fully Reproducible, ['all'], [], 808
+base64, Fully Reproducible, ['all'], [], 475
+toml, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 446
+actix-web, Partially Reproducible, ['exec_path'], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'time'; 'timezone'; 'umask'], 16822
+nom, Fully Reproducible, ['all'], [], 8058
+reqwest, Fully Reproducible, ['all'], [], 7681
+web-sys, Fully Reproducible, ['all'], [], 6407
+wasm-bindgen, Fully Reproducible, ['all'], [], 6407
+js-sys, Fully Reproducible, ['all'], [], 6407
+mio, Fully Reproducible, ['all'], [], 5547
+tracing, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 3977
+pest_derive, Not Reproducible, [], [], 3923
+pest, Not Reproducible, [], [], 3923
+criterion, Fully Reproducible, ['all'], [], 3469
+chrono, Fully Reproducible, ['all'], [], 2786
+itertools, Fully Reproducible, ['all'], [], 2179
+once_cell, Fully Reproducible, ['all'], [], 1522
+lazy_static, Fully Reproducible, ['all'], [], 1513
+cc, Fully Reproducible, ['all'], [], 1357
+openssl, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1143
+percent-encoding, Fully Reproducible, ['all'], [], 1043
+smallvec, Fully Reproducible, ['all'], [], 1026
+tempfile, Fully Reproducible, ['all'], [], 874
+bitflags, Fully Reproducible, ['all'], [], 716
+env_logger, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 554
+num-traits, Fully Reproducible, ['all'], [], 527
+num_cpus, Fully Reproducible, ['all'], [], 502
+semver, Fully Reproducible, ['all'], [], 491
+globset, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 38942
+tokio-io, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+home, Not Reproducible, [], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 10677
+clippy, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 9516
+wasm-bindgen-futures, Fully Reproducible, ['all'], [], 6407
+crossbeam-utils, Fully Reproducible, ['all'], [], 6217
+crossbeam-channel, Fully Reproducible, ['all'], [], 6217
+futures-core, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+rustls, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4636
+async-std, Fully Reproducible, ['all'], [], 3670
+winit, Fully Reproducible, ['all'], [], 3504
+bindgen, Partially Reproducible, ['environment'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], ['fileordering'], 3505
+nalgebra, Fully Reproducible, ['all'], [], 3288
+bincode, Fully Reproducible, ['all'], [], 2130
+async-trait, Fully Reproducible, ['all'], [], 1495
+failure_derive, Fully Reproducible, ['all'], [], 1445
+csv, Fully Reproducible, ['all'], [], 1431
+rand_core, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1360
+colored, Fully Reproducible, ['all'], [], 1344
+indexmap, Fully Reproducible, ['all'], [], 1299
+slog, Fully Reproducible, ['all'], [], 1231
+handlebars, Fully Reproducible, ['all'], [], 1027
+walkdir, Fully Reproducible, ['all'], [], 903
+num, Fully Reproducible, ['all'], [], 883
+time, Fully Reproducible, ['all'], [], 823
+flate2, Fully Reproducible, ['all'], [], 667
+arrayvec, Fully Reproducible, ['all'], [], 596
+slab, Fully Reproducible, ['all'], [], 515
+ctrlc, Fully Reproducible, ['all'], [], 493
+backtrace, Fully Reproducible, ['all'], [], 445
+memchr, Fully Reproducible, ['all'], [], 446
+dirs, Fully Reproducible, ['all'], [], 437
+unicode-segmentation, Fully Reproducible, ['all'], [], 430
+cfg-if, Fully Reproducible, ['all'], [], 416
+either, Fully Reproducible, ['all'], [], 308
+ignore, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 38942
+clap_complete, Fully Reproducible, ['all'], [], 11656
+diesel, Not Reproducible, [], [], 10471
+pyo3, Fully Reproducible, ['all'], [], 8845
+serde_test, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 7342
+crossbeam, Fully Reproducible, ['all'], [], 6217
+crossbeam-deque, Fully Reproducible, ['all'], [], 6217
+futures-preview, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+futures-util, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+image, Fully Reproducible, ['all'], [], 3736
+indicatif, Fully Reproducible, ['all'], [], 3564
+structopt, Fully Reproducible, ['all'], [], 2557
+protobuf, Not Reproducible, [], [], 2470
+parking_lot, Fully Reproducible, ['all'], [], 2204
+notify, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 2128
+hashbrown, Fully Reproducible, ['all'], [], 2005
+winapi, Fully Reproducible, ['all'], [], 1685
+phf, Fully Reproducible, ['all'], [], 1493
+failure, Fully Reproducible, ['all'], [], 1445
+rand_chacha, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1360
+gcc, Fully Reproducible, ['all'], [], 1357
+sha2, Fully Reproducible, ['all'], [], 1336
+rustyline, Fully Reproducible, ['all'], [], 1271
+openssl-sys, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1143
+pretty_assertions, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 950
+http, Fully Reproducible, ['all'], [], 944
+libloading, Fully Reproducible, ['all'], [], 936
+derive_more, Not Reproducible, [], [], 908
+paste, Fully Reproducible, ['all'], [], 854
+serde_yaml, Fully Reproducible, ['all'], [], 782
+aho-corasick, Fully Reproducible, ['all'], [], 773
+error-chain, Fully Reproducible, ['all'], [], 730
+docopt, Fully Reproducible, ['all'], [], 728
+actix-rt, Fully Reproducible, ['all'], [], 622
+signal-hook, Fully Reproducible, ['all'], [], 599
+directories, Fully Reproducible, ['all'], [], 535
+indoc, Fully Reproducible, ['all'], [], 506
+ryu, Fully Reproducible, ['all'], [], 478
+digest, Fully Reproducible, ['all'], [], 470
+pin-project, Fully Reproducible, ['all'], [], 435
+pretty_env_logger, Fully Reproducible, ['all'], [], 425
+generic-array, Fully Reproducible, ['all'], [], 359
+termcolor, Fully Reproducible, ['all'], [], 353
+heck, Fully Reproducible, ['all'], [], 343
+zeroize, Fully Reproducible, ['all'], [], 336
+scopeguard, Fully Reproducible, ['all'], [], 325
+fnv, Fully Reproducible, ['all'], [], 212
+subtle, Fully Reproducible, ['all'], [], 203
+ordered-float, Fully Reproducible, ['all'], [], 153
+mime, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 143
+hex, Fully Reproducible, ['all'], [], 137
+which, Fully Reproducible, ['all'], [], 129
+data-encoding, Not Reproducible, [], [], 115
+tokio-stream, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-tls, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-util, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+rocket, Not Reproducible, [], [], 20438
+actix-http, Partially Reproducible, ['home'], ['fileordering'; 'locales'; 'time'; 'timezone'; 'umask'], 16822
+warp, Fully Reproducible, ['all'], [], 8212
+tonic, Not Reproducible, [], [], 7333
+crossbeam-epoch, Fully Reproducible, ['all'], [], 6217
+futures-executor, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+futures-io, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+futures-sink, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+futures-task, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+futures-channel, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 4794
+regex-syntax, Fully Reproducible, ['all'], [], 2975
+prost, Fully Reproducible, ['all'], [], 2834
+dashmap, Fully Reproducible, ['all'], [], 2291
+nix, Fully Reproducible, ['all'], [], 2194
+rusqlite, Fully Reproducible, ['all'], [], 2196
+crossterm, Fully Reproducible, ['all'], [], 2193
+petgraph, Fully Reproducible, ['all'], [], 2134
+pulldown-cmark, Fully Reproducible, ['all'], [], 1611
+quickcheck, Fully Reproducible, ['all'], [], 1575
+git2, Not Reproducible, [], ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1369
+rand_distr, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1360
+sha-1, Fully Reproducible, ['all'], [], 1336
+sha1, Fully Reproducible, ['all'], [], 1336
+sha3, Fully Reproducible, ['all'], [], 1336
+proptest, Fully Reproducible, ['all'], [], 1333
+embedded-hal, Not Reproducible, [], [], 1280
+strum_macros, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 1190
+idna, Fully Reproducible, ['all'], [], 1043
+bumpalo, Fully Reproducible, ['all'], [], 1031
+dialoguer, Fully Reproducible, ['all'], [], 971
+rust_decimal, Fully Reproducible, ['all'], [], 770
+core-foundation-sys, Not Reproducible, [], [], 770
+darling, Fully Reproducible, ['all'], [], 766
+fern, Fully Reproducible, ['all'], [], 726
+console, Fully Reproducible, ['all'], [], 698
+ahash, Fully Reproducible, ['all'], [], 670
+bstr, Fully Reproducible, ['all'], [], 665
+ed25519-dalek, Fully Reproducible, ['all'], [], 619
+trybuild, Fully Reproducible, ['all'], [], 613
+zip, Fully Reproducible, ['all'], [], 610
+aes, Fully Reproducible, ['all'], [], 552
+tar, Fully Reproducible, ['all'], [], 529
+yaml-rust, Fully Reproducible, ['all'], [], 485
+httparse, Fully Reproducible, ['all'], [], 455
+serde_with, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 453
+arc-swap, Fully Reproducible, ['all'], [], 457
+bytemuck, Fully Reproducible, ['all'], [], 393
+zstd, Not Reproducible, [], [], 382
+native-tls, Fully Reproducible, ['all'], [], 377
+assert_cmd, Fully Reproducible, ['all'], [], 363
+hex-literal, Fully Reproducible, ['all'], [], 336
+quick-error, Fully Reproducible, ['all'], [], 290
+humantime, Fully Reproducible, ['all'], [], 250
+itoa, Fully Reproducible, ['all'], [], 236
+ansi_term, Fully Reproducible, ['all'], [], 234
+getrandom, Fully Reproducible, ['all'], [], 230
+cmake, Fully Reproducible, ['all'], [], 227
+thread_local, Fully Reproducible, ['all'], [], 211
+parity-scale-codec, Fully Reproducible, ['all'], [], 211
+rpassword, Fully Reproducible, ['all'], [], 188
+maplit, Fully Reproducible, ['all'], [], 174
+rustc-serialize, Not Reproducible, [], [], 168
+fs_extra, Fully Reproducible, ['all'], [], 166
+unicode-width, Fully Reproducible, ['all'], [], 163
+strsim, Fully Reproducible, ['all'], [], 160
+num-derive, Fully Reproducible, ['all'], [], 140
+approx, Fully Reproducible, ['all'], [], 139
+num-integer, Fully Reproducible, ['all'], [], 137
+cargo_metadata, Fully Reproducible, ['all'], [], 134
+pkg-config, Fully Reproducible, ['all'], [], 119
+dtoa, Fully Reproducible, ['all'], [], 106
+mime_guess, Fully Reproducible, ['all'], [], 75
+arrayref, Fully Reproducible, ['all'], [], 67
+autocfg, Fully Reproducible, ['all'], [], 49
+rustc_version, Fully Reproducible, ['all'], [], 45
+yew, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 27667
+tokio-test, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-threadpool, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-tcp, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-sync, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-executor, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-timer, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-reactor, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-uds, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-macros, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+tokio-codec, Partially Reproducible, ['environment'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], [], 21109
+actix-web-actors, Not Reproducible, [], ['environment'; 'kernel'; 'time'; 'umask'], 16822
+awc, Not Reproducible, [], ['exec_path'; 'time'; 'umask'], 16822
+cranelift-entity, Not Reproducible, [], [], 12669
+clap_derive, Fully Reproducible, ['all'], [], 11656

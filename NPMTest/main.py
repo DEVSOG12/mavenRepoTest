@@ -61,69 +61,71 @@ def runTest():
         try:
             Repo.clone_from(url, name)
 
-            # change directory
-            os.chdir(name)
-
-            os.system("mkdir dest")
-
-            # run reprotest
-
-            exit_code = os.system("reprotest --variation=+environment,fileordering,locales,exec_path,time,timezone,umask 'npm pack --pack-destination='./dest'' 'dest/*.tgz'")
-
-            if exit_code == 0:
-                # Fully Reproducible
-                print("Fully Reproducible")
-                record = json.loads(
-                    open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'r').read())[
-                    "results"]
-                record.append({
-                    "project": name,
-                    "stars": stars,
-                    "status": "Fully Reproducible",
-                    "variationsNonReproducible": [],
-                    "variationsReproducible": ["all"]
-                })
-
-                with open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'w') as f:
-                    json.dump({"results": record}, f)
-            else:
-                # Try all other variations
-                variations_reproducible = []
-                variations_not_reproducible = []
-
-                # Use multiprocessing to run reprotest commands in parallel
-                pool = Pool()
-                results = pool.starmap(run_reprotest,
-                                       [variation for variation in possible_variations])
-                pool.close()
-                pool.join()
-
-                for result in results:
-                    if result[0]:
-                        variations_reproducible.append(result[1])
-                    else:
-                        variations_not_reproducible.append(result[1])
-
-                # Record the results
-                record = json.loads(
-                    open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'r').read())[
-                    "results"]
-                record.append({
-                    "project": name,
-                    "stars": stars,
-                    "status": "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible",
-                    "variationsNonReproducible": variations_not_reproducible,
-                    "variationsReproducible": variations_reproducible
-                })
-
-                print(record)
-
-                with open('/home/osolarin/ReproducibleTests/NPMTest/data/{}.json'.format("NPMTest_400_res"), 'w') as f:
-                    json.dump({"results": record}, f)
-
-
         except:
-            print("Error")
+            print("Error cloning repo")
+
+        # change directory
+        os.chdir(name)
+
+        os.system("mkdir dest")
+
+        # run reprotest
+
+        exit_code = os.system("reprotest --variation=+environment,fileordering,locales,exec_path,time,timezone,umask 'npm pack --pack-destination='./dest'' 'dest/*.tgz'")
+
+        if exit_code == 0:
+            # Fully Reproducible
+            print("Fully Reproducible")
+            record = json.loads(
+                open('/home/osolarin/ReproducibleTests/NPMTest/data/NPMTest_400_res.json', 'r').read())[
+                "results"]
+            record.append({
+                "project": name,
+                "stars": stars,
+                "status": "Fully Reproducible",
+                "variationsNonReproducible": [],
+                "variationsReproducible": ["all"]
+            })
+
+            with open('/home/osolarin/ReproducibleTests/NPMTest/data/NPMTest_400_res.json', 'w') as f:
+                json.dump({"results": record}, f)
+        else:
+            # Try all other variations
+            variations_reproducible = []
+            variations_not_reproducible = []
+
+            # Use multiprocessing to run reprotest commands in parallel
+            pool = Pool()
+            results = pool.starmap(run_reprotest,
+                                   [variation for variation in possible_variations])
+            pool.close()
+            pool.join()
+
+            for result in results:
+                if result[0]:
+                    variations_reproducible.append(result[1])
+                else:
+                    variations_not_reproducible.append(result[1])
+
+            # Record the results
+            record = json.loads(
+                open('/home/osolarin/ReproducibleTests/NPMTest/data/NPMTest_400_res.json', 'r').read())[
+                "results"]
+            record.append({
+                "project": name,
+                "stars": stars,
+                "status": "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible",
+                "variationsNonReproducible": variations_not_reproducible,
+                "variationsReproducible": variations_reproducible
+            })
+
+            print(record)
+
+            with open('/home/osolarin/ReproducibleTests/NPMTest/data/NPMTest_400_res.json', 'w') as f:
+                json.dump({"results": record}, f)
+
+
+       
 
 if __name__ == '__main__':
     # pull_repos()
