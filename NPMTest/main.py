@@ -9,7 +9,7 @@ possible_variations = ["environment", "build_path", "user_group", "fileordering"
                        "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
 
 def run_reprotest(variation):
-    command = "sudo reprotest --variations=+{} ".format(variation) +
+    command = "sudo reprotest --variations=+{} ".format(variation) + \
               "'npm pack --pack-destination='./dest''" \
               "'dest/*.tgz'"
     print(command)
