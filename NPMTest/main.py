@@ -9,9 +9,9 @@ possible_variations = ["environment", "build_path", "user_group", "fileordering"
                        "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
 
 def run_reprotest(variation):
-    command = "sudo reprotest --variations=+{} " \
-              "npm pack --pack-destination='./dest'" \
-              "'dest/*.tgz'".format(variation)
+    command = "sudo reprotest --variations=+{} ".format(variation) +
+              "'npm pack --pack-destination='./dest''" \
+              "'dest/*.tgz'"
     print(command)
     exit_code = os.system(command)
     return [True, variation] if exit_code == 0 else [False, variation]
@@ -97,7 +97,7 @@ def runTest():
             # Use multiprocessing to run reprotest commands in parallel
             pool = Pool()
             results = pool.starmap(run_reprotest,
-                                   [variation for variation in possible_variations])
+                                   [(variation,) for variation in possible_variations])
             pool.close()
             pool.join()
 
