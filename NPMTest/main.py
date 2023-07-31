@@ -9,9 +9,7 @@ possible_variations = ["environment", "build_path", "user_group", "fileordering"
                        "home", "kernel", "locales", "exec_path", "time", "timezone", "umask"]
 
 def run_reprotest(variation):
-    command = "sudo reprotest --variations=+{} ".format(variation) + \
-              "'npm pack --pack-destination='./dest''" \
-              "'dest/*.tgz'"
+    command = "reprotest --variation=+{} 'npm pack --pack-destination='./dest'' 'dest/*.tgz'".format(variation)
     print(command)
     exit_code = os.system(command)
     return [True, variation] if exit_code == 0 else [False, variation]
