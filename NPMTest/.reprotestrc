@@ -1,0 +1,9 @@
+[basics]
+verbosity = 1
+variations=environment,fileordering,build_path,kernel,locales,exec_path,time,timezone,umask
+
+
+[diff]
+diffoscope_arg =
+  --exclude-command=^readelf.*--hex-dump
+  --exclude-command=^xxd
