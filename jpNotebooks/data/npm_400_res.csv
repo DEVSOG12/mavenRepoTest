@@ -1,0 +1,198 @@
+project, status, reproducibleVariants, nonReproducibleVariants, stars
+eslint, Fully Reproducible, ['all'], [], 22571
+webpack, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 63298
+prettier, Fully Reproducible, ['all'], [], 46258
+eslint-config-airbnb-base, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 135571
+axios, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 101051
+moment, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 47452
+commander, Fully Reproducible, ['all'], [], 24992
+rollup, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 23478
+core-js, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 22484
+autoprefixer, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 21052
+chalk, Fully Reproducible, ['all'], [], 20255
+html-webpack-plugin, Fully Reproducible, ['all'], [], 10483
+fs-extra, Fully Reproducible, ['all'], [], 9001
+rimraf, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5233
+babel-loader, Fully Reproducible, ['all'], [], 4746
+semver, Fully Reproducible, ['all'], [], 4693
+css-loader, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4237
+react-is, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+bootstrap, Fully Reproducible, ['all'], [], 164711
+eslint-config-airbnb, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 135571
+gulp, Fully Reproducible, ['all'], [], 32711
+async, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 27896
+mocha, Fully Reproducible, ['all'], [], 22107
+inquirer, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 18323
+dotenv, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 17468
+uuid, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 13483
+karma, Fully Reproducible, ['all'], [], 11862
+yargs, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 10538
+sinon, Fully Reproducible, ['all'], [], 9177
+eslint-plugin-react, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 8112
+chai, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7926
+eslint-plugin-import, Fully Reproducible, ['all'], [], 4899
+eslint-config-prettier, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4419
+sass-loader, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3871
+postcss-loader, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2831
+style-loader, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1636
+eslint-plugin-react-hooks, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+react-scripts, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+express, Fully Reproducible, ['all'], [], 61402
+jquery, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 57685
+husky, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 29847
+highlight.js, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 21768
+ava, Fully Reproducible, ['all'], [], 20432
+ws, Fully Reproducible, ['all'], [], 20076
+classnames, Fully Reproducible, ['all'], [], 16822
+grunt, Fully Reproducible, ['all'], [], 12189
+browserslist, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 12178
+lint-staged, Fully Reproducible, ['all'], [], 11647
+debug, Fully Reproducible, ['all'], [], 10768
+acorn, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 9573
+node-fetch, Fully Reproducible, ['all'], [], 8386
+qs, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7913
+cross-env, Fully Reproducible, ['all'], [], 6112
+tape, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5742
+prop-types, Fully Reproducible, ['all'], [], 4359
+eslint-plugin-vue, Fully Reproducible, ['all'], [], 4130
+eslint-plugin-prettier, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2625
+eslint-config-standard, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2483
+file-loader, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1874
+url-loader, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1403
+react-test-renderer, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+react-addons-test-utils, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+next, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 109554
+react-app-polyfill, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+babel-preset-react-app, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+three, Fully Reproducible, ['all'], [], 93484
+lodash.debounce, Fully Reproducible, ['all'], [], 56815
+lodash.camelcase, Fully Reproducible, ['all'], [], 56815
+lodash.get, Fully Reproducible, ['all'], [], 56815
+lodash.clonedeep, Fully Reproducible, ['all'], [], 56815
+lodash.merge, Fully Reproducible, ['all'], [], 56815
+marked, Fully Reproducible, ['all'], [], 30122
+whatwg-fetch, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 25776
+validator, Fully Reproducible, ['all'], [], 21513
+bluebird, Fully Reproducible, ['all'], [], 20328
+jasmine-core, Fully Reproducible, ['all'], [], 15587
+q, Fully Reproducible, ['all'], [], 14959
+browserify, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 14423
+uglify-js, Fully Reproducible, ['all'], [], 12426
+co, Fully Reproducible, ['all'], [], 11839
+istanbul, Fully Reproducible, ['all'], [], 8649
+ora, Fully Reproducible, ['all'], [], 8496
+ejs, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7190
+js-yaml, Fully Reproducible, ['all'], [], 5971
+json5, Fully Reproducible, ['all'], [], 5933
+execa, Fully Reproducible, ['all'], [], 5816
+npm-run-all, Fully Reproducible, ['all'], [], 5415
+nyc, Fully Reproducible, ['all'], [], 5377
+colors, Fully Reproducible, ['all'], [], 5108
+mini-css-extract-plugin, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 4601
+color, Fully Reproducible, ['all'], [], 4595
+big.js, Fully Reproducible, ['all'], [], 4458
+babel-preset-env, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3519
+meow, Fully Reproducible, ['all'], [], 3265
+eslint-plugin-jsx-a11y, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3180
+minimatch, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3042
+eventemitter3, Fully Reproducible, ['all'], [], 3027
+babel-eslint, Fully Reproducible, ['all'], [], 2971
+webpack-cli, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2502
+graceful-fs, Fully Reproducible, ['all'], [], 1228
+readable-stream, Fully Reproducible, ['all'], [], 1001
+eslint-plugin-promise, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 761
+resolve, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 737
+deep-equal, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 730
+ini, Fully Reproducible, ['all'], [], 726
+karma-chrome-launcher, Fully Reproducible, ['all'], [], 462
+strip-ansi, Fully Reproducible, ['all'], [], 359
+scheduler, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+react, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+eslint-config-react-app, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+babel-plugin-named-asset-import, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+react-dev-utils, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+confusing-browser-globals, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+@fortawesome/fontawesome-svg-core, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 71761
+font-awesome, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 71761
+@fortawesome/free-solid-svg-icons, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 71761
+svelte, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 71172
+lodash-es, Fully Reproducible, ['all'], [], 56815
+lodash.isequal, Fully Reproducible, ['all'], [], 56815
+cypress, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 44245
+dayjs, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 43649
+preact, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 34629
+@vue/cli-plugin-babel, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 29678
+@vue/cli-service, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 29678
+standard, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 28363
+sequelize, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 28144
+vuex, Fully Reproducible, ['all'], [], 28062
+underscore, Fully Reproducible, ['all'], [], 26999
+immer, Fully Reproducible, ['all'], [], 25641
+ramda, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 23109
+redux-saga, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 22425
+nanoid, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 21261
+winston, Fully Reproducible, ['all'], [], 20813
+enzyme, Fully Reproducible, ['all'], [], 19996
+jsdom, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 19004
+@testing-library/react, Fully Reproducible, ['all'], [], 17836
+less, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 16949
+nodemailer, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 15784
+systemjs, Fully Reproducible, ['all'], [], 12623
+browser-sync, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 11986
+chokidar, Fully Reproducible, ['all'], [], 10049
+terser, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7963
+es6-promise, Fully Reproducible, ['all'], [], 7305
+diff, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 7102
+isomorphic-fetch, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 6970
+cors, Fully Reproducible, ['all'], [], 5810
+log4js, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 5667
+clean-css, Fully Reproducible, ['all'], [], 4065
+extract-text-webpack-plugin, Fully Reproducible, ['all'], [], 4033
+regenerator-runtime, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 3765
+open, Fully Reproducible, ['all'], [], 2954
+progress, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2878
+deepmerge, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2625
+promise, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2528
+webpack-dev-middleware, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 2448
+micromatch, Fully Reproducible, ['all'], [], 2444
+form-data, Fully Reproducible, ['all'], [], 2193
+mime, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1978
+connect-history-api-fallback, Fully Reproducible, ['all'], [], 1781
+fast-deep-equal, Fully Reproducible, ['all'], [], 1727
+buffer, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1625
+pify, Fully Reproducible, ['all'], [], 1492
+ip, Fully Reproducible, ['all'], [], 1390
+serve-static, Fully Reproducible, ['all'], [], 1345
+events, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 1308
+jsonfile, Fully Reproducible, ['all'], [], 1181
+invariant, Fully Reproducible, ['all'], [], 1176
+bn.js, Fully Reproducible, ['all'], [], 1147
+coveralls, Fully Reproducible, ['all'], [], 1064
+eslint-plugin-node, Fully Reproducible, ['all'], [], 934
+object-assign, Fully Reproducible, ['all'], [], 915
+pump, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 897
+clone, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 760
+tar, Fully Reproducible, ['all'], [], 749
+through, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 669
+camelcase, Fully Reproducible, ['all'], [], 632
+escape-string-regexp, Fully Reproducible, ['all'], [], 552
+npmlog, Fully Reproducible, ['all'], [], 420
+extend, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 341
+which, Fully Reproducible, ['all'], [], 297
+minimist, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 149
+eslint-plugin-standard, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 123
+create-react-class, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+react-dom, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 210803
+react-error-overlay, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 100405
+lodash.defaults, Fully Reproducible, ['all'], [], 56815
+lodash.uniq, Fully Reproducible, ['all'], [], 56815
+lodash.memoize, Fully Reproducible, ['all'], [], 56815
+lodash.sortby, Fully Reproducible, ['all'], [], 56815
+lodash.keys, Fully Reproducible, ['all'], [], 56815
+lodash.template, Fully Reproducible, ['all'], [], 56815
+lodash.isplainobject, Fully Reproducible, ['all'], [], 56815
+lodash.isarray, Fully Reproducible, ['all'], [], 56815
+lodash.assign, Fully Reproducible, ['all'], [], 56815
+gatsby, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 54632
+gatsby-plugin-react-helmet, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 54632
+gatsby-plugin-manifest, Not Reproducible, [], ['environment'; 'build_path'; 'user_group'; 'fileordering'; 'home'; 'kernel'; 'locales'; 'exec_path'; 'time'; 'timezone'; 'umask'], 54632

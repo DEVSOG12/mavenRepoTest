@@ -43,7 +43,30 @@ def pull_repos():
         final = {"data": resources}
         json.dump(final, outfile)
 
+def convert_csv():
+    with open('data/NPMTest_400_res.json', 'r') as f:
+        records = json.load(f)['results']
 
+        # If len(records) > 400: records = records[:400]
+
+        # if len(records) > 400:
+        #     # Radomly select 400
+        #     records = random.sample(records, 400)
+
+        s = open('data/npm_400_res.csv', 'w')
+        s.write("project, status, reproducibleVariants, nonReproducibleVariants, stars\n")
+        for i in range(len(records)):
+            s.write("{}, {}, {}, {}, {}\n".format(
+                records[i]['project'],
+                records[i]['status'],
+                str(records[i]['variationsReproducible']).replace(',', ';'),
+                str(records[i]['variationsNonReproducible']).replace(',', ';'),
+                records[i]['stars']))
+        s.close()
+
+        # Save the randomly sampled records
+        # with open('data/npm_400_res.json', 'w') as f:
+        #     json.dump({"results": records}, f)
 def runTest():
     with open('data/npm_400.json', 'r') as f:
         records = json.load(f)['data']
@@ -127,4 +150,5 @@ def runTest():
 
 if __name__ == '__main__':
     # pull_repos()
-    runTest()
+    # runTest()
+    convert_csv()
