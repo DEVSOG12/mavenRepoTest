@@ -32,7 +32,6 @@ def regexRepoUrl(repository_url):
         return None, None
 
 
-
 def reprotestRun(variant):
     # Reprotest
     reproducible = subprocess.run(f"reprotest --variations=+{variant} 'mvn package -Dmaven.test.skip' 'target/*'",
@@ -45,52 +44,55 @@ def mvnBuildAndTest():
     variations_reproducible = []
     variations_not_reproducible = []
     variation_errors = []
+    try:
+        print(os.getcwd())
+        # Can build
+        build = subprocess.run('mvn package -Dmaven.test.skip', shell=True, stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE).returncode == 0
 
-    # Can build
-    build = subprocess.run('mvn package -Dmaven.test.skip', shell=True, stdout=subprocess.PIPE,
-                           stderr=subprocess.PIPE).returncode != 0
+        # Repotest
+        if build:
+            fullReproducible = subprocess.run("reprotest --variations=+all 'mvn package -Dmaven.test.skip' 'target/*'",
+                                              shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 0
+            if fullReproducible:
+                variations_reproducible.append("+all")
+                return [build, [fullReproducible, variations_reproducible, variations_not_reproducible, variation_errors]]
 
-    # Repotest
-    if build:
-        fullReproducible = subprocess.run("reprotest --variations=+all 'mvn package -Dmaven.test.skip' 'target/*'",
-                                          shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode != 0
-        if fullReproducible:
-            variations_reproducible.append("+all")
+            possible_variations = ["environment", "fileordering", "home", "kernel", "locales", "exec_path", "time",
+                                   "timezone", "umask"]
+
+            results = runMProcessWithReturn(possible_variations, reprotestRun)
+            for result in results:
+                if result["reproducible"]:
+                    variations_reproducible.append(result["variant"])
+                else:
+                    variations_not_reproducible.append(result["variant"])
+
             return [build, [fullReproducible, variations_reproducible, variations_not_reproducible, variation_errors]]
+        else:
+            return [build, [False, variations_reproducible, variations_not_reproducible, variation_errors]]
 
-        possible_variations = ["environment", "fileordering", "home", "kernel", "locales", "exec_path", "time",
-                               "timezone", "umask"]
-
-        results = runMProcessWithReturn(possible_variations, reprotestRun)
-        for result in results:
-            if result["reproducible"]:
-                variations_reproducible.append(result["variant"])
-            else:
-                variations_not_reproducible.append(result["variant"])
-
-        return [build, [fullReproducible, variations_reproducible, variations_not_reproducible, variation_errors]]
-    else:
-        return [build, [False, variations_reproducible, variations_not_reproducible, variation_errors]]
+    except Exception as e:
+        print(e)
+        # backToBase()
 
 
 def runTests(data):
-
-    result = runMProcess(data, runTest)
-
+    result = runMProcessWithReturn(data, runTest)
+    print("Results", result)
     inform({"title": "Maven", "text": f"Finished testing {len(result)} repositories"})
 
     return len(result)
 
 
-
-
 def postResultsToFile(data):
-    with open("data/results/maven_results.json", "r") as f:
+    # print(os.getcwd().split())
+    with open("/Users/devsog12/mavenRepoTest/mavenTests/data/results/maven_results.json", "r") as f:
         datas = json.load(f)
 
     datas["results"].append(data)
 
-    with open("data/results/maven_results.json", "w") as f:
+    with open("/Users/devsog12/mavenRepoTest/mavenTests/data/results/maven_results.json", "w") as f:
         json.dump(datas, f, indent=4)
 
 
@@ -100,13 +102,14 @@ def inform(info):
                   headers={"Content-Type": "application/json"})
 
 
-
-
 def backToBase(repodir):
-    os.chdir(repodir)
+
+    # if os.getcwd().split("/")[-1] == repodir:
     os.chdir("..")
     # delete the folder
+
     shutil.rmtree(repodir)
+    print("Deleted", repodir)
 
 
 def changeDirAndRun(path):
@@ -126,12 +129,14 @@ def runTest(item):
         exit(1)
 
     # cd into the folder
+
     os.chdir(item[0])
 
     # Find all pom.xml files
-    possiblePaths = findAllPomSubFolders(item[1])
+    possiblePaths = findAllPomSubFolders(os.getcwd())
     if len(possiblePaths) == 0:
         print("No pom.xml found")
+        backToBase(item[0])
         exit(1)
 
     results = runMProcessWithReturn(possiblePaths, changeDirAndRun)
@@ -142,8 +147,6 @@ def runTest(item):
     backToBase(item[0])
 
     return results
-
-
 
 
 def fixRepos(data=None):
@@ -192,5 +195,3 @@ def findAllPomSubFolders(repoPath):
                 paths.append(root)
 
     return paths
-
-

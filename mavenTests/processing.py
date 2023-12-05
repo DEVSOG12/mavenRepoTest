@@ -1,41 +1,34 @@
-#-- Multiprocessing
-
 import concurrent.futures
 import time
 
-
 def runMProcess(data, function):
-    # Max number of threads = 4
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-        # Start the load operations and mark each future with its URL
-        future_to_url = {executor.submit(function, url): url for url in data}
-        for future in concurrent.futures.as_completed(future_to_url):
-            url = future_to_url[future]
+    # Max number of processes = 4
+    with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
+        # Start the load operations and mark each future with its data
+        future_to_data = {executor.submit(function, item): item for item in data}
+        for future in concurrent.futures.as_completed(future_to_data):
+            item = future_to_data[future]
             try:
-                data = future.result()
+                result = future.result()
             except Exception as exc:
-                print('%r generated an exception: %s' % (url, exc))
+                print('%r generated an exception: %s' % (item, exc))
             else:
-                # print('%r page is %d bytes' % (url, len(data)))
+                # Process the result as needed
                 pass
 
 def runMProcessWithReturn(data, function):
-    datas = []
-    # Max number of threads = 4
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-        # Start the load operations and mark each future with its URL
-        future_to_url = {executor.submit(function, url): url for url in data}
-        for future in concurrent.futures.as_completed(future_to_url):
-            url = future_to_url[future]
+    results = []
+    # Max number of processes = 4
+    with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
+        # Start the load operations and mark each future with its data
+        future_to_data = {executor.submit(function, item): item for item in data}
+        for future in concurrent.futures.as_completed(future_to_data):
+            item = future_to_data[future]
             try:
-                data = future.result()
+                result = future.result()
             except Exception as exc:
-                print('%r generated an exception: %s' % (url, exc))
+                print('%r generated an exception: %s' % (item, exc))
             else:
-                # print('%r page is %d bytes' % (url, len(data)))
-                # print('%r page is %d bytes' % (url, len(data)))
-                datas.append(data)
-    return datas
-
-
-
+                # Collect the results
+                results.append(result)
+    return results

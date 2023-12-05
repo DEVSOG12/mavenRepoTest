@@ -1,4 +1,4 @@
-from pullData import run, runFixed
+from pullData import *
 from tests import runTests, fixRepos
 
 
@@ -13,6 +13,8 @@ if '__main__' == __name__:
         if not data:
             fixRepos(data)
             data = runFixed()
+            data = data[:1]
             runTests(data)
         else:
+            data = data[:4]
             runTests(data)
