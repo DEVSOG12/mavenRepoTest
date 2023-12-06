@@ -1,5 +1,5 @@
 from pullData import *
-from tests import runTests, fixRepos
+from tests import runTests, fixRepos, runReTests
 
 
 if '__main__' == __name__:
@@ -18,3 +18,11 @@ if '__main__' == __name__:
         else:
             data = data[:4]
             runTests(data)
+
+        results = pullResults()
+
+        results = [[item["repo"][0:5], item["repo"]] for item in results]
+
+        runReTests(results)
+
+

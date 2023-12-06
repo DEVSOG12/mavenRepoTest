@@ -1,5 +1,14 @@
 from importss import *
 
+
+def pullResults():
+    if os.path.exists("data/results/maven_results.json"):
+        with open("data/results/maven_results.json", "r") as f:
+            data = json.load(f)
+        return data
+    else:
+        return False
+
 def run():
     # Check if raw data exists
     if os.path.exists("data/raw/maven_sample_5000Fixed.csv"):

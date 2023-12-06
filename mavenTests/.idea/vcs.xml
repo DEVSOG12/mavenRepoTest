@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/com.github.pkoli:xls2pojo-maven-plugin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/graceful-readlink" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/org.constretto:constretto-camel" vcs="Git" />
   </component>
 </project>

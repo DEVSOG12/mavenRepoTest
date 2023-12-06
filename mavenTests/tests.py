@@ -75,6 +75,75 @@ def mvnBuildAndTest():
     except Exception as e:
         print(e)
         # backToBase()
+def pomFileFix(path):
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            data = f.read()
+        """
+        Enable Reproducible Builds mode for plugins, by adding project.build.outputTimestamp property to the project's pom.xml:
+        <properties>
+         <project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>
+        </properties>
+        
+        https://maven.apache.org/guides/mini/guide-reproducible-builds.html
+        """
+        data = data.replace("</properties>", "</properties>\n<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>")
+        with open(path, "w") as f:
+            f.write(data)
+
+        return path
+    else:
+        return False
+def runReTests(data):
+    result = runMProcessWithReturn(data, runReTest)
+    print("Results", result)
+    inform({"title": "Maven", "text": f"Finished testing {len(result)} repositories"})
+
+    return 0 if len(result) > 1 else False
+
+def runReTest(item):
+    if subprocess.run('mvn --version', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode != 0:
+        print("Maven is not installed")
+        exit(1)
+
+    # Clone
+    if subprocess.run('git clone ' + item[1] + ' ' + item[0], shell=True, stdout=subprocess.PIPE,
+                        stderr=subprocess.PIPE).returncode != 0:
+            print("Git clone failed")
+            exit(1)
+
+    # cd into the folder
+    os.chdir(item[0])
+
+    # Find all pom.xml files
+    possiblePaths = findAllPomSubFolders(os.getcwd())
+
+    if len(possiblePaths) == 0:
+        print("No pom.xml found")
+        backToBase(item[0])
+        exit(1)
+
+    path = runMProcessWithReturn(possiblePaths, pomFileFix)
+
+    path = [item for item in path if item is not False]
+
+    if len(path) == 0:
+        print("No pom.xml found")
+        backToBase(item[0])
+        exit(1)
+
+    results = runMProcessWithReturn(path, changeDirAndRun)
+
+    postResultsToFile("/home/osolarin/mavenRepoTest/mavenTests/data/results/maven_results_afterFix.json", {"repo": item[1], "results": results})
+
+    # Go back to base
+    backToBase(item[0])
+
+    return results
+
+
+
+
 
 
 def runTests(data):
@@ -85,14 +154,15 @@ def runTests(data):
     return len(result)
 
 
-def postResultsToFile(data):
+
+def postResultsToFile(path, data):
     # print(os.getcwd().split())
-    with open("/Users/devsog12/mavenRepoTest/mavenTests/data/results/maven_results.json", "r") as f:
+    with open(path, "r") as f:
         datas = json.load(f)
 
     datas["results"].append(data)
 
-    with open("/Users/devsog12/mavenRepoTest/mavenTests/data/results/maven_results.json", "w") as f:
+    with open(path, "w") as f:
         json.dump(datas, f, indent=4)
 
 
@@ -134,14 +204,14 @@ def runTest(item):
 
     # Find all pom.xml files
     possiblePaths = findAllPomSubFolders(os.getcwd())
-    if len(possiblePaths) == 0:
+    if len(possiblePaths) ==   0:
         print("No pom.xml found")
         backToBase(item[0])
         exit(1)
 
     results = runMProcessWithReturn(possiblePaths, changeDirAndRun)
 
-    postResultsToFile({"repo": item[1], "results": results})
+    postResultsToFile("/home/osolarin/mavenRepoTest/mavenTests/data/results/maven_results_afterFix.json", {"repo": item[1], "results": results})
 
     # Go back to base
     backToBase(item[0])
