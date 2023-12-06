@@ -10,19 +10,20 @@ if '__main__' == __name__:
     else:
         data = runFixed()
 
-        if not data:
-            fixRepos(data)
-            data = runFixed()
-            data = data[:1]
-            runTests(data)
-        else:
-            data = data[:4]
-            runTests(data)
+        # if not data:
+        #     fixRepos(data)
+        #     data = runFixed()
+        #     data = data[:1]
+        #     runTests(data)
+        # else:
+        #     data = data[:4]
+        #     runTests(data)
 
         results = pullResults()
 
-        results = [[item["repo"][0:5], item["repo"]] for item in results]
+        if results:
+            results = [[item["repo"][0:5], item["repo"]] for item in results]
 
-        runReTests(results)
+            runReTests(results)
 
 
