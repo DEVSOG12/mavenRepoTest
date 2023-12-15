@@ -75,7 +75,8 @@ def mvnBuildAndTest():
     except Exception as e:
         print(e)
         # backToBase()
-def pomFileFix(path):
+def pomFileFix(directory):
+    path = directory + "/pom.xml"
     if os.path.exists(path):
         with open(path, "r") as f:
             data = f.read()
@@ -87,11 +88,11 @@ def pomFileFix(path):
         
         https://maven.apache.org/guides/mini/guide-reproducible-builds.html
         """
-        data = data.replace("</properties>", "</properties>\n<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>")
+        data = data.replace("</properties>", "<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>\n</properties>")
         with open(path, "w") as f:
             f.write(data)
 
-        return path
+        return directory
     else:
         return False
 def runReTests(data):
@@ -117,6 +118,8 @@ def runReTest(item):
 
     # Find all pom.xml files
     possiblePaths = findAllPomSubFolders(os.getcwd())
+
+    print(possiblePaths)
 
     if len(possiblePaths) == 0:
         print("No pom.xml found")
@@ -261,9 +264,13 @@ def validationTest(repoData):
 
 def findAllPomSubFolders(repoPath):
     paths = []
+    print(repoPath)
     for root, dirs, files in os.walk(repoPath):
         for file in files:
             if file.endswith("pom.xml"):
+                print(root)
                 paths.append(root)
-
+    # find all pom.xml files
+    print(paths)
     return paths
+

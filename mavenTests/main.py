@@ -22,8 +22,11 @@ if '__main__' == __name__:
         results = pullResults()
 
         if results:
-            results = [[item["repo"][0:5], item["repo"]] for item in results]
-
+            results = results["results"]
+            results = [[item["repo"][::-1][0:8], item["repo"]] for item in results]
+            # test on 1
+            results = results[:1]
+            print(results[0])
             runReTests(results)
 
 
