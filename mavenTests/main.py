@@ -25,8 +25,8 @@ if '__main__' == __name__:
             results = results["results"]
             results = [[item["repo"][::-1][0:8], item["repo"]] for item in results]
             # test on 1
-            results = results[:1]
-            print(results[0])
+            # results = results[:1]
+            # print(results[0])
             runReTests(results)
 
 
