@@ -31,13 +31,35 @@ def regexRepoUrl(repository_url):
     else:
         return None, None
 
+def findArtifactMaven(directory):
+    # Look for .jar files in the target folder if else loop to check other folders
+    path = directory + "/target"
+    f_path = None
+    if os.path.exists(path):
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                if file.endswith(".jar"):
+                    f_path = os.path.join(root, file)
+                    return f_path
+        return f_path
+    else:
+        for root, dirs, files in os.walk(directory):
+            for file in files:
+                if file.endswith(".jar"):
+                    f_path = os.path.join(root, file)
+                    return f_path
+        return f_path
 
-def reprotestRun(variant):
+
+
+
+def reprotestRun(arg):
     # Reprotest
-    reproducible = subprocess.run(f"reprotest --variations=+{variant} 'mvn package -Dmaven.test.skip' 'target/*'",
+    print("Running Reprotest", f"reprotest --variations=+{arg[0]} 'mvn package -Dmaven.test.skip' 'target/{arg[1]}'")
+    reproducible = subprocess.run(f"reprotest --variations=+{arg[0]} 'mvn package -Dmaven.test.skip' 'target/{arg[1]}'",
                                   shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode != 0
 
-    return {"variant": variant, "reproducible": reproducible}
+    return {"variant": arg[0], "reproducible": reproducible}
 
 
 def mvnBuildAndTest():
@@ -45,14 +67,24 @@ def mvnBuildAndTest():
     variations_not_reproducible = []
     variation_errors = []
     try:
-        print(os.getcwd())
+        # print(os.getcwd())
         # Can build
         build = subprocess.run('mvn package -Dmaven.test.skip', shell=True, stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE).returncode == 0
 
         # Repotest
         if build:
-            fullReproducible = subprocess.run("reprotest --variations=+all 'mvn package -Dmaven.test.skip' 'target/*'",
+            # print("Build Successful")
+            # Find artifact
+            artifact = findArtifactMaven(os.getcwd())
+
+            if artifact is None:
+                return [build, [False, variations_reproducible, variations_not_reproducible, variation_errors,
+                                ], "No artifact found"]
+
+            artifact = artifact.split("/")[-1]
+
+            fullReproducible = subprocess.run("reprotest --variations=+all 'mvn package -Dmaven.test.skip' 'target/{}'".format(artifact),
                                               shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 0
             if fullReproducible:
                 variations_reproducible.append("+all")
@@ -61,6 +93,8 @@ def mvnBuildAndTest():
             possible_variations = ["environment", "fileordering", "home", "kernel", "locales", "exec_path", "time",
                                    "timezone", "umask"]
 
+            possible_variations = [[item, artifact] for item in possible_variations]
+
             results = runMProcessWithReturn(possible_variations, reprotestRun)
             for result in results:
                 if result["reproducible"]:
@@ -68,13 +102,15 @@ def mvnBuildAndTest():
                 else:
                     variations_not_reproducible.append(result["variant"])
 
-            return [build, [fullReproducible, variations_reproducible, variations_not_reproducible, variation_errors]]
+            return [build, [fullReproducible, variations_reproducible, variations_not_reproducible, variation_errors], "Full Reproducible" if fullReproducible or len(variations_not_reproducible) == 0 else "Partially Reproducible" if len(variations_reproducible) > 0 else "Not Reproducible"]
         else:
-            return [build, [False, variations_reproducible, variations_not_reproducible, variation_errors]]
+            return [build, [False, variations_reproducible, variations_not_reproducible, variation_errors], "Build Failed"]
 
     except Exception as e:
         print(e)
+        return [False, [False, variations_reproducible, variations_not_reproducible, variation_errors], "Error"]
         # backToBase()
+
 def pomFileFix(directory):
     path = directory + "/pom.xml"
     if os.path.exists(path):
@@ -88,7 +124,13 @@ def pomFileFix(directory):
         
         https://maven.apache.org/guides/mini/guide-reproducible-builds.html
         """
-        data = data.replace("</properties>", "<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>\n</properties>")
+        # check if the properties tag already exists
+        if "<properties>" not in data:
+            data = data.replace("<project>", "<project>\n<properties>\n<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>\n</properties>")
+        else:
+            # check if the project.build.outputTimestamp already exists
+            if "<project.build.outputTimestamp>" not in data:
+                data = data.replace("</properties>", "<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>\n</properties>")
         with open(path, "w") as f:
             f.write(data)
 
@@ -119,7 +161,7 @@ def runReTest(item):
     # Find all pom.xml files
     possiblePaths = findAllPomSubFolders(os.getcwd())
 
-    print(possiblePaths)
+    # print(possiblePaths)
 
     if len(possiblePaths) == 0:
         print("No pom.xml found")
@@ -137,7 +179,7 @@ def runReTest(item):
 
     results = runMProcessWithReturn(path, changeDirAndRun)
 
-    postResultsToFile("/home/osolarin/mavenRepoTest/mavenTests/data/results/maven_results_afterFix.json", {"repo": item[1], "results": results})
+    postResultsToFile("//Users/devsog12/mavenRepoTest/mavenTests/data/results/maven_results_afterFix.json", {"repo": item[1], "results": results})
 
     # Go back to base
     backToBase(item[0])
@@ -264,13 +306,13 @@ def validationTest(repoData):
 
 def findAllPomSubFolders(repoPath):
     paths = []
-    print(repoPath)
+    # print(repoPath)
     for root, dirs, files in os.walk(repoPath):
         for file in files:
             if file.endswith("pom.xml"):
-                print(root)
+                # print(root)
                 paths.append(root)
     # find all pom.xml files
-    print(paths)
+    # print(paths)
     return paths
 
