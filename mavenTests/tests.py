@@ -179,7 +179,7 @@ def runReTest(item):
 
     results = runMProcessWithReturn(path, changeDirAndRun)
 
-    postResultsToFile("//Users/devsog12/mavenRepoTest/mavenTests/data/results/maven_results_afterFix.json", {"repo": item[1], "results": results})
+    postResultsToFile("/home/osolarin/mavenRepoTest/mavenTests/data/results/maven_results_afterFix.json", {"repo": item[1], "results": results})
 
     # Go back to base
     backToBase(item[0])
